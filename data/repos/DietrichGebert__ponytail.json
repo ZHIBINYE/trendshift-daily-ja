@@ -1,0 +1,53 @@
+{
+  "full_name": "DietrichGebert/ponytail",
+  "title_ja": "AIに怠け者の上級開発者の発想をさせる",
+  "category": "AI開発ツール",
+  "summary_ja": "「最良のコードは書かないコード」を方針に、AIエージェントへ最小限の実装を促すスキル(プロンプト)集。既存コードや標準機能、ネイティブ機能で済まないかを順に確認してから書くよう誘導する。Claude Code、Codexなど約20のエージェントに対応。",
+  "features": [
+    "実装前に「本当に必要か」「既存コードや標準ライブラリで足りるか」を順に確認する判断ルール",
+    "Claude Code・Codex向けプラグインと、AGENTS.mdによる汎用対応",
+    "レビューや監査用のコマンド群と /ponytail によるモード切替",
+    "リスクのあるロジックに小さなテストを付けさせる方針"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Claude Codeでマーケットプレイスを追加する",
+      "続けてプラグインをインストールする",
+      "Codexの場合は専用コマンドで追加し、/hooks で2つのフックを信頼して新規スレッドを開始",
+      "その他のエージェントはAGENTS.mdをプロジェクトにコピーするか、SKILL.mdをスキルとして導入する"
+    ],
+    "code": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail\n\ncodex plugin marketplace add DietrichGebert/ponytail\ncodex plugin add ponytail@ponytail"
+  },
+  "effects": [
+    "生成コード量の削減(README記載のベンチマークで約53%減)",
+    "作業時間・トークン・コストの削減(同ベンチマークで時間41%減、トークン45%減など)",
+    "不要な依存ライブラリの追加を抑制",
+    "リスクのあるロジックのテスト同梱率が向上(README記載で68%から98%)"
+  ],
+  "domains": [
+    {
+      "area": "Webアプリ開発",
+      "example": "日付選択などをライブラリ追加でなく既存部品やブラウザ標準で実装させる"
+    },
+    {
+      "area": "コードレビュー",
+      "example": "過剰実装や不要な抽象化を指摘するレビューコマンドを使う"
+    },
+    {
+      "area": "レガシーコードの整理",
+      "example": "監査機能で不要なコードの削減候補を洗い出す"
+    },
+    {
+      "area": "AI導入チーム",
+      "example": "チーム共通のAGENTS.mdとして最小実装方針を徹底する"
+    }
+  ],
+  "target_users": "AIエージェントが生成する冗長なコードに悩む開発者・チーム。",
+  "cautions": [
+    "ベンチマーク数値は作者自身の計測で、環境により異なると考えられる",
+    "作者は公式のGitHubとnpm以外の配布物は信用しないよう注意喚起している(偽物に注意)",
+    "フックの有効化など、導入時の権限設定を確認すること"
+  ],
+  "license": "MIT",
+  "analyzed_at": "2026-11-20"
+}

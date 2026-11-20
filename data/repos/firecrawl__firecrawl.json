@@ -1,0 +1,55 @@
+{
+  "full_name": "firecrawl/firecrawl",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "Web情報をAIに渡すデータ基盤",
+  "category": "データ・スクレイピング",
+  "summary_ja": "Webサイトをクリーンなmarkdownに変換し、AIエージェントへ供給するスクレイピング/クロール基盤。ローカル実行(Firecrawl Local)、クラウド、セルフホストの3形態で使える。",
+  "features": [
+    "scrape・crawl・mapによるサイト取得とmarkdown化",
+    "MCPサーバーとしてClaude Code・Cursor等に接続(initコマンド)",
+    "Firecrawl v2互換APIをlocalhostで提供(serve)",
+    "PDFやOfficeドキュメントのローカル解析",
+    "クラウド版で検索・構造化JSON・ブラウザ操作・Alexandriaデータ提供元に対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Rustが入った環境でfirecrawl-localをインストール(Rust無しならnpxでCLIを使う)",
+      "scrape/crawl/mapコマンドで対象サイトを取得",
+      "initでAIツールにMCPサーバーとして登録し再起動",
+      "serveでlocalhost:3002のAPIを立て、既存SDKのapi_urlを向ける",
+      "大規模・検索・構造化JSONが必要ならクラウド版やセルフホストを使う"
+    ],
+    "code": "cargo install firecrawl-local\nfirecrawl-local scrape https://firecrawl.dev --markdown\nfirecrawl-local init"
+  },
+  "effects": [
+    "Webページ収集とクリーニングの実装工数を削減",
+    "AIエージェントがWeb上の最新情報を直接参照可能に",
+    "DB・キュー不要で1バイナリから手軽に開始",
+    "既存のFirecrawlコードをローカルAPIへそのまま流用"
+  ],
+  "domains": [
+    {
+      "area": "AI開発・RAG構築",
+      "example": "社内外ドキュメントサイトをcrawlしてmarkdown化し、検索用コーパスに投入"
+    },
+    {
+      "area": "マーケティング・競合調査",
+      "example": "競合サイトのページをmapとscrapeで定期取得して比較"
+    },
+    {
+      "area": "リサーチ業務",
+      "example": "MCP経由でエージェントに調査対象サイトを読ませて要約"
+    },
+    {
+      "area": "開発者ドキュメント整備",
+      "example": "ライブラリ公式docsをまとめて取り込みLLMに参照させる"
+    }
+  ],
+  "target_users": "AIエージェントやRAGにWebデータを安定供給したい開発者・データチーム。",
+  "cautions": [
+    "本体はAGPL-3.0(SDKや一部UIはMIT)。自社サービスへの組み込み時は条件を確認",
+    "スクレイピングは対象サイトの利用規約・robots.txt・著作権を順守する",
+    "検索・Alexandria・構造化JSON等はFirecrawl Cloud(APIキー・課金)が必要"
+  ],
+  "license": "AGPL-3.0(SDK・一部UIはMIT)"
+}

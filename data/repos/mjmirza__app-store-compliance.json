@@ -1,0 +1,60 @@
+{
+  "full_name": "mjmirza/app-store-compliance",
+  "title_ja": "ストア審査リジェクトを事前に防ぐ",
+  "category": "AI開発ツール",
+  "summary_ja": "App Store と Google Play の審査落ちを防ぐためのオープンなプレイブック兼、提出前チェック用ガード。117 件のリジェクト事例と対処法、プライバシーマニフェスト／Data safety の確認、95 件の期限管理を収録し、AI コーディングエージェント用スキルも提供する。",
+  "features": [
+    "117 件の文書化されたリジェクトパターンと修正方法",
+    "提出前にアプリのフォルダを走査するシェルスクリプト製ガード（重大度順に該当ファイル・行を表示）",
+    "プライバシーマニフェストと Data safety の確認",
+    "EU AI Act・DSA・COPPA・年齢法などの期限 95 件の追跡",
+    "Claude Code・Codex・Gemini CLI・Cursor 等への導入スクリプトと /app-store-audit"
+  ],
+  "how_to_use": {
+    "steps": [
+      "リポジトリを git clone で取得する",
+      "ガードスクリプトにアプリ（Xcode または Android）のフォルダを渡して実行する",
+      "出力された指摘を重大度の高い順に修正する",
+      "AI コーディングツールに常時組み込む場合は install.sh を実行して再起動する",
+      "リジェクト済みの場合は appeal playbook を参照する"
+    ],
+    "code": "git clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance\nbash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"\n\n# AI コーディングツールへ導入\nbash ~/repositories/app-store-compliance/scripts/install.sh --tool all"
+  },
+  "effects": [
+    "審査リジェクトによる再提出の手戻りを減らす",
+    "提出前に問題箇所をファイルと行単位で把握できる",
+    "規制対応の期限を見落とすリスクを下げる",
+    "非開発者でもチェックリストで確認できる",
+    "AI エージェントの提出操作時に自動でチェックを挟める"
+  ],
+  "domains": [
+    {
+      "area": "モバイルアプリ開発",
+      "example": "iOS/Android アプリの申請前に自動スキャンして審査落ち要因を潰す"
+    },
+    {
+      "area": "プロダクト管理・QA",
+      "example": "提出前チェックリストでリリース判定の抜けを防ぐ"
+    },
+    {
+      "area": "法務・コンプライアンス",
+      "example": "EU AI Act や COPPA などの期限一覧を対応計画に使う"
+    },
+    {
+      "area": "受託・スタジオ開発",
+      "example": "複数案件の申請品質を共通のガードで揃える"
+    },
+    {
+      "area": "AI コーディング運用",
+      "example": "エージェントの submit コマンドをフックで検査する"
+    }
+  ],
+  "target_users": "iOS/Android アプリをストアへ提出する開発者・プロダクト担当・受託開発チーム。",
+  "cautions": [
+    "ライセンスは OpenRoots ORA 2.3 で、MIT 等とは条件が異なるため利用前に確認が必要",
+    "install.sh は各ツールのフックやスキルをホームフォルダ配下に設置するため、内容を確認してから実行する",
+    "審査通過を保証するものではなく、ストア規約や法規制は変わるため公式ガイドラインの確認が必要"
+  ],
+  "license": "OpenRoots ORA 2.3",
+  "analyzed_at": "2026-11-20"
+}

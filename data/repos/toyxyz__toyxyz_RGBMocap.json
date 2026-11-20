@@ -1,0 +1,59 @@
+{
+  "full_name": "toyxyz/toyxyz_RGBMocap",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "動画から人物モーションを抽出するWindowsアプリ",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "動画から人体のアニメーションを推定し、編集・書き出しできるネイティブWindowsアプリ。AI処理はローカルで動作し、ExMR・FlowHMR・GVHMR等のモデルを切り替えて使う。接地補正やキャラクターへのリターゲット、FBX/VMDなどへの出力に対応する。",
+  "features": [
+    "動画から1人または複数人のモーションを再構成し、3Dで確認",
+    "足・手の接地補正でスライディングを低減",
+    "Mixamo FBX・VRM・PMXキャラクターへのリターゲット",
+    "FBX・BVH・VMD出力、Blender/Unreal Engine(MetaHuman Live Link)へのストリーミング",
+    "Model Managerでモデルファイルを管理し、顔トラッキングも可能"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Git for Windowsを導入し、リポジトリをクローンする",
+      "install.cmdでランタイムを準備する",
+      "RGBMoCap.cmdでアプリを起動する",
+      "Model Managerで使用するAIモデルのファイルを用意する",
+      "File > Open Videoで動画を開き、Reconstruct 3Dを実行して結果を確認・書き出す"
+    ],
+    "code": "git clone https://github.com/toyxyz/toyxyz_RGBMocap.git\ncd toyxyz_RGBMocap\ninstall.cmd\nRGBMoCap.cmd"
+  },
+  "effects": [
+    "モーションキャプチャ機材なしで動画からアニメーション素材を作れる",
+    "Blender・Unreal・MMD向けの書き出しで制作工程を短縮",
+    "接地補正により後処理の手作業を軽減",
+    "ローカル処理のため動画を外部に送らずに済む"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム開発",
+      "example": "撮影した動作を人型キャラクターのアニメーションとして取り込む"
+    },
+    {
+      "area": "映像・VTuber制作",
+      "example": "VRMキャラクターへ動画の動きを適用する"
+    },
+    {
+      "area": "MMD制作",
+      "example": "PMXモデル向けにVMDモーションを書き出す"
+    },
+    {
+      "area": "バーチャルプロダクション",
+      "example": "Unreal EngineのMetaHumanへLive Linkで動きと表情を送る"
+    },
+    {
+      "area": "研究・教育",
+      "example": "人体姿勢推定モデルの結果を比較・確認する"
+    }
+  ],
+  "target_users": "動画から手軽にモーションデータを作りたい、Windows環境のアニメーター・ゲーム開発者・MMD/VTuber制作者。",
+  "cautions": [
+    "Windows専用で、モデルによってはCUDA 12.8やVisual Studio C++ Build Toolsが必要で、VRAMも多く使う",
+    "一部モデルはアカウント登録・手動ダウンロード・ライセンス確認が必要で、第三者モデルは各自の規約に従う",
+    "人物動画の利用時は肖像権・著作権に配慮する"
+  ],
+  "license": "MIT"
+}

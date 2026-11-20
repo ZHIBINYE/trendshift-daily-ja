@@ -1,0 +1,55 @@
+{
+  "full_name": "Bodila51/gtavi-claudecode",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "GTA6配信を縦動画クリップ化",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "GTA 6の配信から見どころを検出し、字幕・フック付きの9:16縦動画クリップを作るClaude Codeプラグイン。クリップ報酬キャンペーン探しやトレンド動画把握も支援する。",
+  "features": [
+    "campaign-finder: クリップ報酬キャンペーンのレート・規約を取得",
+    "trend-radar・stream-finder: 人気動画/配信の抽出",
+    "moment-finder: 音量・盛り上がり等で名場面を採点",
+    "clip-cutter: 1080x1920、単語字幕、フック付き",
+    "multilang・rule-check等16スキル"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Claude Codeにマーケットプレイスを追加",
+      "プラグインをインストール",
+      "READMEの初回プロンプトを貼り付けセットアップ",
+      "質問に答えて候補動画と名場面を確認",
+      "作成クリップをルール確認し自分で投稿"
+    ],
+    "code": "/plugin marketplace add Bodila51/gtavi-claudecode\n/plugin install gtavi-claudecode@gtavi-claudecode"
+  },
+  "effects": [
+    "長尺配信から短尺クリップを切り出す作業時間を短縮",
+    "トレンド把握により投稿タイミングを判断しやすい",
+    "多言語化で海外視聴者へ展開",
+    "投稿前に長さ・形式などを自動チェック"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム系SNS運用",
+      "example": "新作ゲームの話題動画を縦型で投稿"
+    },
+    {
+      "area": "クリッパー活動",
+      "example": "キャンペーン規約を確認し対象配信者のクリップを提出"
+    },
+    {
+      "area": "動画編集",
+      "example": "字幕・フック付き縦動画を自動生成"
+    },
+    {
+      "area": "多言語メディア",
+      "example": "同一クリップを5言語で展開"
+    }
+  ],
+  "target_users": "ゲーム配信のショート動画を量産して投稿したいクリエイター。",
+  "cautions": [
+    "非公式ファンプロジェクト。他者の配信・動画を使うため、権利者の許諾、クレジット、各プラットフォーム規約・キャンペーン規約を必ず守る",
+    "収益は保証されない(README記載)。リーク・違法配布・不正行為に関わる投稿はしない",
+    "ffmpeg・yt-dlp等の導入が必要。公開直後で成熟度は未知"
+  ],
+  "license": "MIT"
+}

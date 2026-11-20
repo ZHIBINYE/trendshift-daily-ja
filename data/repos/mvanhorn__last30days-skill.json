@@ -1,0 +1,54 @@
+{
+  "full_name": "mvanhorn/last30days-skill",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "直近30日の話題をSNS横断で調査",
+  "category": "AIエージェント",
+  "summary_ja": "Reddit・X・YouTube・HN・Polymarket等を並列検索し、反応の大きさで採点して要約するエージェントスキル。人々の関心を反映した最新ブリーフを作る。",
+  "features": [
+    "Reddit・X・YouTube・TikTok・HN・GitHub等を横断検索",
+    "Polymarketのオッズも含めて採点",
+    "AIエージェントによる統合サマリー生成",
+    "初期設定不要でReddit・HN・Polymarket・GitHubを利用可",
+    "Claude Code・Codex・Cursor等のスキルホストに対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Claude Codeのマーケットプレイスから導入(他エージェントはnpx skills)",
+      "必要ならセットアップウィザードで追加ソースを有効化",
+      "/last30days <トピック>を実行",
+      "出力のブリーフを確認し調査や準備に使う"
+    ],
+    "code": "/plugin marketplace add mvanhorn/last30days-skill\n/plugin install last30days\n\nnpx skills add mvanhorn/last30days-skill -g"
+  },
+  "effects": [
+    "商談・会議前の最新情報収集時間を短縮",
+    "コミュニティで流行中のプロンプトや課題を把握",
+    "一次情報(投稿・動画字幕)に基づく要約",
+    "複数プラットフォームの反応を横断比較"
+  ],
+  "domains": [
+    {
+      "area": "営業",
+      "example": "商談前に相手企業の直近30日の動向を調べる"
+    },
+    {
+      "area": "プロダクト企画",
+      "example": "ユーザーが実際に困っている課題を調査"
+    },
+    {
+      "area": "AI/技術動向調査",
+      "example": "新ツールや手法の評判を把握"
+    },
+    {
+      "area": "広報・マーケ",
+      "example": "話題の反応や広告動向を確認"
+    }
+  ],
+  "target_users": "最新の世論や技術動向を素早く把握したいリサーチャー・営業・開発者。",
+  "cautions": [
+    "X等の一部ソース利用にはAPIキーやブラウザセッションの用意が必要で、各サービスの規約に従う",
+    "ログイン済みアカウントでの検索は自分の認証情報を使うため取り扱いに注意",
+    "出力は外部投稿に基づくため、事実確認が必要"
+  ],
+  "license": "MIT"
+}

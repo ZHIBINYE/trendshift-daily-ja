@@ -1,0 +1,260 @@
+<title>トレンド番付 GitHub日次</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Dela+Gothic+One&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* 番付表のように「順位」を主役にした一覧 → 1件を開くと読み物としての詳細。藍を軸に、獲得スターだけ朱で示す */
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --fg: #1b1f2a;
+  --muted: #5c6474;
+  --line: #dde1e8;
+  --accent: #23408e;      /* 藍 */
+  --accent-soft: #e6ebf7;
+  --gain: #c2410c;        /* 朱：当日の獲得スター */
+  --up: #15803d;
+  --down: #b91c1c;
+  --code-bg: #eef0f4;
+  --f-display: "Dela Gothic One", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --f-body: "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151c; --surface: #1a1e27; --fg: #e6e8ee; --muted: #9aa2b2; --line: #2c3240;
+    --accent: #8ea8ef; --accent-soft: #232c45; --gain: #fb923c; --up: #4ade80; --down: #f87171;
+    --code-bg: #232833; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151c; --surface: #1a1e27; --fg: #e6e8ee; --muted: #9aa2b2; --line: #2c3240;
+  --accent: #8ea8ef; --accent-soft: #232c45; --gain: #fb923c; --up: #4ade80; --down: #f87171;
+  --code-bg: #232833; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.75; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.35; }
+.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+/* ヘッダー */
+.masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; border-bottom: 3px double var(--fg); padding-bottom: 14px; }
+.masthead h1 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: clamp(1.7rem, 4.5vw, 2.4rem); letter-spacing: .04em; }
+.masthead h1 small { display: block; font-family: var(--f-body); font-size: .8rem; letter-spacing: .12em; color: var(--muted); font-weight: 700; }
+.datebox { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--muted); }
+select, input[type="search"] { font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
+.lede { color: var(--muted); font-size: .88rem; margin: 10px 0 0; }
+
+/* フィルタ */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; align-items: center; }
+.filters input { flex: 1 1 220px; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.chip { font: inherit; font-size: .8rem; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 999px; padding: 3px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip .n { color: inherit; opacity: .7; margin-left: 4px; }
+
+/* 一覧（番付） */
+.board { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.row { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 4px 16px; padding: 16px 18px; border-top: 1px solid var(--line); text-decoration: none; color: inherit; }
+.board li:first-child .row { border-top: 0; }
+.row:hover { background: var(--accent-soft); }
+.rank { font-family: var(--f-display); font-size: 2rem; line-height: 1; color: var(--accent); text-align: center; padding-top: 4px; }
+.rank .mv { display: block; font-family: var(--f-mono); font-size: .68rem; margin-top: 6px; color: var(--muted); }
+.mv.up { color: var(--up) !important; } .mv.down { color: var(--down) !important; } .mv.new { color: var(--gain) !important; font-weight: 600; }
+.main { min-width: 0; }
+.name { font-family: var(--f-mono); font-size: .82rem; color: var(--muted); overflow-wrap: anywhere; }
+.title { font-weight: 700; font-size: 1.05rem; margin: 2px 0 4px; }
+.summary { font-size: .88rem; color: var(--muted); margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 8px; font-size: .75rem; color: var(--muted); align-items: center; }
+.cat { background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 1px 8px; font-weight: 700; }
+.stats { text-align: right; white-space: nowrap; font-size: .8rem; color: var(--muted); }
+.stats .gain { display: block; color: var(--gain); font-size: 1.05rem; font-weight: 600; }
+.empty { padding: 32px; text-align: center; color: var(--muted); }
+
+/* 詳細 */
+.back { display: inline-block; margin: 18px 0 8px; font-size: .9rem; text-decoration: none; }
+.detail-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 20px; align-items: start; padding: 20px 0 18px; border-bottom: 1px solid var(--line); }
+.detail-head .rank { font-size: 3.4rem; padding: 0; }
+.detail-head .rank small { display: block; font-family: var(--f-body); font-size: .7rem; color: var(--muted); letter-spacing: .1em; }
+.detail-head h2 { margin: 4px 0 6px; font-size: clamp(1.3rem, 3.4vw, 1.75rem); }
+.detail-head .name { font-size: .95rem; }
+.kpis { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 18px 0 4px; }
+.kpi { font-size: .75rem; color: var(--muted); }
+.kpi b { display: block; font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 1.15rem; color: var(--fg); font-weight: 600; }
+.kpi.g b { color: var(--gain); }
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.btn { display: inline-block; font-size: .85rem; border: 1px solid var(--accent); border-radius: 6px; padding: 5px 14px; text-decoration: none; }
+.btn.primary { background: var(--accent); color: var(--bg); }
+.sections { display: grid; grid-template-columns: minmax(0, 1fr); gap: 30px; margin-top: 28px; }
+.sec { min-width: 0; }
+.sec h3 { font-size: 1.1rem; margin: 0 0 10px; padding-left: 10px; border-left: 4px solid var(--accent); }
+.sec p, .sec ul, .sec ol { margin: 0; max-width: 68ch; }
+.sec ul, .sec ol { padding-left: 1.4em; display: grid; gap: 4px; }
+.lead { font-size: 1.02rem; }
+.code { position: relative; margin-top: 12px; }
+.code pre { margin: 0; background: var(--code-bg); border-radius: 6px; padding: 14px 16px; overflow-x: auto; font-family: var(--f-mono); font-size: .82rem; line-height: 1.6; }
+.copy { position: absolute; top: 8px; right: 8px; font: inherit; font-size: .72rem; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+.domains { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.domain { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; min-width: 0; }
+.domain b { display: block; color: var(--accent); margin-bottom: 4px; }
+.domain span { font-size: .88rem; color: var(--muted); }
+.caution li { color: var(--fg); }
+.caution { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--gain); border-radius: 6px; padding: 12px 16px; }
+.history { overflow-x: auto; }
+.history table { border-collapse: collapse; font-size: .8rem; }
+.history td, .history th { border: 1px solid var(--line); padding: 4px 10px; text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.history th { color: var(--muted); font-weight: 400; }
+.pending { color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 16px; }
+footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); font-size: .75rem; color: var(--muted); }
+
+@media (max-width: 600px) {
+  .row { grid-template-columns: 44px minmax(0, 1fr); padding: 14px 12px; }
+  .rank { font-size: 1.5rem; }
+  .stats { grid-column: 2; text-align: left; }
+  .stats .gain { display: inline; margin-right: 8px; }
+  .detail-head .rank { font-size: 2.4rem; }
+}
+@media (prefers-reduced-motion: no-preference) { .row { transition: background .15s; } }
+</style>
+
+<div class="wrap" id="app"></div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById("data").textContent);
+  const app = document.getElementById("app");
+  const days = DATA.days; // 新しい順
+  const repos = DATA.repos;
+  let state = { date: days[0]?.date, cat: "", q: "" };
+
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const fmt = n => n == null ? "—" : Number(n).toLocaleString("ja-JP");
+  const jpDate = d => { const [y, m, dd] = d.split("-"); return `${y}年${+m}月${+dd}日`; };
+  const dayOf = date => days.find(d => d.date === date);
+
+  function movement(date, slug, rank) {
+    const i = days.findIndex(d => d.date === date);
+    const prev = days[i + 1];
+    if (!prev) return "";
+    const p = prev.items.find(x => x.slug === slug);
+    if (!p) return '<span class="mv new">NEW</span>';
+    const diff = p.rank - rank;
+    if (diff > 0) return `<span class="mv up">▲${diff}</span>`;
+    if (diff < 0) return `<span class="mv down">▼${-diff}</span>`;
+    return '<span class="mv">―</span>';
+  }
+
+  function renderList() {
+    const day = dayOf(state.date) || days[0];
+    const cats = {};
+    day.items.forEach(it => { const c = repos[it.slug]?.category || "解説準備中"; cats[c] = (cats[c] || 0) + 1; });
+    const q = state.q.trim().toLowerCase();
+    const items = day.items.filter(it => {
+      const a = repos[it.slug];
+      if (state.cat && (a?.category || "解説準備中") !== state.cat) return false;
+      if (!q) return true;
+      return [it.full_name, it.description, a?.title_ja, a?.summary_ja, ...(it.tags || [])].join(" ").toLowerCase().includes(q);
+    });
+    const chips = Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([c, n]) =>
+      `<button class="chip" data-cat="${esc(c)}" aria-pressed="${state.cat === c}">${esc(c)}<span class="n">${n}</span></button>`).join("");
+
+    app.innerHTML = `
+      <header class="masthead">
+        <h1><small>trendshift.io デイリーランキング 日本語解説</small>トレンド番付</h1>
+        <label class="datebox">集計日
+          <select id="date">${days.map(d => `<option value="${d.date}" ${d.date === day.date ? "selected" : ""}>${jpDate(d.date)}</option>`).join("")}</select>
+        </label>
+      </header>
+      <p class="lede">GitHub で今勢いのあるリポジトリ ${day.items.length} 件。各行を開くと、使い方・効果・活用領域の解説が読めます。右端の数字は集計日に増えたスター数です。</p>
+      <div class="filters"><input type="search" id="q" placeholder="キーワードで絞り込み（例: エージェント, Rust, セキュリティ）" value="${esc(state.q)}"></div>
+      <div class="chips"><button class="chip" data-cat="" aria-pressed="${state.cat === ""}">すべて<span class="n">${day.items.length}</span></button>${chips}</div>
+      <ol class="board">${items.length ? items.map(it => {
+        const a = repos[it.slug];
+        return `<li><a class="row" href="#r-${esc(it.slug)}">
+          <div class="rank">${it.rank}${movement(day.date, it.slug, it.rank)}</div>
+          <div class="main">
+            <div class="name">${esc(it.full_name)}</div>
+            <div class="title">${esc(a?.title_ja || it.description || it.full_name)}</div>
+            <p class="summary">${esc(a?.summary_ja || it.description)}</p>
+            <div class="meta">${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
+          </div>
+          <div class="stats num"><span class="gain">+${fmt(it.stars_gained)}</span>★ ${fmt(it.stars)}</div>
+        </a></li>`;
+      }).join("") : '<li class="empty">条件に合うリポジトリはありません。</li>'}</ol>
+      <footer>出典: <a href="https://trendshift.io/" target="_blank" rel="noopener">trendshift.io</a> の daily ランキング（集計日 ${jpDate(day.date)}）。解説は各リポジトリの README をもとに AI が日本語で要約したもので、正確性は保証しません。利用前に必ず原文とライセンスを確認してください。最終更新 ${esc(DATA.generated_at)}</footer>`;
+
+    app.querySelector("#date").addEventListener("change", e => { state.date = e.target.value; state.cat = ""; renderList(); });
+    const qi = app.querySelector("#q");
+    qi.addEventListener("input", e => { state.q = e.target.value; const pos = qi.selectionStart; renderList(); const n = app.querySelector("#q"); n.focus(); n.setSelectionRange(pos, pos); });
+    app.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => { state.cat = b.dataset.cat; renderList(); }));
+  }
+
+  function renderDetail(slug) {
+    const day = dayOf(state.date) || days[0];
+    const it = day.items.find(x => x.slug === slug) || days.map(d => d.items.find(x => x.slug === slug)).find(Boolean);
+    if (!it) { location.hash = ""; return; }
+    const a = repos[slug];
+    const hist = days.slice(0, 14).reverse().map(d => ({ d: d.date, r: d.items.find(x => x.slug === slug)?.rank }));
+    const list = arr => `<ul>${(arr || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+
+    const body = a ? `
+      <section class="sec"><h3>概要</h3><p class="lead">${esc(a.summary_ja)}</p></section>
+      <section class="sec"><h3>主な機能</h3>${list(a.features)}</section>
+      <section class="sec"><h3>どう使うか</h3>
+        <ol>${(a.how_to_use?.steps || []).map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+        ${a.how_to_use?.code ? `<div class="code"><pre><code>${esc(a.how_to_use.code)}</code></pre><button class="copy" type="button">コピー</button></div>` : ""}
+      </section>
+      <section class="sec"><h3>使うとどんな効果があるか</h3>${list(a.effects)}</section>
+      <section class="sec"><h3>活用できる領域</h3><div class="domains">${(a.domains || []).map(d => `<div class="domain"><b>${esc(d.area)}</b><span>${esc(d.example)}</span></div>`).join("")}</div></section>
+      <section class="sec"><h3>向いている人・チーム</h3><p>${esc(a.target_users)}</p></section>
+      <section class="sec"><h3>注意点</h3><div class="caution">${list(a.cautions)}<p style="margin-top:6px;font-size:.85rem;color:var(--muted)">ライセンス: ${esc(a.license || "不明（リポジトリで確認）")}</p></div></section>`
+      : `<section class="sec"><h3>概要</h3><p class="lead">${esc(it.description)}</p><p class="pending" style="margin-top:12px">日本語解説は次回の更新で作成されます。</p></section>`;
+
+    app.innerHTML = `
+      <a class="back" href="#d-${esc(day.date)}">← ${jpDate(day.date)} の一覧へ戻る</a>
+      <header class="detail-head">
+        <div class="rank"><small>集計日の順位</small>${it.rank}</div>
+        <div style="min-width:0">
+          <div class="name">${esc(it.full_name)}</div>
+          <h2>${esc(a?.title_ja || it.full_name)}</h2>
+          <div class="meta">${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
+        </div>
+      </header>
+      <div class="kpis">
+        <div class="kpi g">集計日の獲得スター<b>+${fmt(it.stars_gained)}</b></div>
+        <div class="kpi">累計スター<b>${fmt(it.stars)}</b></div>
+        <div class="kpi">フォーク<b>${fmt(it.forks)}</b></div>
+        <div class="kpi">リポジトリ作成日<b>${esc((it.created_at || "").slice(0, 10) || "—")}</b></div>
+      </div>
+      <div class="links"><a class="btn primary" href="${esc(it.github_url)}" target="_blank" rel="noopener">GitHub で見る</a><a class="btn" href="${esc(it.trendshift_url)}" target="_blank" rel="noopener">trendshift で見る</a></div>
+      <div class="sections">${body}
+        <section class="sec"><h3>直近の順位推移</h3><div class="history"><table><tr>${hist.map(h => `<th>${h.d.slice(5).replace("-", "/")}</th>`).join("")}</tr><tr>${hist.map(h => `<td class="num">${h.r ?? "圏外"}</td>`).join("")}</tr></table></div></section>
+      </div>
+      <footer>解説は README をもとに AI が作成（${esc(a?.analyzed_at || "未作成")}）。導入前に原文・ライセンス・セキュリティを確認してください。</footer>`;
+
+    const cp = app.querySelector(".copy");
+    if (cp) cp.addEventListener("click", () => {
+      const txt = a.how_to_use.code;
+      const done = () => { cp.textContent = "コピーしました"; setTimeout(() => cp.textContent = "コピー", 1500); };
+      try {
+        navigator.clipboard.writeText(txt).then(done, () => selectCode());
+      } catch { selectCode(); }
+      function selectCode() { const r = document.createRange(); r.selectNodeContents(app.querySelector(".code code")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); cp.textContent = "選択しました"; }
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function route() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    if (h.startsWith("r-")) return renderDetail(h.slice(2));
+    if (h.startsWith("d-") && dayOf(h.slice(2))) state.date = h.slice(2);
+    renderList();
+  }
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>

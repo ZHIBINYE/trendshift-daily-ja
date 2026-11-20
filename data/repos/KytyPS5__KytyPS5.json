@@ -1,0 +1,52 @@
+{
+  "full_name": "KytyPS5/KytyPS5",
+  "title_ja": "PS5向けの変換レイヤー(エミュレータ)",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "PlayStation 5用ゲームをWindows、Linux、実験的にmacOSで動かすためのC++製オープンソース変換レイヤー。Kytyを大幅に改変したもので、活発に開発中のため挙動はビルドごとに大きく変わり得る。ゲームや公式システムソフトは配布しない。",
+  "features": [
+    "Windows・Linux向けのPS5変換レイヤー(macOSはRosetta 2とMoltenVK上で実験的)",
+    "互換性リストとコミュニティによる動作報告",
+    "CMake/Ninjaによるビルドとランチャー(Qt)",
+    "Vulkan 1.3対応GPUで動作"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Windows 10 1803以降、Linux、またはmacOSなどの環境とVulkan 1.3対応GPUを用意する",
+      "READMEのビルド要件(Visual Studio 2022やClang、Qtなど)を揃える",
+      "CMakeで構成し、launcherターゲットをビルドしてインストールする",
+      "合法的に入手したゲームファイルのみを使用して起動する"
+    ],
+    "code": "cmake -S . -B _Build/linux -G Ninja -DCMAKE_BUILD_TYPE=Release\ncmake --build _Build/linux --target launcher --parallel\ncmake --install _Build/linux --prefix _Build/linux/install"
+  },
+  "effects": [
+    "PS5用ソフトのPC上での動作検証が可能になる",
+    "互換性リストでタイトルごとの動作状況を確認できる",
+    "エミュレーション技術の研究・学習の素材になる"
+  ],
+  "domains": [
+    {
+      "area": "エミュレーション研究",
+      "example": "変換レイヤーの設計やGPU命令の扱いを学ぶ"
+    },
+    {
+      "area": "ゲーム保存・互換性検証",
+      "example": "自分が所有するソフトの動作を別環境で検証する"
+    },
+    {
+      "area": "グラフィックス開発",
+      "example": "Vulkanを用いた実装の参考にする"
+    },
+    {
+      "area": "OSS開発コミュニティ",
+      "example": "不具合報告や互換性テストに貢献する"
+    }
+  ],
+  "target_users": "ビルドや不安定さを許容でき、PS5エミュレーションに関心がある技術者・愛好家。",
+  "cautions": [
+    "ソニーとは無関係で、ゲームや著作権のあるシステムソフトは同梱されない。正規に所有するソフトのみ使用すること",
+    "活発な開発中で、クラッシュや描画不具合が起こり得る。macOSは実験的",
+    "ライセンスはGPL-2.0。地域の法令・利用規約への適合は利用者の責任"
+  ],
+  "license": "GPL-2.0",
+  "analyzed_at": "2026-11-20"
+}

@@ -1,0 +1,55 @@
+{
+  "full_name": "HKUDS/CLI-Anything",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "あらゆるソフトをエージェント対応に",
+  "category": "AI開発ツール",
+  "summary_ja": "既存ソフトウェアのCLIハーネスを生成し、AIエージェントがGUIソフトを操作できるようにするフレームワーク。コミュニティ製CLIを配布するCLI-Hubも備える。",
+  "features": [
+    "7フェーズのハーネス生成で任意ソフト向けCLIを作成",
+    "CLI-Hubでコミュニティ製CLIを検索・導入(cli-hub)",
+    "Claude Code・Cursor・OpenClaw等のエージェントに対応",
+    "JSONと人間向けの両方の出力形式",
+    "CAD・3D・動画・図表など多様なアプリのデモ"
+  ],
+  "how_to_use": {
+    "steps": [
+      "pipでcli-anything-hubをインストール",
+      "cli-hub listやsearchで既存CLIを探す",
+      "cli-hub install <name>で導入",
+      "新規作成する場合は利用中エージェント向けにプラグイン/スキルを入れる",
+      "生成ハーネスでソフトをエージェントから操作する"
+    ],
+    "code": "pip install cli-anything-hub\ncli-hub list\ncli-hub install <name>"
+  },
+  "effects": [
+    "GUI前提のソフトをエージェントから自動操作可能に",
+    "ソフトごとの連携コードを書く手間を削減",
+    "導入済みCLIの再利用で業務自動化を早期化",
+    "JSON出力でパイプライン化しやすい"
+  ],
+  "domains": [
+    {
+      "area": "クリエイティブ制作",
+      "example": "画像・動画・3Dソフトをエージェントが操作して成果物を生成"
+    },
+    {
+      "area": "設計・CAD",
+      "example": "CAD操作をCLI化し形状生成を自動化"
+    },
+    {
+      "area": "業務自動化",
+      "example": "社内ツールをCLI化してエージェントに実行させる"
+    },
+    {
+      "area": "ツールベンダー",
+      "example": "自社製品をエージェント対応として公開"
+    }
+  ],
+  "target_users": "エージェントから既存ソフトを操作させたい開発者・自動化担当者。",
+  "cautions": [
+    "生成・導入するCLIは外部ソフトを操作するため、実行権限と信頼できる提供元かを確認する",
+    "対象ソフトのライセンス・利用規約に従う",
+    "サードパーティ製CLIの品質はHub掲載物ごとに異なる"
+  ],
+  "license": "Apache-2.0"
+}

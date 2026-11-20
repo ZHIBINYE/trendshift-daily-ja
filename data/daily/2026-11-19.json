@@ -1,0 +1,531 @@
+{
+  "date": "2026-11-19",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "BaaRai/ARTEX",
+      "slug": "BaaRai__ARTEX",
+      "github_url": "https://github.com/BaaRai/ARTEX",
+      "trendshift_url": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "stars": 11785,
+      "forks": 4336,
+      "stars_gained": 3029,
+      "forks_gained": 484,
+      "score": 19519,
+      "created_at": "2026-10-08T21:14:39Z",
+      "tags": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "boykopovar/AnyPS5",
+      "slug": "boykopovar__AnyPS5",
+      "github_url": "https://github.com/boykopovar/AnyPS5",
+      "trendshift_url": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "stars": 57793,
+      "forks": 5697,
+      "stars_gained": 1858,
+      "forks_gained": 67,
+      "score": 15066,
+      "created_at": "2026-08-03T21:30:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "erkamyaman/rust-anything",
+      "slug": "erkamyaman__rust-anything",
+      "github_url": "https://github.com/erkamyaman/rust-anything",
+      "trendshift_url": "https://trendshift.io/repositories/363468",
+      "language": "Rust",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "stars": 5092,
+      "forks": 356,
+      "stars_gained": 1824,
+      "forks_gained": 94,
+      "score": 12803,
+      "created_at": "2026-11-16T12:10:36Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "mdiri-ai/SoduWork",
+      "slug": "mdiri-ai__SoduWork",
+      "github_url": "https://github.com/mdiri-ai/SoduWork",
+      "trendshift_url": "https://trendshift.io/repositories/350333",
+      "language": "JavaScript",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "stars": 4116,
+      "forks": 411,
+      "stars_gained": 1302,
+      "forks_gained": 72,
+      "score": 10585,
+      "created_at": "2026-10-29T02:43:14Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "nexu-io/openmotion",
+      "slug": "nexu-io__openmotion",
+      "github_url": "https://github.com/nexu-io/openmotion",
+      "trendshift_url": "https://trendshift.io/repositories/29398",
+      "language": "TypeScript",
+      "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+      "stars": 12843,
+      "forks": 1280,
+      "stars_gained": 1066,
+      "forks_gained": 17,
+      "score": 8563,
+      "created_at": "2026-05-11T09:40:38Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+      "stars": 204090,
+      "forks": 11099,
+      "stars_gained": 1019,
+      "forks_gained": 6,
+      "score": 8164,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "simplexai-labs/linger",
+      "slug": "simplexai-labs__linger",
+      "github_url": "https://github.com/simplexai-labs/linger",
+      "trendshift_url": "https://trendshift.io/repositories/350772",
+      "language": "TypeScript",
+      "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+      "stars": 1403,
+      "forks": 70,
+      "stars_gained": 968,
+      "forks_gained": 39,
+      "score": 7830,
+      "created_at": "2026-11-10T03:50:38Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "HKUDS/CLI-Anything",
+      "slug": "HKUDS__CLI-Anything",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "trendshift_url": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 60514,
+      "forks": 5717,
+      "stars_gained": 816,
+      "forks_gained": 12,
+      "score": 6552,
+      "created_at": "2026-03-08T13:52:57Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "Bodila51/gtavi-claudecode",
+      "slug": "Bodila51__gtavi-claudecode",
+      "github_url": "https://github.com/Bodila51/gtavi-claudecode",
+      "trendshift_url": "https://trendshift.io/repositories/365728",
+      "language": "Python",
+      "description": "Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.",
+      "stars": 772,
+      "forks": 33,
+      "stars_gained": 848,
+      "forks_gained": 33,
+      "score": 5137,
+      "created_at": "2026-11-18T17:54:29Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "mvanhorn/last30days-skill",
+      "slug": "mvanhorn__last30days-skill",
+      "github_url": "https://github.com/mvanhorn/last30days-skill",
+      "trendshift_url": "https://trendshift.io/repositories/21997",
+      "language": "Python",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars": 70760,
+      "forks": 6808,
+      "stars_gained": 809,
+      "forks_gained": 9,
+      "score": 5133,
+      "created_at": "2026-01-23T20:37:37Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "toyxyz/toyxyz_RGBMocap",
+      "slug": "toyxyz__toyxyz_RGBMocap",
+      "github_url": "https://github.com/toyxyz/toyxyz_RGBMocap",
+      "trendshift_url": "https://trendshift.io/repositories/322817",
+      "language": "Python",
+      "description": "Native Windows video motion capture with ExMR, FlowHMR and GVHMR, contact correction, humanoid retargeting, and FBX/VMD export.",
+      "stars": 2134,
+      "forks": 254,
+      "stars_gained": 524,
+      "forks_gained": 38,
+      "score": 4268,
+      "created_at": "2026-10-26T22:26:28Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "apekshik/anymachine",
+      "slug": "apekshik__anymachine",
+      "github_url": "https://github.com/apekshik/anymachine",
+      "trendshift_url": "https://trendshift.io/repositories/365052",
+      "language": "Python",
+      "description": "Working mechanical rigs from a generated mesh: hinges, legs, and soft goods, every control a 0-1 parameter",
+      "stars": 660,
+      "forks": 39,
+      "stars_gained": 526,
+      "forks_gained": 25,
+      "score": 4258,
+      "created_at": "2026-11-04T08:06:50Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 12440,
+      "forks": 1578,
+      "stars_gained": 1143,
+      "forks_gained": 14,
+      "score": 4231,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 12616,
+      "forks": 835,
+      "stars_gained": 526,
+      "forks_gained": 3,
+      "score": 4214,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+      "stars": 129842,
+      "forks": 9009,
+      "stars_gained": 1003,
+      "forks_gained": 0,
+      "score": 4174,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "aoci-spec/aoci-code",
+      "slug": "aoci-spec__aoci-code",
+      "github_url": "https://github.com/aoci-spec/aoci-code",
+      "trendshift_url": "https://trendshift.io/repositories/195419",
+      "language": "Go",
+      "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code intelligence.",
+      "stars": 2605,
+      "forks": 269,
+      "stars_gained": 488,
+      "forks_gained": 8,
+      "score": 3920,
+      "created_at": "2026-08-08T11:33:08Z",
+      "tags": [
+        "MCP"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "toeverything/AFFiNE",
+      "slug": "toeverything__AFFiNE",
+      "github_url": "https://github.com/toeverything/AFFiNE",
+      "trendshift_url": "https://trendshift.io/repositories/3381",
+      "language": "TypeScript",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "stars": 75135,
+      "forks": 5852,
+      "stars_gained": 457,
+      "forks_gained": 1,
+      "score": 3658,
+      "created_at": "2022-07-31T18:45:21Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "google-research/paper-orchestra",
+      "slug": "google-research__paper-orchestra",
+      "github_url": "https://github.com/google-research/paper-orchestra",
+      "trendshift_url": "https://trendshift.io/repositories/263826",
+      "language": "Python",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "stars": 5005,
+      "forks": 579,
+      "stars_gained": 766,
+      "forks_gained": 48,
+      "score": 3612,
+      "created_at": "2026-05-01T18:07:52Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "DietrichGebert/ponytail",
+      "slug": "DietrichGebert__ponytail",
+      "github_url": "https://github.com/DietrichGebert/ponytail",
+      "trendshift_url": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "stars": 194819,
+      "forks": 11598,
+      "stars_gained": 821,
+      "forks_gained": 14,
+      "score": 3591,
+      "created_at": "2026-06-12T00:52:37Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "KytyPS5/KytyPS5",
+      "slug": "KytyPS5__KytyPS5",
+      "github_url": "https://github.com/KytyPS5/KytyPS5",
+      "trendshift_url": "https://trendshift.io/repositories/79105",
+      "language": "C++",
+      "description": "PlayStation 5 translation layer for Windows, Linux and macOS",
+      "stars": 12173,
+      "forks": 1468,
+      "stars_gained": 439,
+      "forks_gained": 7,
+      "score": 3526,
+      "created_at": "2026-06-09T14:58:38Z",
+      "tags": [
+        "Emulator"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "mjmirza/app-store-compliance",
+      "slug": "mjmirza__app-store-compliance",
+      "github_url": "https://github.com/mjmirza/app-store-compliance",
+      "trendshift_url": "https://trendshift.io/repositories/100374",
+      "language": "Shell",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "stars": 1790,
+      "forks": 107,
+      "stars_gained": 433,
+      "forks_gained": 2,
+      "score": 3468,
+      "created_at": "2026-06-06T11:29:45Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "felipebasurto/unslop-ui",
+      "slug": "felipebasurto__unslop-ui",
+      "github_url": "https://github.com/felipebasurto/unslop-ui",
+      "trendshift_url": "https://trendshift.io/repositories/365677",
+      "language": "HTML",
+      "description": "Agent skill that cuts AI tells from UI copy, charts and dashboards: eyebrows, numbering, botsplaining, decorative icons, badges and status dots. Opt-in surface rules.",
+      "stars": 567,
+      "forks": 9,
+      "stars_gained": 431,
+      "forks_gained": 7,
+      "score": 3462,
+      "created_at": "2026-10-27T13:00:12Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "imxieyi/Kernarium",
+      "slug": "imxieyi__Kernarium",
+      "github_url": "https://github.com/imxieyi/Kernarium",
+      "trendshift_url": "https://trendshift.io/repositories/345734",
+      "language": "C++",
+      "description": "Run real Linux kernel natively on iOS",
+      "stars": 921,
+      "forks": 69,
+      "stars_gained": 428,
+      "forks_gained": 12,
+      "score": 3448,
+      "created_at": "2026-11-07T14:15:03Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "storytold/craft-anything",
+      "slug": "storytold__craft-anything",
+      "github_url": "https://github.com/storytold/craft-anything",
+      "trendshift_url": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "stars": 38366,
+      "forks": 7612,
+      "stars_gained": 1461,
+      "forks_gained": 157,
+      "score": 3422,
+      "created_at": "2026-10-31T14:50:00Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "affaan-m/ECC",
+      "slug": "affaan-m__ECC",
+      "github_url": "https://github.com/affaan-m/ECC",
+      "trendshift_url": "https://trendshift.io/repositories/21488",
+      "language": "JavaScript",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars": 307258,
+      "forks": 47500,
+      "stars_gained": 803,
+      "forks_gained": 23,
+      "score": 3396,
+      "created_at": "2026-01-18T00:51:51Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    }
+  ]
+}

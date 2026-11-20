@@ -1,0 +1,53 @@
+{
+  "full_name": "google-research/paper-orchestra",
+  "title_ja": "AI論文執筆を自動化するマルチエージェント",
+  "category": "研究・学術",
+  "summary_ja": "アイデアや実験ログといった未整理の素材から、投稿可能なLaTeX原稿を自動生成するマルチエージェントフレームワーク。アウトライン生成、文献調査、節の執筆、推敲、作図を専門エージェントが分担する。Google Cloud AI Researchによる研究実装。",
+  "features": [
+    "アウトライン・文献調査・執筆・推敲・作図の各エージェントによるパイプライン",
+    "関連文献の検索・優先順位付け・原稿への統合",
+    "グラフ生成と概念図の取り込み",
+    "対象会議のテンプレートに沿ったLaTeX出力"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Python 3.11のConda環境を作り、requirements.txtをインストールする",
+      "プロジェクト直下に.envを作成し、利用するモデルやSemantic ScholarのAPIキーを設定する",
+      "アイデアと実験ログなどの素材ディレクトリとLaTeXテンプレートを用意する",
+      "paper_writing_cli.sh か paper_writing_cli.py を実行して原稿を生成する"
+    ],
+    "code": "conda create -n paper_orchestra python=3.11\nconda activate paper_orchestra\npip install -r requirements.txt\npython paper_writing_cli.py \\\n  --raw_materials_dir /path_to_your_raw_materials/ \\\n  --latex_template_dir /path_to_your_latex_template/ \\\n  --output_dir /path_to_your_output_folder/ \\\n  --use_plotting true"
+  },
+  "effects": [
+    "論文の初稿作成にかかる時間を短縮",
+    "文献調査と引用整理の手作業を軽減",
+    "会議テンプレートに沿った体裁整形を自動化",
+    "プロット作成と本文執筆を一連の流れで処理"
+  ],
+  "domains": [
+    {
+      "area": "AI研究",
+      "example": "実験ログから論文の初稿をLaTeXで生成する"
+    },
+    {
+      "area": "大学・研究機関",
+      "example": "研究室で投稿準備の下書き作成を効率化する"
+    },
+    {
+      "area": "企業の研究開発",
+      "example": "技術レポートや社内論文の骨子作成に使う"
+    },
+    {
+      "area": "研究支援ツール開発",
+      "example": "執筆エージェントのパイプラインを参考に自社ツールを設計する"
+    }
+  ],
+  "target_users": "AI分野の論文執筆を効率化したい研究者・学生。",
+  "cautions": [
+    "README上、論文生成用のデータセットは未公開(後日別途公開予定)",
+    "Gemini/OpenAI等のAPIキーが必要で、利用料金が発生し得る",
+    "生成物の内容・引用の正確性は必ず人が検証し、投稿先の規定(AI利用ポリシー)に従うこと"
+  ],
+  "license": null,
+  "analyzed_at": "2026-11-20"
+}

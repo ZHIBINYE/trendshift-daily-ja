@@ -1,0 +1,54 @@
+{
+  "full_name": "elementalsouls/Claude-BugHunter",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "Claude Code用バグハンティングスキル集",
+  "category": "セキュリティ",
+  "summary_ja": "Claude Codeにバグバウンティやレッドチーム業務の知識を与えるスキルバンドル。83のスキルと15のスラッシュコマンド、公開レポートに基づく681の攻撃パターンを収録する。トピックに応じてスキルが自動で読み込まれる。",
+  "features": [
+    "83スキルと15スラッシュコマンド",
+    "公開済みHackerOneレポートに基づく脆弱性クラス別の検出パターン",
+    "M365/Entra・Okta・VPN機器などエンタープライズ攻撃面のチェーン",
+    "トリアージ検証・レポート作成・証跡の機微情報マスク",
+    "Burp MCP連携とエンゲージメントフォルダの雛形生成"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Claude Code上でプラグインのマーケットプレイスを追加する",
+      "プラグインをインストールする(HackerOneのAPI情報は任意)",
+      "対象の内容を自然な言葉で伝えるとスキルが自動で読み込まれる",
+      "クローン版を使う場合はscripts/install.shを実行する"
+    ],
+    "code": "/plugin marketplace add elementalsouls/Claude-BugHunter\n/plugin install claude-bughunter@elementalsouls"
+  },
+  "effects": [
+    "脆弱性調査の手順や観点を素早く呼び出せる",
+    "偵察から報告書作成までの作業を効率化",
+    "重複調査やスコープ逸脱を減らす指針が得られる",
+    "重大度判定や報告の質を揃えやすい"
+  ],
+  "domains": [
+    {
+      "area": "バグバウンティ",
+      "example": "許可されたプログラムの偵察と脆弱性の報告書作成"
+    },
+    {
+      "area": "レッドチーム",
+      "example": "契約範囲内の外部攻撃面の調査"
+    },
+    {
+      "area": "Webアプリ診断",
+      "example": "OAuthやGraphQLなどクラス別の検査観点を参照する"
+    },
+    {
+      "area": "セキュリティ教育",
+      "example": "DVWAやJuice Shopなどの学習環境での演習"
+    }
+  ],
+  "target_users": "許可を得た範囲で診断やバグバウンティを行うセキュリティ研究者・ペンテスター。",
+  "cautions": [
+    "許可された対象・スコープ内でのみ使用する。無許可の攻撃は違法",
+    "AIが提案する操作は人が確認し、証跡の機微情報の扱いに注意する",
+    "コードはMIT、ドキュメント等はCC BY 4.0のデュアルライセンスで、帰属表示が必要"
+  ],
+  "license": "MIT(コード) / CC BY 4.0(コンテンツ)"
+}

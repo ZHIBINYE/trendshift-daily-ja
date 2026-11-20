@@ -1,0 +1,54 @@
+{
+  "full_name": "imxieyi/Kernarium",
+  "title_ja": "iOS上で本物のLinuxカーネルを動かす",
+  "category": "インフラ・DevOps",
+  "summary_ja": "User-mode Linux を arm64 ネイティブコードとしてコンパイルし、iOS のランタイムに組み込んで本物の Linux カーネルを動かす基盤。ユーザー空間は iSH 型のスレッド化インタプリタでエミュレートする。Android エミュレータアプリ Andarium も含む。",
+  "features": [
+    "Linux 6.18 LTS カーネルを Linux/Android ゲストで実行（名前空間・SELinux 等対応）",
+    "arm64・arm32・x86_64 のゲスト命令をインタプリタまたは JIT で実行",
+    "KosmicKrisp 経由の Vulkan 1.4、Zink 経由の OpenGL 4.6/GLES 3.2、VideoToolbox による動画エンコード/デコード",
+    "UBD 仮想ディスク、ext4/xfs 等のファイルシステム、loop デバイス、FUSE",
+    "libslirp によるゲストのネットワーク接続"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Andarium を App Store から入手するか、releases の IPA をサイドロードする",
+      "ビルドや組み込みを行う場合は AGENTS.md と docs/ を参照する",
+      "Android システムイメージのビルドには高性能な x86_64 Linux マシンを用意するか、prebuilt イメージを使う",
+      "汎用 Linux エミュレータの Kernarium アプリは開発初期でまだ未リリース"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "iOS 端末で Docker コンテナや Linux デスクトップ等を動かす可能性が広がる",
+    "カーネルをエミュレートせず実行するため、フルシステムエミュレータより効率的と考えられる",
+    "iOS アプリへ Linux ランタイムを組み込める",
+    "Android 環境を iOS 上で試せる"
+  ],
+  "domains": [
+    {
+      "area": "モバイル開発",
+      "example": "iPhone/iPad 上で Android アプリの動作を確認する"
+    },
+    {
+      "area": "組み込み・OS 研究",
+      "example": "UML をネイティブ実行する構成を研究・検証する"
+    },
+    {
+      "area": "開発者の個人環境",
+      "example": "iPad 上で Linux ツールチェーンや Docker を使う"
+    },
+    {
+      "area": "アプリ開発",
+      "example": "自作 iOS アプリにランタイムを組み込む"
+    }
+  ],
+  "target_users": "iOS 上で Linux/Android 環境を動かしたい上級開発者や OS・エミュレータ研究者。",
+  "cautions": [
+    "ライセンスは GPL-2.0-or-later（一部ファイルは SPDX ヘッダ優先）で、組み込み時は配布条件に注意",
+    "Kernarium アプリ本体は開発初期で未リリース。TestFlight 版は interpreter のみ",
+    "エミュレータ上で動かすソフトやイメージは正規に入手・所有しているもののみ使う"
+  ],
+  "license": "GPL-2.0-or-later",
+  "analyzed_at": "2026-11-20"
+}

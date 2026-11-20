@@ -1,0 +1,55 @@
+{
+  "full_name": "erkamyaman/rust-anything",
+  "title_ja": "挙動を記録しアプリをRustへ段階移行",
+  "category": "開発ツール",
+  "summary_ja": "既存アプリの挙動を記録し、Rust書き換えの各部分を記録と照合しながら進めて最終的に純Rustアプリにするツール。CLI・HTTPサーバ・ライブラリを対象とし、Rustのコードは開発者またはコーディングエージェントが書く。",
+  "features": [
+    "recordで元アプリの入出力・例外を記録",
+    "bridgeでRustクレートとラッパーを生成",
+    "diffで記録済みケースをRust側で再生・比較",
+    "gateとapp liftで純Rustアプリへ移行",
+    "Node.js、Python、C、Go、Ruby、Java/Kotlinに対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "cargo install でインストールする",
+      "rust-anything setup を実行する",
+      "コーディングエージェントを再起動する",
+      "record、bridge、diff、gateの順で部分ごとに移植する",
+      "全て通過したら app lift で純Rust化する"
+    ],
+    "code": "cargo install rust-anything\nrust-anything setup"
+  },
+  "effects": [
+    "書き換え前後の挙動一致を機械的に検証",
+    "段階的移行でリスクを抑制",
+    "Rust化による高速化（READMEではPrettier移植で19倍と記載）",
+    "エージェントによる移植作業の検証基盤になる"
+  ],
+  "domains": [
+    {
+      "area": "Webバックエンド",
+      "example": "HTTPサーバの一部をRustへ置換して性能改善"
+    },
+    {
+      "area": "CLIツール開発",
+      "example": "Node.js製CLIをRust化し起動を高速化"
+    },
+    {
+      "area": "レガシー保守",
+      "example": "C/Ruby資産の安全な移行"
+    },
+    {
+      "area": "ライブラリ提供",
+      "example": "Python/Go製ライブラリの互換Rust版作成"
+    }
+  ],
+  "target_users": "既存コードをRustへ移行したい開発チームやAIエージェント利用者。",
+  "cautions": [
+    "記録がカバーしない挙動は検出できない（README記載）",
+    "Rustコードの記述自体は別途必要",
+    "v2.0公開直後で成熟度は検証が必要"
+  ],
+  "license": "MIT",
+  "analyzed_at": "2026-11-20"
+}

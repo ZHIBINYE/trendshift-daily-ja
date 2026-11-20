@@ -1,0 +1,55 @@
+{
+  "full_name": "apekshik/anymachine",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "AIエージェントがBlenderで動く機械を作る実験",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "Claude Codeのエージェントが、参照画像やメッシュからBlender上で動く機械リグを構築する実験リポジトリ。ヒンジや脚などの関節を0〜1のパラメータで操作でき、結果は機械的にチェックされる。現状は実験段階で、完成した最終形はまだない。",
+  "features": [
+    "参照シートからBlender Pythonで部品ごとにモデリングする手法(PIPELINE.md)",
+    "30mの歩行ロボットStiltなど6つの実験例",
+    "全コントロールを0〜1パラメータ化しglTFアクションへベイク",
+    "オーバーラップ・足滑りなどの自動検証",
+    "ノートパソコン、四足歩行、クモ、バックパックなどの事例"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Blender(5.xとREADMEに記載)を用意する",
+      "stilt/build_stilt.pyをBlenderのバックグラウンド実行で走らせ、モデルを再生成する",
+      "render_stilt.pyでチェック用レンダリングを出す",
+      "硬い面のオブジェクトはhardsurface内の各スクリプトを個別に実行する",
+      "手法の詳細はPIPELINE.mdと各NOTES.mdを読む"
+    ],
+    "code": "blender --background --python stilt/build_stilt.py\nblender --background stilt/stilt.blend --python stilt/render_stilt.py -- 3q cu check\nblender --background --python stilt/verify_glb.py"
+  },
+  "effects": [
+    "複雑な機械の3Dモデルとリグ作成の手作業を減らせる",
+    "パラメータ化でゲームエンジン上の姿勢制御が容易になる",
+    "自動チェックで干渉や不具合を早期に発見できる",
+    "AIによる3D制作手法の知見として参考になる"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム開発",
+      "example": "動く乗り物や装置をゲーム用アセットとして生成する"
+    },
+    {
+      "area": "映像制作",
+      "example": "SF作品向けの機械・ロボットをリグ付きで用意する"
+    },
+    {
+      "area": "3Dアセット制作",
+      "example": "生成メッシュを作り直して関節が動くモデルにする"
+    },
+    {
+      "area": "研究",
+      "example": "エージェントによる3D制作パイプラインの検証"
+    }
+  ],
+  "target_users": "Blenderを使い、AIエージェントで3Dアセット制作を自動化する手法に関心のあるクリエイターや開発者。",
+  "cautions": [
+    "README上で状態は『実験』とされ、バックパック等は一部検証に失敗している",
+    "Meshy・Tripoなど外部サービスやFAL_KEYなどのAPIキーが必要な工程がある",
+    "ライセンスはREADMEから確認できず、利用前にリポジトリのLICENSEを確認する"
+  ],
+  "license": null
+}
