@@ -1,0 +1,55 @@
+{
+  "full_name": "haydenschmitty/floorplan",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "アプリ構造をClaude/Codexが地図化",
+  "category": "AI開発ツール",
+  "summary_ja": "Claude Code または Codex がコードベースを読み、各部品・ファイル・Web リクエストに平易な名前を付けて接続関係を描く、対話型の地図を作るプラグイン。",
+  "features": [
+    "アプリ全体のズーム可能な地図（部品・ファイル・エンドポイント・画面・外部サービス）",
+    "ヘルスチェック（コード内の鍵、公開された Supabase/Firebase 設定など）",
+    "Recent work（AI が直近に変更した箇所と理由）",
+    "PRD から設計図（blueprint）を作成",
+    "Claude Code と Codex に対応、依存パッケージ 0"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Node.js 18 以上と Claude Code か Codex を用意",
+      "プラグインのマーケットプレイスを追加してインストール",
+      "新しいセッションで「Make me a floorplan of this app.」と依頼",
+      "生成された地図で構造を確認",
+      "変更後は「Update the floorplan.」で更新"
+    ],
+    "code": "claude plugin marketplace add haydenschmitty/floorplan\nclaude plugin install floorplan@floorplan\ncodex plugin marketplace add haydenschmitty/floorplan\ncodex plugin add floorplan@floorplan"
+  },
+  "effects": [
+    "AI で作ったアプリの構造を、コードを読まずに把握できる",
+    "新メンバーのオンボーディング時間を短縮",
+    "変更の影響範囲を事前に把握",
+    "コード内の鍵漏えい等を早期発見"
+  ],
+  "domains": [
+    {
+      "area": "個人開発",
+      "example": "AI で作ったアプリの全体理解"
+    },
+    {
+      "area": "チーム開発",
+      "example": "新規メンバーへの構造説明"
+    },
+    {
+      "area": "コードレビュー",
+      "example": "AI の変更箇所の確認"
+    },
+    {
+      "area": "セキュリティ点検",
+      "example": "公開鍵・公開エンドポイントの洗い出し"
+    }
+  ],
+  "target_users": "AI で開発し、コードを細かく読まないビルダーや小規模チーム。",
+  "cautions": [
+    "Claude/Codex の利用枠で動き、コードが各エージェントに読まれる点を理解して使う",
+    "ヘルスチェックは簡易的であり、本格的な診断の代替にならないと考えられる",
+    "バージョン 0.11 と若い段階"
+  ],
+  "license": "MIT"
+}

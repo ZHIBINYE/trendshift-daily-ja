@@ -1,0 +1,54 @@
+{
+  "full_name": "zhouxiaoka/autoclip",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "リンク1つで長尺動画を縦型ショートに",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "長尺のポッドキャスト・インタビュー・講座動画から、ショート動画・字幕・サムネイル・投稿文を自動生成するオープンソースのデスクトップツール。編集・レンダリングは手元の PC で行う。",
+  "features": [
+    "URL を貼るだけで各プラットフォーム向けにクリップを自動生成",
+    "字幕、話者追従の取景、サムネイル、タイトル・説明文・ハッシュタグを生成",
+    "抖音・小紅書・TikTok・Reels・Shorts・B站・YouTube に対応",
+    "デスクトップ版、Docker/Web、CLI/MCP を提供",
+    "分析モデルは選択可、字幕は Whisper/SenseVoice 等をローカルで利用可"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Releases からデスクトップ版（macOS Apple Silicon は .dmg、Windows は -setup.exe）を入手",
+      "設定でモデル提供元と API キーを登録",
+      "まず「サンプルプロジェクト」で動作を確認",
+      "自分の動画 URL を貼って出力を生成",
+      "プレビューを確認し、パッケージをダウンロード"
+    ],
+    "code": "git clone https://github.com/zhouxiaoka/autoclip.git\ncd autoclip\ncp env.example .env\nmkdir -p data logs uploads\ndocker compose up -d --build"
+  },
+  "effects": [
+    "長尺動画のショート化の工数を大幅に削減",
+    "複数プラットフォーム向けの画角・長さ・文案を一括で用意",
+    "手元で処理するため素材を外部に預けずに済む"
+  ],
+  "domains": [
+    {
+      "area": "コンテンツ運用",
+      "example": "ポッドキャストをショート動画に再利用"
+    },
+    {
+      "area": "教育",
+      "example": "講座動画から要点クリップを作成"
+    },
+    {
+      "area": "企業広報",
+      "example": "インタビューを SNS 用に切り出し"
+    },
+    {
+      "area": "メディア制作",
+      "example": "複数 SNS 向け投稿パッケージの量産"
+    }
+  ],
+  "target_users": "長尺動画を SNS 向けに切り出して発信するクリエイター・運用担当者。",
+  "cautions": [
+    "ソフトは無料だが、クラウドモデルは従量課金で API キーが必要",
+    "他者の動画（インタビュー等）を切り出す場合は著作権・肖像権に注意",
+    "自動のブランド終了カードが既定でオン（設定で変更可）"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,56 @@
+{
+  "full_name": "sourmitocand1987/VividFrame-GPU",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "あらゆる映像をGPUでリアルタイム高画質化",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "Windows向けの動画プレーヤー兼キャプチャ強化ツール。ローカル動画・キャプチャカード・画面キャプチャ・コンソール/PCストリーミングに、AI超解像・ノイズ低減・HDR・フレーム生成を DirectX 12 でリアルタイム適用する。",
+  "features": [
+    "AI超解像（NVIDIA RTX VSR、DLSS/XeSS/FSR を選択可）",
+    "最大4層の独立したノイズ低減レイヤー",
+    "RTX Video HDR による SDR 素材の HDR 化",
+    "フレーム生成（倍率指定）",
+    "PS5・Sunshine ホスト・Xbox（実験的）・キャプチャカードからの入力",
+    "調整結果を MP4/MKV に書き出し"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Releases から NVIDIA 版または AMD 版のポータブル ZIP を新しいフォルダに保存",
+      "ZIP を展開",
+      "実行ファイルを起動し、まずエフェクトを全てオフにして映像と音声を確認",
+      "超解像・ノイズ低減・HDR・フレーム生成を1つずつ有効にして GPU 負荷を確認",
+      "必要なら調整済みの映像を書き出しキューから MP4/MKV に出力"
+    ],
+    "code": "powershell Expand-Archive -Path \".\\vividframe-gpu-win64-portable.zip\" -DestinationPath \".\\vividframe-gpu\"\npowershell .\\vividframe-gpu\\vividframe-gpu.exe"
+  },
+  "effects": [
+    "低解像度動画を再生しながら高画質化でき、オフラインの待ち時間が不要",
+    "超解像・HDR・フレーム生成を1つのパイプラインに統合し、複数ツールを使い分ける手間を削減",
+    "コンソールゲームのストリーム映像をライブで補正",
+    "視聴用に調整した設定をそのまま書き出し可能"
+  ],
+  "domains": [
+    {
+      "area": "映像視聴",
+      "example": "古い低解像度の映像資産を高画質で再生"
+    },
+    {
+      "area": "ゲーム配信",
+      "example": "PS5 のリモート映像を PC で補正して表示"
+    },
+    {
+      "area": "キャプチャ・録画",
+      "example": "キャプチャカード経由の映像をノイズ低減して確認"
+    },
+    {
+      "area": "映像制作",
+      "example": "調整結果を MP4/MKV に書き出してクリップを仕上げる"
+    }
+  ],
+  "target_users": "Windows 11 と NVIDIA/AMD GPU を持ち、動画やゲーム映像の画質を上げたい個人ユーザー。",
+  "cautions": [
+    "Windows 11 x64 と DirectX 12 が必須。高解像度・複数層のノイズ低減・フレーム生成は GPU/VRAM 負荷が高い",
+    "バイナリを Releases から入手する形式。配布元とハッシュを確認し、信頼できる環境で試す",
+    "著作権保護された映像・配信のキャプチャは正規の権利の範囲内で行う"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,54 @@
+{
+  "full_name": "XinaTian/MROffice",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "ブラウザで動く文書・表計算等のOSSエディタ群",
+  "category": "生産性・ドキュメント",
+  "summary_ja": "MR Office のエディタ部分を公開したリポジトリ。ドキュメント・スプレッドシート・プレゼン・PDF・手書き・コードの6種のエディタがブラウザで動く。Office ファイル(.docx 等)の読み書きは別配布の無料デスクトップ版が担う。",
+  "features": [
+    "ページ組みの文書エディタ（スタイル、表、変更履歴、コメント等）",
+    "スプレッドシート（書式、並べ替え、フィルタ、固定、CSV/TSV 入出力）",
+    "プレゼン、PDF、手書き、コードの各エディタ",
+    "デスクトップシェルと MCP サーバー（AI アプリ連携）を同梱",
+    "独自形式 .mrdoc/.mrsheet 等を保存し HTML/Markdown/PDF 等を開ける"
+  ],
+  "how_to_use": {
+    "steps": [
+      "ライブデモで試すか、リポジトリを取得してビルド",
+      "npm run build でビルド",
+      "npm run desktop でデスクトップシェルを起動",
+      "Word/Excel/PowerPoint を扱うなら Releases から無料の MR Office デスクトップ版を入手",
+      "組み込み用途では @mrnote/core とエディタをアプリに取り込む"
+    ],
+    "code": "npm run build\nnpm run desktop"
+  },
+  "effects": [
+    "インストール不要でブラウザ上から文書・表計算・PDF を編集",
+    "エディタを自社アプリに組み込める",
+    "MCP サーバー経由で AI から文書を操作できる"
+  ],
+  "domains": [
+    {
+      "area": "業務文書",
+      "example": "ブラウザで議事録や企画書を作成"
+    },
+    {
+      "area": "データ集計",
+      "example": "CSV を開いて表計算・フィルタ"
+    },
+    {
+      "area": "製品開発",
+      "example": "エディタを SaaS に組み込み"
+    },
+    {
+      "area": "AI活用",
+      "example": "MCP で AI アプリから文書編集"
+    }
+  ],
+  "target_users": "ブラウザ型エディタを使いたい、または自社製品に組み込みたい開発者・チーム。",
+  "cautions": [
+    "AGPL-3.0 で追加条件あり（MR Office の帰属表示とリンクの維持など）。商用ライセンスは別途",
+    "docx/xlsx/pptx の読み書き、関数付き数式、グラフ等は OSS 版に含まれず、非OSSの無料コンポーネントが必要",
+    "ネットワーク提供時の AGPL のソース公開義務に注意"
+  ],
+  "license": "AGPL-3.0"
+}

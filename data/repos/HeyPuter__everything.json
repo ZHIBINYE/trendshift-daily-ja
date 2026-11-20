@@ -1,0 +1,54 @@
+{
+  "full_name": "HeyPuter/everything",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "世界のソフトをOSSで一から作り直す",
+  "category": "生産性・ドキュメント",
+  "summary_ja": "Office から Slack、Photoshop、AutoCAD まで、既存の商用ソフトの無料オープンソース代替を作るモノレポのプロジェクト。表計算・文書・プレゼン・ホワイトボード・PDF・ノートなど多数のアプリを収録する。",
+  "features": [
+    "Office系（Spreadsheet・Documents・Presentation・Whiteboard・PDF・Notes）",
+    "コラボレーション、クリエイティブ、エンジニアリング、生産性、金融、ビジネス、開発者向け、ゲームの各分野",
+    "各アプリに Alternative to（代替対象）と Try it のデモリンクを併記",
+    "1つのリポジトリ内にアプリごとのソースを管理",
+    "Node.js 22.12 以上で各アプリを開発起動"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Node.js 22.12 以上を用意",
+      "リポジトリを取得",
+      "src/ 配下の使いたいアプリのディレクトリへ移動",
+      "npm install で依存を導入",
+      "npm run dev で開発サーバーを起動（またはデモを Try it で試す）"
+    ],
+    "code": "git clone https://github.com/HeyPuter/everything.git\ncd everything/src/[app-name]\nnpm install\nnpm run dev"
+  },
+  "effects": [
+    "商用ソフトの代替をブラウザですぐ試せる",
+    "ライセンス費用を抑えた業務ツールの選択肢が増える",
+    "ソースが公開されており、自社向けに改変・組み込みが可能"
+  ],
+  "domains": [
+    {
+      "area": "オフィス業務",
+      "example": "Excel/Word/PowerPoint 代替でのドキュメント作成"
+    },
+    {
+      "area": "チーム共同作業",
+      "example": "ホワイトボードやノートでのアイデア整理"
+    },
+    {
+      "area": "ソフトウェア開発",
+      "example": "OSS アプリを土台にした自社ツール開発"
+    },
+    {
+      "area": "教育",
+      "example": "無償のオフィス・創作ツールの提供"
+    }
+  ],
+  "target_users": "商用ソフトの OSS 代替を探す個人・チーム、OSS アプリ開発に関わりたい開発者。",
+  "cautions": [
+    "各アプリの完成度は個別に異なると考えられ、商用製品と同等とは限らない",
+    "アプリごとにライセンスが異なる可能性があり、利用前に確認が必要",
+    "対象が極めて広く、プロジェクトは再構築の途上"
+  ],
+  "license": null
+}

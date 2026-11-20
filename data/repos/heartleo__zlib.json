@@ -1,0 +1,54 @@
+{
+  "full_name": "heartleo/zlib",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "Z-Library用CLI/TUIとエージェント連携",
+  "category": "データ・スクレイピング",
+  "summary_ja": "Z-Library のコマンドラインツール。検索・閲覧・ダウンロード、Kindle や WeRead への送信、TUI を備え、Claude Code や Codex のプラグインで AI エージェントとも連携できる。",
+  "features": [
+    "年・言語・形式で絞り込む書籍検索",
+    "お気に入り・おすすめ・人気・履歴の閲覧",
+    "ダウンロードと Kindle・WeRead への送信",
+    "日次ダウンロード枠の確認、テーマ変更、ミラーの確認",
+    "--json 出力でスクリプト連携、Claude Code/Codex 向けプラグイン"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Homebrew・インストールスクリプト・winget・Releases のいずれかで導入",
+      "zlib doctor で到達可能なドメインを確認",
+      "zlib login --domain で Z-Library アカウントにログイン",
+      "zlib tui で対話画面を開き / から検索",
+      "Enter で確認後にダウンロード"
+    ],
+    "code": "brew install heartleo/tap/zlib-cli\nzlib doctor\nzlib login --domain https://z-lib.gd\nzlib tui"
+  },
+  "effects": [
+    "書籍の検索から端末への取得までをターミナルで完結",
+    "Kindle への送信を自動化し読書の手間を削減",
+    "JSON 出力でスクリプトや AI エージェントに組み込める"
+  ],
+  "domains": [
+    {
+      "area": "読書・学習",
+      "example": "書籍を検索して Kindle へ送る"
+    },
+    {
+      "area": "研究",
+      "example": "文献探索の自動化"
+    },
+    {
+      "area": "開発",
+      "example": "JSON 出力を使った自動化"
+    },
+    {
+      "area": "AI活用",
+      "example": "エージェントから書籍検索を呼び出す"
+    }
+  ],
+  "target_users": "ターミナル中心で書籍を探す利用者、エージェントに書籍検索を任せたい開発者。",
+  "cautions": [
+    "Z-Library は著作権侵害を理由に各国で摘発・遮断されている。正規に利用権のある資料のみに使い、法令・規約を確認する",
+    "Z-Library のアカウントが必要で、ミラーのドメインは変動する",
+    "インストールスクリプトを curl で実行する方式は、内容を確認してから使う"
+  ],
+  "license": "MIT"
+}

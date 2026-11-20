@@ -1,0 +1,54 @@
+{
+  "full_name": "Tufalabs/tufazip",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "enwik9を圧縮するTransformer方式のデコーダ",
+  "category": "研究・学術",
+  "summary_ja": "Large Text Compression Benchmark 向けの enwik9 圧縮成果物（enwik9-v2.bin）を復元する決定論的デコーダ。量子化済みのオフライン事前学習モデルで初期化したオンライン Transformer を用いる。",
+  "features": [
+    "約1億958万バイトの圧縮ファイルから enwik9（10億バイト）を復元",
+    "オンライン Transformer（量子化オフライン Cycle2 事前分布で初期化）",
+    "再開可能なチェックポイントを state ディレクトリに保存",
+    "SHA-256 で入力・重み・復元結果を検証できる",
+    "ランク対象合計は 105,388,353 バイトと記載"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Linux x86-64 に 2 枚の NVIDIA B200、GCC、CUDA 13.0、cuDNN 9.20、Python 3.12.3、uv を用意",
+      "uv sync で依存を固定バージョンで同期",
+      "tufazip に圧縮ファイル・出力先・状態ディレクトリを渡して実行",
+      "中断した場合は同じコマンドを再実行",
+      "README 記載の SHA-256 と出力を照合"
+    ],
+    "code": "uv sync --frozen --python 3.12.3\nuv run --frozen --python 3.12.3 ./tufazip /path/to/enwik9-v2.bin /path/to/enwik9 /path/to/state"
+  },
+  "effects": [
+    "テキスト圧縮ベンチマークの結果を再現・検証できる",
+    "ニューラル圧縮の到達点を具体的な数値で把握できる",
+    "ハッシュ検証により再現性を確認できる"
+  ],
+  "domains": [
+    {
+      "area": "データ圧縮研究",
+      "example": "ニューラル圧縮と従来手法の比較"
+    },
+    {
+      "area": "機械学習研究",
+      "example": "オンライン学習型 Transformer の応用例の調査"
+    },
+    {
+      "area": "ベンチマーク検証",
+      "example": "enwik9 の復元結果を再現して検証"
+    },
+    {
+      "area": "GPU計算",
+      "example": "大規模推論の再現性・決定論の確認"
+    }
+  ],
+  "target_users": "データ圧縮やニューラル圧縮のベンチマークを追う研究者・エンジニア。",
+  "cautions": [
+    "B200 2枚が必要で、圧縮・復元に各約63万秒（約7日）かかると記載され、一般的な環境では実行困難",
+    "研究・提出用のデコーダであり、汎用の圧縮ツールではない",
+    "実行環境の要件（CUDA 13.0、cuDNN 9.20 等）が厳密"
+  ],
+  "license": null
+}

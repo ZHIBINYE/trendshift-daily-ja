@@ -1,0 +1,514 @@
+{
+  "date": "2026-11-20",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "simplexai-labs/linger",
+      "slug": "simplexai-labs__linger",
+      "github_url": "https://github.com/simplexai-labs/linger",
+      "trendshift_url": "https://trendshift.io/repositories/350772",
+      "language": "TypeScript",
+      "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+      "stars": 1462,
+      "forks": 70,
+      "stars_gained": 203,
+      "forks_gained": 0,
+      "score": 849,
+      "created_at": "2026-11-10T03:50:38Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "sourmitocand1987/VividFrame-GPU",
+      "slug": "sourmitocand1987__VividFrame-GPU",
+      "github_url": "https://github.com/sourmitocand1987/VividFrame-GPU",
+      "trendshift_url": "https://trendshift.io/repositories/367310",
+      "language": "",
+      "description": "Any source. One real-time GPU enhancement pipeline. · video enhancer · gpu video · real-time video enhancement · hdr · super-resolution · game-streaming · moonlight · dolby-vision · frame-interpolation · video-player · media-player · video-super-resolution · video-processing · upscaling · rife · vulkan · nvidia · windows · video-enhancement · ncnn",
+      "stars": 850,
+      "forks": 7,
+      "stars_gained": 119,
+      "forks_gained": 0,
+      "score": 680,
+      "created_at": "2026-11-18T15:51:00Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "bothaggsigym1988/frameglide",
+      "slug": "bothaggsigym1988__frameglide",
+      "github_url": "https://github.com/bothaggsigym1988/frameglide",
+      "trendshift_url": "https://trendshift.io/repositories/366520",
+      "language": "",
+      "description": "From a 30 fps console stream to 60–120 fps on your PC. · frame-interpolation · frame-generation · nvidia · windows · dlss · super-resolution · vulkan · dlss5 · upscaling · rife · neural-rendering · ps5 · rtx · remote-play · pytorch · video · chiaki · optical-flow · video-frame-interpolation · amd · tensorrt · fsr · rtx-vsr · video-upscaling",
+      "stars": 797,
+      "forks": 7,
+      "stars_gained": 116,
+      "forks_gained": 0,
+      "score": 678,
+      "created_at": "2026-11-18T15:40:02Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 4,
+      "full_name": "Tufalabs/tufazip",
+      "slug": "Tufalabs__tufazip",
+      "github_url": "https://github.com/Tufalabs/tufazip",
+      "trendshift_url": "https://trendshift.io/repositories/367674",
+      "language": "Python",
+      "description": "",
+      "stars": 142,
+      "forks": 2,
+      "stars_gained": 81,
+      "forks_gained": 0,
+      "score": 648,
+      "created_at": "2026-09-03T12:53:22Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "HeyPuter/everything",
+      "slug": "HeyPuter__everything",
+      "github_url": "https://github.com/HeyPuter/everything",
+      "trendshift_url": "https://trendshift.io/repositories/304148",
+      "language": "JavaScript",
+      "description": "We're rebuilding and open-sourcing the world’s software from scratch.",
+      "stars": 8866,
+      "forks": 958,
+      "stars_gained": 118,
+      "forks_gained": 0,
+      "score": 584,
+      "created_at": "2026-10-13T16:18:22Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "stars": 71,
+      "forks": 0,
+      "stars_gained": 53,
+      "forks_gained": 0,
+      "score": 424,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "atuizz/posewear",
+      "slug": "atuizz__posewear",
+      "github_url": "https://github.com/atuizz/posewear",
+      "trendshift_url": "https://trendshift.io/repositories/366894",
+      "language": "Python",
+      "description": "姿势、服装、人像参考图库，附中英文提示词，可在浏览器里 AI 试穿 · Pose, outfit & portrait reference library with bilingual prompts and in-browser AI try-on",
+      "stars": 243,
+      "forks": 67,
+      "stars_gained": 49,
+      "forks_gained": 0,
+      "score": 392,
+      "created_at": "2026-10-30T19:08:14Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 8,
+      "full_name": "heartleo/zlib",
+      "slug": "heartleo__zlib",
+      "github_url": "https://github.com/heartleo/zlib",
+      "trendshift_url": "https://trendshift.io/repositories/135168",
+      "language": "Go",
+      "description": "A command-line tool for Z-Library. Search, download, send to Kindle and WeRead, and integrate with AI agents.",
+      "stars": 2513,
+      "forks": 152,
+      "stars_gained": 101,
+      "forks_gained": 0,
+      "score": 373,
+      "created_at": "2026-04-10T02:20:43Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "context-dot-dev/enrichable",
+      "slug": "context-dot-dev__enrichable",
+      "github_url": "https://github.com/context-dot-dev/enrichable",
+      "trendshift_url": "https://trendshift.io/repositories/367630",
+      "language": "TypeScript",
+      "description": "Open-source AI spreadsheet for data enrichment. Build lead lists from a prompt, research every row with live web data, and find work emails. Powered by Context.dev.",
+      "stars": 100,
+      "forks": 4,
+      "stars_gained": 32,
+      "forks_gained": 0,
+      "score": 256,
+      "created_at": "2026-10-30T02:02:50Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "imxieyi/Kernarium",
+      "slug": "imxieyi__Kernarium",
+      "github_url": "https://github.com/imxieyi/Kernarium",
+      "trendshift_url": "https://trendshift.io/repositories/345734",
+      "language": "C++",
+      "description": "Run real Linux kernel natively on iOS",
+      "stars": 951,
+      "forks": 69,
+      "stars_gained": 67,
+      "forks_gained": 0,
+      "score": 249,
+      "created_at": "2026-11-07T14:15:03Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 12680,
+      "forks": 835,
+      "stars_gained": 86,
+      "forks_gained": 0,
+      "score": 243,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+      "stars": 204179,
+      "forks": 11099,
+      "stars_gained": 95,
+      "forks_gained": 0,
+      "score": 233,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 11227,
+      "forks": 1965,
+      "stars_gained": 71,
+      "forks_gained": 0,
+      "score": 228,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "erkamyaman/rust-anything",
+      "slug": "erkamyaman__rust-anything",
+      "github_url": "https://github.com/erkamyaman/rust-anything",
+      "trendshift_url": "https://trendshift.io/repositories/363468",
+      "language": "Rust",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "stars": 5191,
+      "forks": 356,
+      "stars_gained": 122,
+      "forks_gained": 0,
+      "score": 223,
+      "created_at": "2026-11-16T12:10:36Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "asgeirtj/system_prompts_leaks",
+      "slug": "asgeirtj__system_prompts_leaks",
+      "github_url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "trendshift_url": "https://trendshift.io/repositories/14577",
+      "language": "Python",
+      "description": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.",
+      "stars": 71926,
+      "forks": 12294,
+      "stars_gained": 64,
+      "forks_gained": 0,
+      "score": 220,
+      "created_at": "2025-05-03T02:43:56Z",
+      "tags": [
+        "Curated list"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "nexu-io/openmotion",
+      "slug": "nexu-io__openmotion",
+      "github_url": "https://github.com/nexu-io/openmotion",
+      "trendshift_url": "https://trendshift.io/repositories/29398",
+      "language": "TypeScript",
+      "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+      "stars": 12913,
+      "forks": 1280,
+      "stars_gained": 89,
+      "forks_gained": 0,
+      "score": 213,
+      "created_at": "2026-05-11T09:40:38Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "Lemxy/WinRust",
+      "slug": "Lemxy__WinRust",
+      "github_url": "https://github.com/Lemxy/WinRust",
+      "trendshift_url": "https://trendshift.io/repositories/364300",
+      "language": "Rust",
+      "description": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.",
+      "stars": 387,
+      "forks": 5,
+      "stars_gained": 45,
+      "forks_gained": 0,
+      "score": 196,
+      "created_at": "2026-11-17T14:27:06Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 12534,
+      "forks": 1578,
+      "stars_gained": 113,
+      "forks_gained": 0,
+      "score": 195,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "BaaRai/ARTEX",
+      "slug": "BaaRai__ARTEX",
+      "github_url": "https://github.com/BaaRai/ARTEX",
+      "trendshift_url": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "stars": 12073,
+      "forks": 4336,
+      "stars_gained": 121,
+      "forks_gained": 0,
+      "score": 186,
+      "created_at": "2026-10-08T21:14:39Z",
+      "tags": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "haydenschmitty/floorplan",
+      "slug": "haydenschmitty__floorplan",
+      "github_url": "https://github.com/haydenschmitty/floorplan",
+      "trendshift_url": "https://trendshift.io/repositories/322616",
+      "language": "JavaScript",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "stars": 5029,
+      "forks": 416,
+      "stars_gained": 66,
+      "forks_gained": 0,
+      "score": 184,
+      "created_at": "2026-10-27T12:03:01Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "debpalash/VoiceStudio",
+      "slug": "debpalash__VoiceStudio",
+      "github_url": "https://github.com/debpalash/VoiceStudio",
+      "trendshift_url": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 114362,
+      "forks": 12958,
+      "stars_gained": 99,
+      "forks_gained": 0,
+      "score": 174,
+      "created_at": "2026-04-09T21:40:26Z",
+      "tags": [
+        "Text to speech"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "jingyaogong/minimind",
+      "slug": "jingyaogong__minimind",
+      "github_url": "https://github.com/jingyaogong/minimind",
+      "trendshift_url": "https://trendshift.io/repositories/12586",
+      "language": "Python",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "stars": 66838,
+      "forks": 9055,
+      "stars_gained": 64,
+      "forks_gained": 0,
+      "score": 162,
+      "created_at": "2024-07-27T04:34:12Z",
+      "tags": [
+        "LLM training"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "Bodila51/gtavi-claudecode",
+      "slug": "Bodila51__gtavi-claudecode",
+      "github_url": "https://github.com/Bodila51/gtavi-claudecode",
+      "trendshift_url": "https://trendshift.io/repositories/365728",
+      "language": "Python",
+      "description": "Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.",
+      "stars": 850,
+      "forks": 33,
+      "stars_gained": 54,
+      "forks_gained": 0,
+      "score": 156,
+      "created_at": "2026-11-18T17:54:29Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+      "stars": 129907,
+      "forks": 9009,
+      "stars_gained": 72,
+      "forks_gained": 0,
+      "score": 155,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "boykopovar/AnyPS5",
+      "slug": "boykopovar__AnyPS5",
+      "github_url": "https://github.com/boykopovar/AnyPS5",
+      "trendshift_url": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "stars": 57876,
+      "forks": 5697,
+      "stars_gained": 79,
+      "forks_gained": 0,
+      "score": 154,
+      "created_at": "2026-08-03T21:30:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    }
+  ]
+}

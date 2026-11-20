@@ -1,0 +1,54 @@
+{
+  "full_name": "Lemxy/WinRust",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "Rust製のWindowsシェル置き換えセット",
+  "category": "インフラ・DevOps",
+  "summary_ja": "タスクバー、ファイルマネージャー、NTFS 全体検索、タスクマネージャー、ディスククリーナー等を Rust 製の小さなネイティブプログラムで置き換える Windows 向けツール群。1つのインストーラで導入できる。",
+  "features": [
+    "Alt+Space の NTFS ドライブ検索（rust-search）",
+    "Windows 11 風の下部バー（topbar）と専用ホットキー",
+    "タブ付きファイルマネージャー兼デスクトップ（rust-explorer）",
+    "タスクマネージャー、ディスク使用量マップ、写真ビューア",
+    "debloat（テレメトリ・Copilot 等の無効化、コマンドライン限定）"
+  ],
+  "how_to_use": {
+    "steps": [
+      "最新リリースから WinRust.exe を入手（Windows 10/11 x64）",
+      "管理者として実行",
+      "入れたいコンポーネントを選び Install WinRust を押す",
+      "元に戻すときは Remove all",
+      "タスクバーが消えたら Ctrl+Alt+Del からタスクマネージャーで explorer.exe を起動"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "軽量なネイティブ製ツールで起動と検索の体感速度が向上と謳われる",
+    "複数の標準機能を一括で置き換え可能",
+    "導入前に復元ポイントが作られ、Remove all で戻せる"
+  ],
+  "domains": [
+    {
+      "area": "PC最適化",
+      "example": "古い PC の軽量化"
+    },
+    {
+      "area": "システム管理",
+      "example": "ディスク使用量の把握・整理"
+    },
+    {
+      "area": "開発環境",
+      "example": "高速検索とタブ付きファイル操作"
+    },
+    {
+      "area": "検証環境",
+      "example": "VM や LTSC イメージのカスタマイズ"
+    }
+  ],
+  "target_users": "Windows の標準シェルを軽量化・カスタマイズしたい上級ユーザー。",
+  "cautions": [
+    "Windows Search の無効化、タスクバーの非表示、Explorer のシェル無効化など深いシステム変更を行う。予備機や VM で試すこと",
+    "exe はコード署名されておらず SmartScreen の警告が出る",
+    "導入には管理者権限が必要。debloat 等は自己責任で"
+  ],
+  "license": null
+}

@@ -1,0 +1,54 @@
+{
+  "full_name": "jingyaogong/minimind",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "64MパラメータのLLMをゼロから学習",
+  "category": "研究・学術",
+  "summary_ja": "約64M パラメータの超小型言語モデルを、PyTorch ネイティブ実装でゼロから学習できるオープンソースプロジェクト。事前学習・SFT・LoRA・DPO・PPO/GRPO・Tool Use などの全工程と教材を提供する。",
+  "features": [
+    "Dense と MoE のモデル構造コード（Qwen3 系と整合）",
+    "トークナイザー学習と全工程の学習コード",
+    "全段階のデータセット（収集・蒸留・クレンジング・重複排除済み）",
+    "視覚・マルチモーダル・拡散言語モデルへの拡張（MiniMind-V/O/dLM）",
+    "約2時間・約3元（RTX 3090 1枚、SFT 1 epoch）で学習"
+  ],
+  "how_to_use": {
+    "steps": [
+      "リポジトリを取得し requirements.txt で依存を導入",
+      "推論は Hugging Face からモデルを取得して eval_llm.py で実行",
+      "事前学習は train_pretrain.py",
+      "SFT は train_full_sft.py",
+      "eval_llm.py で重みを指定して評価"
+    ],
+    "code": "git clone --depth 1 https://github.com/jingyaogong/minimind\ncd minimind && pip install -r requirements.txt\npython train_pretrain.py\npython train_full_sft.py"
+  },
+  "effects": [
+    "LLM の学習全工程を低コストで体験・理解できる",
+    "高レベルライブラリに頼らず内部の仕組みを学べる",
+    "個人 GPU で再現でき、実験の試行錯誤が速い"
+  ],
+  "domains": [
+    {
+      "area": "教育",
+      "example": "LLM 入門・実習教材"
+    },
+    {
+      "area": "研究",
+      "example": "小型モデルでの新手法の検証"
+    },
+    {
+      "area": "エッジAI",
+      "example": "軽量モデルの試作"
+    },
+    {
+      "area": "開発",
+      "example": "独自データでの小型モデル学習"
+    }
+  ],
+  "target_users": "LLM の仕組みを手を動かして学びたい学生・エンジニア・研究者。",
+  "cautions": [
+    "64M の小型モデルのため、実用の大規模モデルと同等の性能は期待できない",
+    "学習には NVIDIA GPU が必要で、「2時間・3元」は特定条件での実測値",
+    "学習データのライセンスは個別に確認する"
+  ],
+  "license": "Apache-2.0"
+}

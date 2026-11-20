@@ -1,0 +1,54 @@
+{
+  "full_name": "context-dot-dev/enrichable",
+  "analyzed_at": "2026-11-20",
+  "title_ja": "プロンプトで作るAIリスト・データ補完表計算",
+  "category": "データ・スクレイピング",
+  "summary_ja": "データ補完（エンリッチメント）用のオープンソース AI スプレッドシート。条件を文章で伝えると企業・人物のリストを作り、質問を列として追加すると各行をウェブ上で調査して根拠付きで埋める。",
+  "features": [
+    "プロンプトからリード（見込み客）リストを生成",
+    "AI リサーチ列（各回答に出典リンク付き）",
+    "真偽・カテゴリ・スコア列と信頼度",
+    "メールアドレス探索のウォーターフォール",
+    "CSV/Excel/JSON エクスポートと MCP サーバー"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Vercel にデプロイするか、ローカルにリポジトリを取得",
+      "Neon の Postgres を用意し DATABASE_URL を設定",
+      "マイグレーションを実行して起動",
+      "/app を開き Context.dev と OpenAI などの API キーを登録",
+      "リスト作成→AI 列追加→確認→エクスポート"
+    ],
+    "code": "git clone https://github.com/context-dot-dev/enrichable\ncd enrichable\nnvm use\nnpm ci\ncp .env.example .env.local   # set DATABASE_URL\nnpm run db:migrate\nnpm run dev"
+  },
+  "effects": [
+    "リード収集と情報調査の時間を短縮",
+    "各回答に出典と信頼度があり検証しやすい",
+    "メール探索を複数サービスで自動フォールバック"
+  ],
+  "domains": [
+    {
+      "area": "営業・マーケ",
+      "example": "対象企業のリスト作成と担当者メール探索"
+    },
+    {
+      "area": "市場調査",
+      "example": "競合の価格ページや技術スタックの一括調査"
+    },
+    {
+      "area": "採用",
+      "example": "候補企業・人物の情報整理"
+    },
+    {
+      "area": "データ運用",
+      "example": "既存 CSV の欠損項目の補完"
+    }
+  ],
+  "target_users": "営業・調査業務のデータ収集を自動化したい担当者や、AI リサーチツールの実装例を探す開発者。",
+  "cautions": [
+    "Context.dev と OpenAI の API キーが必須で、利用料は各サービスに課金される",
+    "個人情報（メール等）の収集は各国の個人情報保護法・スパム規制に従う",
+    "ライセンスは README から確認できない"
+  ],
+  "license": null
+}
