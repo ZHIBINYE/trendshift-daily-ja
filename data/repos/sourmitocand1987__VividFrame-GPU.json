@@ -13,14 +13,8 @@
     "調整結果を MP4/MKV に書き出し"
   ],
   "how_to_use": {
-    "steps": [
-      "Releases から NVIDIA 版または AMD 版のポータブル ZIP を新しいフォルダに保存",
-      "ZIP を展開",
-      "実行ファイルを起動し、まずエフェクトを全てオフにして映像と音声を確認",
-      "超解像・ノイズ低減・HDR・フレーム生成を1つずつ有効にして GPU 負荷を確認",
-      "必要なら調整済みの映像を書き出しキューから MP4/MKV に出力"
-    ],
-    "code": "powershell Expand-Archive -Path \".\\vividframe-gpu-win64-portable.zip\" -DestinationPath \".\\vividframe-gpu\"\npowershell .\\vividframe-gpu\\vividframe-gpu.exe"
+    "steps": [],
+    "code": ""
   },
   "effects": [
     "低解像度動画を再生しながら高画質化でき、オフラインの待ち時間が不要",
@@ -48,9 +42,17 @@
   ],
   "target_users": "Windows 11 と NVIDIA/AMD GPU を持ち、動画やゲーム映像の画質を上げたい個人ユーザー。",
   "cautions": [
+    "マルウェア配布の可能性があるため、ダウンロード・実行しないこと",
     "Windows 11 x64 と DirectX 12 が必須。高解像度・複数層のノイズ低減・フレーム生成は GPU/VRAM 負荷が高い",
-    "バイナリを Releases から入手する形式。配布元とハッシュを確認し、信頼できる環境で試す",
     "著作権保護された映像・配信のキャプチャは正規の権利の範囲内で行う"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "risk": {
+    "level": "high",
+    "reasons": [
+      "ソースコードが無く、Releases の zip（Windows 実行ファイル）を入手・実行させる形式",
+      "オーナー名が「ランダムな語＋西暦」で使い捨てアカウントに見える",
+      "2026-11-18 作成の直後にトレンド上位へ急上昇"
+    ]
+  }
 }

@@ -71,6 +71,13 @@ select, input[type="search"] { font: inherit; color: var(--fg); background: var(
 .summary { font-size: .88rem; color: var(--muted); margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .meta { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 8px; font-size: .75rem; color: var(--muted); align-items: center; }
 .cat { background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 1px 8px; font-weight: 700; }
+.risk { border: 1px solid var(--down); color: var(--down); border-radius: 4px; padding: 0 7px; font-weight: 700; }
+.risk.medium { border-color: var(--gain); color: var(--gain); }
+.alert { margin-top: 18px; border: 2px solid var(--down); border-radius: 8px; padding: 14px 18px; background: var(--surface); }
+.alert.medium { border-color: var(--gain); }
+.alert b { color: var(--down); display: block; margin-bottom: 4px; }
+.alert.medium b { color: var(--gain); }
+.alert ul { margin: 0; padding-left: 1.4em; font-size: .9rem; }
 .stats { text-align: right; white-space: nowrap; font-size: .8rem; color: var(--muted); }
 .stats .gain { display: block; color: var(--gain); font-size: 1.05rem; font-weight: 600; }
 .empty { padding: 32px; text-align: center; color: var(--muted); }
@@ -135,6 +142,8 @@ footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line);
   const fmt = n => n == null ? "—" : Number(n).toLocaleString("ja-JP");
   const jpDate = d => { const [y, m, dd] = d.split("-"); return `${y}年${+m}月${+dd}日`; };
   const dayOf = date => days.find(d => d.date === date);
+  const riskLevel = a => a?.risk?.level === "high" || a?.risk?.level === "medium" ? a.risk.level : "";
+  const riskBadge = a => ({ high: '<span class="risk">⚠ 要警戒</span>', medium: '<span class="risk medium">要確認</span>' })[riskLevel(a)] || "";
 
   function movement(date, slug, rank) {
     const i = days.findIndex(d => d.date === date);
@@ -180,7 +189,7 @@ footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line);
             <div class="name">${esc(it.full_name)}</div>
             <div class="title">${esc(a?.title_ja || it.description || it.full_name)}</div>
             <p class="summary">${esc(a?.summary_ja || it.description)}</p>
-            <div class="meta">${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
+            <div class="meta">${riskBadge(a)}${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
           </div>
           <div class="stats num"><span class="gain">+${fmt(it.stars_gained)}</span>★ ${fmt(it.stars)}</div>
         </a></li>`;
@@ -205,6 +214,7 @@ footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line);
       <section class="sec"><h3>概要</h3><p class="lead">${esc(a.summary_ja)}</p></section>
       <section class="sec"><h3>主な機能</h3>${list(a.features)}</section>
       <section class="sec"><h3>どう使うか</h3>
+        ${riskLevel(a) === "high" ? '<p class="pending">マルウェア配布の可能性があるため、ダウンロード・実行の手順は掲載していません。</p>' : ""}
         <ol>${(a.how_to_use?.steps || []).map(s => `<li>${esc(s)}</li>`).join("")}</ol>
         ${a.how_to_use?.code ? `<div class="code"><pre><code>${esc(a.how_to_use.code)}</code></pre><button class="copy" type="button">コピー</button></div>` : ""}
       </section>
@@ -221,7 +231,7 @@ footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line);
         <div style="min-width:0">
           <div class="name">${esc(it.full_name)}</div>
           <h2>${esc(a?.title_ja || it.full_name)}</h2>
-          <div class="meta">${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
+          <div class="meta">${riskBadge(a)}${a?.category ? `<span class="cat">${esc(a.category)}</span>` : ""}${it.language ? `<span>${esc(it.language)}</span>` : ""}${(it.tags || []).map(t => `<span>#${esc(t)}</span>`).join("")}</div>
         </div>
       </header>
       <div class="kpis">
@@ -231,6 +241,7 @@ footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line);
         <div class="kpi">リポジトリ作成日<b>${esc((it.created_at || "").slice(0, 10) || "—")}</b></div>
       </div>
       <div class="links"><a class="btn primary" href="${esc(it.github_url)}" target="_blank" rel="noopener">GitHub で見る</a><a class="btn" href="${esc(it.trendshift_url)}" target="_blank" rel="noopener">trendshift で見る</a></div>
+      ${riskLevel(a) ? `<div class="alert ${riskLevel(a)}" role="note"><b>${riskLevel(a) === "high" ? "⚠ 要警戒：マルウェア配布の可能性があります。ダウンロード・実行しないでください" : "要確認：導入前に配布元と中身を確認してください"}</b>${list(a.risk.reasons)}</div>` : ""}
       <div class="sections">${body}
         <section class="sec"><h3>直近の順位推移</h3><div class="history"><table><tr>${hist.map(h => `<th>${h.d.slice(5).replace("-", "/")}</th>`).join("")}</tr><tr>${hist.map(h => `<td class="num">${h.r ?? "圏外"}</td>`).join("")}</tr></table></div></section>
       </div>
