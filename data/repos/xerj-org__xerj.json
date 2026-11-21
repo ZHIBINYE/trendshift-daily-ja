@@ -1,0 +1,58 @@
+{
+  "full_name": "xerj-org/xerj",
+  "title_ja": "AIエージェント向け単一バイナリ検索エンジン",
+  "category": "AI開発ツール",
+  "summary_ja": "Rust製の単一バイナリで動く検索エンジン兼MCPサーバー。コード・文書・ログ・JSONL/CSV・PDFをインデックスし、BM25全文検索・ベクトル検索・ハイブリッド検索を提供する。Elasticsearch互換APIを備え、エージェントのメモリやRAGにも使える。",
+  "features": [
+    "BM25・ベクトル・ハイブリッドを1クエリで扱う検索",
+    "grepに頼らないコード検索とエージェント用メモリ（/_memory）",
+    "MCPネイティブ対応でClaude CodeやCursorなどと連携",
+    "Elasticsearch互換API（JVM不要）",
+    "質問を小さなプログラムに変換して保存済みの事実に答えるXERJ Query-1"
+  ],
+  "how_to_use": {
+    "steps": [
+      "インストールスクリプトでXERJを導入する（モデル込みは --with-model）",
+      "対象のコードや文書をインデックスする",
+      "xerj を起動し、localhost:9200 のAPIで検索する",
+      "MCPクライアントやエージェントから接続して利用する"
+    ],
+    "code": "curl -fsSL https://xerj.org/get | sh -s -- --with-model"
+  },
+  "effects": [
+    "grep中心のエージェントより出力トークンを削減（READMEでは2.7倍少ないと主張）",
+    "JVM不要の単一バイナリでElasticsearch系の運用負荷を軽減",
+    "オフライン・CPUのみで回答でき、導入コストを抑制",
+    "エージェントが過去の知識を検索でき、同じ調査の繰り返しを減らす"
+  ],
+  "domains": [
+    {
+      "area": "AIコーディング支援",
+      "example": "大規模リポジトリを索引化し、エージェントがコードを高速に検索"
+    },
+    {
+      "area": "社内ナレッジ検索",
+      "example": "文書やPDFを横断検索し、根拠付きで回答"
+    },
+    {
+      "area": "ログ分析・SRE",
+      "example": "ログやJSONLを全文検索して障害調査を効率化"
+    },
+    {
+      "area": "検索基盤の移行",
+      "example": "Elasticsearch互換APIを使い既存アプリの検索基盤を置き換え検討"
+    }
+  ],
+  "target_users": "AIエージェントに検索・記憶機能を持たせたい開発者や、軽量なElasticsearch代替を探すチーム。",
+  "cautions": [
+    "READMEの性能指標は開発元による自社計測であり、独自検証が望ましい",
+    "curl | sh 形式のインストールは内容を確認してから実行すること",
+    "バージョンは rc 段階（v1.0.0-rc.101）で、成熟度に注意"
+  ],
+  "license": "Apache-2.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-20"
+}
