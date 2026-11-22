@@ -1,0 +1,56 @@
+{
+  "full_name": "hatsunemiku-ai/google-one-tools",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "Google OneのSKUとオファーを調べるFridaツール集",
+  "category": "その他",
+  "summary_ja": "MuMuエミュレータ上のGoogle OneにFridaを注入し、Play Billing経由で購読オファーを走査したり、任意SKUの決済画面を呼び出したりするPythonスクリプト集。READMEは中国語。",
+  "features": [
+    "全SKUのオファー(無料・有料)の一括走査",
+    "任意SKUのPlay決済画面の呼び出し",
+    "環境診断スクリプト",
+    "地域別の価格比較リスト"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Python 3.9+とfrida 16.xを用意する",
+      "rootを有効にしたMuMuエミュレータにGoogleアカウントとGoogle One、Playストアを入れる",
+      "probe_env.pyで環境を確認する",
+      "scan_all.pyやlaunch_checkout.pyを実行する"
+    ],
+    "code": "py -m pip install frida==16.7.19\npy probe_env.py\npy scan_all.py"
+  },
+  "effects": [
+    "アカウントごとの購読オファーを一覧できる",
+    "SKUと地域別価格の比較に使える"
+  ],
+  "domains": [
+    {
+      "area": "価格調査",
+      "example": "地域別のプラン価格の比較"
+    },
+    {
+      "area": "Android解析",
+      "example": "Fridaによる課金フローの観察"
+    },
+    {
+      "area": "研究",
+      "example": "Play Billingの挙動の確認"
+    }
+  ],
+  "target_users": "Fridaによる動的解析を理解した上級者。",
+  "cautions": [
+    "Google Oneのアプリへ計測コードを注入するため、利用規約違反やアカウント停止の恐れがある",
+    "READMEの注意として、決済画面の呼び出しだけで無料試用の資格を消費し得る",
+    "自分のアカウント・自己責任でのみ使うこと",
+    "作成が2026-11-20と新しく、説明文も空"
+  ],
+  "license": null,
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成が2026-11-20で、約1日で1,000超のスターが増加",
+      "サービスの課金・試用の制限を回避し得る内容",
+      "リポジトリのdescriptionが空"
+    ]
+  }
+}

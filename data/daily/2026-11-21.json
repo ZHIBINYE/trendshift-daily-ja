@@ -1,0 +1,516 @@
+{
+  "date": "2026-11-21",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "ItsNotRexed/Leonida",
+      "slug": "ItsNotRexed__Leonida",
+      "github_url": "https://github.com/ItsNotRexed/Leonida",
+      "trendshift_url": "https://trendshift.io/repositories/370687",
+      "language": "Python",
+      "description": "",
+      "stars": 4432,
+      "forks": 26,
+      "stars_gained": 4489,
+      "forks_gained": 0,
+      "score": 26934,
+      "created_at": "2026-11-20T20:07:13Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "havenicec/google-qr-sms-helper",
+      "slug": "havenicec__google-qr-sms-helper",
+      "github_url": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshift_url": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "stars": 1858,
+      "forks": 337,
+      "stars_gained": 984,
+      "forks_gained": 142,
+      "score": 8156,
+      "created_at": "2026-10-26T10:44:47Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 15952,
+      "forks": 1766,
+      "stars_gained": 1813,
+      "forks_gained": 15,
+      "score": 6434,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "stars": 1404,
+      "forks": 158,
+      "stars_gained": 672,
+      "forks_gained": 78,
+      "score": 5532,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "ChiefGyk3D/Clouds-Against-Humanity",
+      "slug": "ChiefGyk3D__Clouds-Against-Humanity",
+      "github_url": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+      "trendshift_url": "https://trendshift.io/repositories/309875",
+      "language": "Python",
+      "description": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "stars": 2022,
+      "forks": 112,
+      "stars_gained": 667,
+      "forks_gained": 16,
+      "score": 5368,
+      "created_at": "2026-10-10T17:50:27Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 6,
+      "full_name": "anefzaoui/misterdownloadmanager",
+      "slug": "anefzaoui__misterdownloadmanager",
+      "github_url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshift_url": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "stars": 15481,
+      "forks": 1309,
+      "stars_gained": 1203,
+      "forks_gained": 24,
+      "score": 5354,
+      "created_at": "2026-10-29T01:25:19Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+      "stars": 206099,
+      "forks": 11216,
+      "stars_gained": 923,
+      "forks_gained": 4,
+      "score": 5124,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "pingdotgg/t3code",
+      "slug": "pingdotgg__t3code",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "trendshift_url": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "stars": 69469,
+      "forks": 13085,
+      "stars_gained": 1699,
+      "forks_gained": 30,
+      "score": 5118,
+      "created_at": "2026-02-08T23:46:22Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 12813,
+      "forks": 2085,
+      "stars_gained": 675,
+      "forks_gained": 11,
+      "score": 5030,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "rohanarun/alpoge-rh-replay",
+      "slug": "rohanarun__alpoge-rh-replay",
+      "github_url": "https://github.com/rohanarun/alpoge-rh-replay",
+      "trendshift_url": "https://trendshift.io/repositories/369342",
+      "language": "Python",
+      "description": "Independent replay of Alpöge’s claimed RH proof. Claim Lean modules and submit reproducible evidence.",
+      "stars": 74,
+      "forks": 78,
+      "stars_gained": 30,
+      "forks_gained": 29,
+      "score": 4875,
+      "created_at": "2026-11-20T16:01:19Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "atuizz/posewear",
+      "slug": "atuizz__posewear",
+      "github_url": "https://github.com/atuizz/posewear",
+      "trendshift_url": "https://trendshift.io/repositories/366894",
+      "language": "Python",
+      "description": "姿势、服装、人像参考图库，附中英文提示词，可在浏览器里 AI 试穿 · Pose, outfit & portrait reference library with bilingual prompts and in-browser AI try-on",
+      "stars": 1291,
+      "forks": 293,
+      "stars_gained": 586,
+      "forks_gained": 73,
+      "score": 4836,
+      "created_at": "2026-10-30T19:08:14Z",
+      "tags": [
+        "AI image generation"
+      ],
+      "social": []
+    },
+    {
+      "rank": 12,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 14388,
+      "forks": 910,
+      "stars_gained": 750,
+      "forks_gained": 2,
+      "score": 4822,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "slug": "bookwjitchieni1986__blender-ai-mcp-addon",
+      "github_url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "trendshift_url": "https://trendshift.io/repositories/369195",
+      "language": "",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "stars": 2310,
+      "forks": 31,
+      "stars_gained": 580,
+      "forks_gained": 25,
+      "score": 4690,
+      "created_at": "2026-11-19T14:43:10Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "mjmirza/app-store-compliance",
+      "slug": "mjmirza__app-store-compliance",
+      "github_url": "https://github.com/mjmirza/app-store-compliance",
+      "trendshift_url": "https://trendshift.io/repositories/100374",
+      "language": "Shell",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "stars": 3361,
+      "forks": 182,
+      "stars_gained": 674,
+      "forks_gained": 11,
+      "score": 4171,
+      "created_at": "2026-06-06T11:29:45Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "hatsunemiku-ai/google-one-tools",
+      "slug": "hatsunemiku-ai__google-one-tools",
+      "github_url": "https://github.com/hatsunemiku-ai/google-one-tools",
+      "trendshift_url": "https://trendshift.io/repositories/369805",
+      "language": "Python",
+      "description": "",
+      "stars": 1003,
+      "forks": 240,
+      "stars_gained": 670,
+      "forks_gained": 0,
+      "score": 4020,
+      "created_at": "2026-11-20T22:12:47Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "iamajmeena/neonclipping",
+      "slug": "iamajmeena__neonclipping",
+      "github_url": "https://github.com/iamajmeena/neonclipping",
+      "trendshift_url": "https://trendshift.io/repositories/367260",
+      "language": "Python",
+      "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "stars": 1719,
+      "forks": 76,
+      "stars_gained": 493,
+      "forks_gained": 19,
+      "score": 3990,
+      "created_at": "2026-11-19T10:00:43Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "HKUDS/CLI-Anything",
+      "slug": "HKUDS__CLI-Anything",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "trendshift_url": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 62043,
+      "forks": 5858,
+      "stars_gained": 695,
+      "forks_gained": 14,
+      "score": 3960,
+      "created_at": "2026-03-08T13:52:57Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "rustrak/rustrak",
+      "slug": "rustrak__rustrak",
+      "github_url": "https://github.com/rustrak/rustrak",
+      "trendshift_url": "https://trendshift.io/repositories/107953",
+      "language": "Rust",
+      "description": "Self-hosted, open-source Sentry alternative in Rust. Error tracking, performance, logs and AI agent traces in one small container that works with the Sentry SDKs. SQLite or PostgreSQL.",
+      "stars": 1572,
+      "forks": 68,
+      "stars_gained": 479,
+      "forks_gained": 1,
+      "score": 3834,
+      "created_at": "2026-01-22T10:36:38Z",
+      "tags": [
+        "Monitoring"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 131937,
+      "forks": 9268,
+      "stars_gained": 940,
+      "forks_gained": 14,
+      "score": 3779,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "kunkundi/crossdesk",
+      "slug": "kunkundi__crossdesk",
+      "github_url": "https://github.com/kunkundi/crossdesk",
+      "trendshift_url": "https://trendshift.io/repositories/17514",
+      "language": "C++",
+      "description": "A lightweight, cross-platform remote desktop software with support for Web Client access | 一款支持 Web 客户端访问的轻量级跨平台远程桌面软件。",
+      "stars": 5827,
+      "forks": 567,
+      "stars_gained": 464,
+      "forks_gained": 6,
+      "score": 3724,
+      "created_at": "2023-11-20T06:31:52Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "toeverything/AFFiNE",
+      "slug": "toeverything__AFFiNE",
+      "github_url": "https://github.com/toeverything/AFFiNE",
+      "trendshift_url": "https://trendshift.io/repositories/3381",
+      "language": "TypeScript",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "stars": 76253,
+      "forks": 5910,
+      "stars_gained": 493,
+      "forks_gained": 3,
+      "score": 3692,
+      "created_at": "2022-07-31T18:45:21Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "R0Y00/Xbox2Windows",
+      "slug": "R0Y00__Xbox2Windows",
+      "github_url": "https://github.com/R0Y00/Xbox2Windows",
+      "trendshift_url": "https://trendshift.io/repositories/370332",
+      "language": "Python",
+      "description": "Static recompilation research for Xbox Series X|S (Scarlett) on x64 Windows. GTA VI case study with shader translation, BC7 texture rendering, script-state replay and D3D12/PE checks.",
+      "stars": 870,
+      "forks": 12,
+      "stars_gained": 600,
+      "forks_gained": 0,
+      "score": 3600,
+      "created_at": "2026-11-20T17:43:52Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "BaaRai/ARTEX",
+      "slug": "BaaRai__ARTEX",
+      "github_url": "https://github.com/BaaRai/ARTEX",
+      "trendshift_url": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "stars": 15098,
+      "forks": 5596,
+      "stars_gained": 1400,
+      "forks_gained": 181,
+      "score": 3586,
+      "created_at": "2026-10-08T21:14:39Z",
+      "tags": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "mattpocock/skills",
+      "slug": "mattpocock__skills",
+      "github_url": "https://github.com/mattpocock/skills",
+      "trendshift_url": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "stars": 329737,
+      "forks": 29330,
+      "stars_gained": 832,
+      "forks_gained": 11,
+      "score": 3568,
+      "created_at": "2026-02-03T11:15:53Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "nexu-io/openmotion",
+      "slug": "nexu-io__openmotion",
+      "github_url": "https://github.com/nexu-io/openmotion",
+      "trendshift_url": "https://trendshift.io/repositories/29398",
+      "language": "TypeScript",
+      "description": "The open-source Claude Motion & CapCut alternative. Turn a reference video into editable motion graphics with your brand kit. Export MP4s for YouTube, YouTube Shorts, Instagram Reels, and TikTok. A full-stack agentic video studio with 300+ Motion.md guides and support for 22 agents, including Claude Code, Codex, DSH, and WorkBuddy.",
+      "stars": 14682,
+      "forks": 1478,
+      "stars_gained": 762,
+      "forks_gained": 10,
+      "score": 3530,
+      "created_at": "2026-05-11T09:40:38Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    }
+  ]
+}

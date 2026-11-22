@@ -1,0 +1,56 @@
+{
+  "full_name": "mattpocock/skills",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "現場の開発者向けエージェントスキル集",
+  "category": "AI開発ツール",
+  "summary_ja": "作者が日常的に使っているAIエージェント向けスキル(プロンプト集)を公開したリポジトリ。要件のすり合わせ(grill系)など、小さく組み合わせやすいスキルを提供し、モデルを問わず使えるとされる。",
+  "features": [
+    "/grill-me・/grill-with-docs による要件の掘り下げ",
+    "Claude Code・Codex・Copilot・Geminiなど多数のエージェントに対応",
+    "プラグインまたはnpxでの導入",
+    "/setup-matt-pocock-skills による初期設定"
+  ],
+  "how_to_use": {
+    "steps": [
+      "利用するエージェント向けのコマンドでスキルを導入する",
+      "その他のエージェントは npx skills でファイルを追加する",
+      "インストール時に setup-matt-pocock-skills を含める",
+      "リポジトリごとに /setup-matt-pocock-skills を1回実行して課題管理やラベルを設定する"
+    ],
+    "code": "claude plugin install mattpocock-skills@claude-plugins-official\nnpx skills@latest add mattpocock/skills -a <agent>"
+  },
+  "effects": [
+    "エージェントとの認識ずれを減らせる",
+    "冗長な出力の抑制に役立つ",
+    "自分用に改変しやすい"
+  ],
+  "domains": [
+    {
+      "area": "ソフトウェア開発",
+      "example": "機能追加前の要件整理"
+    },
+    {
+      "area": "個人開発",
+      "example": "AIとの作業手順の標準化"
+    },
+    {
+      "area": "チーム開発",
+      "example": "共通スキルとして配布"
+    },
+    {
+      "area": "非コード作業",
+      "example": "grill-meによる思考整理"
+    }
+  ],
+  "target_users": "AIコーディングエージェントを使いこなしたい開発者。",
+  "cautions": [
+    "スキルはプロンプトであり、導入前に内容を確認すること",
+    "プラグインとnpxの両方を入れるとスキルが重複する",
+    "ライセンスはREADME上で確認できなかった"
+  ],
+  "license": null,
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

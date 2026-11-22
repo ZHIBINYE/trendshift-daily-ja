@@ -1,0 +1,56 @@
+{
+  "full_name": "kunkundi/crossdesk",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "Webクライアント対応の軽量リモートデスクトップ",
+  "category": "開発ツール",
+  "summary_ja": "PC・ブラウザ・スマホ・ターミナルから遠隔のPCに接続できる、軽量なクロスプラットフォームのリモートデスクトップ。複数端末を一覧操作できる「デスクトップウォール」やAgent/MCP連携を備え、セルフホストにも対応する。",
+  "features": [
+    "Windows・macOS・Linux・iOS・Android・HarmonyOSなどに対応",
+    "Webクライアントとターミナル用CLI",
+    "複数端末を扱うデスクトップウォール(DeskHub)",
+    "IP直接接続・信頼済みデバイス・MCP連携"
+  ],
+  "how_to_use": {
+    "steps": [
+      "公式サイトまたはReleasesから各OS向けクライアントを入手する",
+      "被操作側PCで起動し、9桁のデバイスIDとパスワードを確認する",
+      "操作側で相手のIDを入力して接続する",
+      "CLIはnpmで導入できる"
+    ],
+    "code": "npm install -g @chunkdash/crossdesk-cli@latest"
+  },
+  "effects": [
+    "リモート作業の準備を簡略化できる",
+    "ブラウザだけで遠隔PCへ接続できる",
+    "複数端末をまとめて監視・操作できる"
+  ],
+  "domains": [
+    {
+      "area": "リモートワーク",
+      "example": "自宅から会社PCを操作"
+    },
+    {
+      "area": "IT保守",
+      "example": "遠隔サポート"
+    },
+    {
+      "area": "サーバー運用",
+      "example": "ヘッドレス環境のデスクトップ操作"
+    },
+    {
+      "area": "AIエージェント活用",
+      "example": "MCP経由での遠隔PC操作"
+    }
+  ],
+  "target_users": "軽量で自前運用もできるリモートデスクトップを探している個人・小規模チーム。",
+  "cautions": [
+    "遠隔操作ツールのため、IDとパスワードの管理と接続元の制限を徹底すること",
+    "画面収録・アクセシビリティ権限(macOS)の付与が必要",
+    "GPL-3.0-onlyの条件に従うこと"
+  ],
+  "license": "GPL-3.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "full_name": "ItsNotRexed/Leonida",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "Xbox版GTA VIをPCで動かす静的再コンパイル",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "Xbox Series向けGTA VIを、利用者自身が所有するコピーからWindows上でネイティブ動作させることを目指す静的再コンパイルのプロジェクト。READMEによればゲーム本体・鍵・実行ファイルは含まれず、現時点ではゲームは起動しない初期段階。",
+  "features": [
+    "RDNA2のGPUプログラム(約26,500本のシェーダー)をSPIR-Vへ変換しVulkanで利用",
+    "モデル(OBJ)・テクスチャ(DDS)・オーディオの書き出し",
+    "所有コピーの自動検出とバージョン確認(Xbox Series 1.0.2.1)",
+    "Build.batによるビルドの自動化と中断からの再開"
+  ],
+  "how_to_use": {
+    "steps": [
+      "README記載の前提(Python 3.11+、.NET 8 SDK、Vulkan SDK、LLVM 21+、Visual Studio 2022等)を用意する",
+      "利用者自身が所有するXbox Series版パッケージのファイルを、読み取り可能な状態でディスク上に用意する",
+      "git clone --recursive でサブモジュール込みで取得する",
+      "Build.bat を実行して、結果を Documents\\Leonida に生成する"
+    ],
+    "code": "git clone --recursive https://github.com/ItsNotRexed/Leonida"
+  },
+  "effects": [
+    "シェーダー変換やアセット抽出の技術検証が進められる",
+    "Xbox向けコードをPCで動かす静的再コンパイルの手法を学べる",
+    "13種のGPUでのテスト結果が公開され、互換性の目安になる"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム技術研究",
+      "example": "RDNA2シェーダーをSPIR-Vへ変換する仕組みの調査"
+    },
+    {
+      "area": "ソフトウェア保存・互換性研究",
+      "example": "コンソール向けソフトをPCで動かす手法の検証"
+    },
+    {
+      "area": "グラフィックス開発",
+      "example": "Vulkanパイプライン生成の検証事例として参照"
+    },
+    {
+      "area": "OSS開発コミュニティ",
+      "example": "未解決課題へのコントリビュート"
+    }
+  ],
+  "target_users": "静的再コンパイルやGPU/シェーダー解析に関心がある上級開発者。",
+  "cautions": [
+    "正規に所有するソフトのみを対象とすること。著作権・利用規約上のリスクがあり得る",
+    "ゲームは未起動の初期段階で、約350GBの空き容量と多数のツールが必要",
+    "リポジトリ作成から日が浅く、成熟度は不明"
+  ],
+  "license": "GPL-3.0",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "リポジトリ作成が2026-11-20で、約1日で4,000超のスターが増加",
+      "著作権のある商用ゲームの移植を扱っており、法的リスクがあり得る"
+    ]
+  }
+}

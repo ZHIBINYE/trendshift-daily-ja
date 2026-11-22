@@ -1,0 +1,55 @@
+{
+  "full_name": "ChiefGyk3D/Clouds-Against-Humanity",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "クラウドセキュリティを自作で学ぶホームラボ",
+  "category": "インフラ・DevOps",
+  "summary_ja": "DigitalOcean上に、公開インバウンドポートを持たない小規模な環境をOpenTofuで構築し、ゼロトラストやDevSecOpsを学ぶための教材リポジトリ。授業内容の本体はWikiにある。",
+  "features": [
+    "OpenTofuによるレイヤー分けされたスタックとモジュール",
+    "Spacelift・Doppler・Twingateを使った適用・秘密管理・接続",
+    "コストの上限チェックやポリシーテスト(OPA)",
+    "初心者向けのWiki教材と学習順序"
+  ],
+  "how_to_use": {
+    "steps": [
+      "READMEとWikiの「Start Here」を読む",
+      "OpenTofu 1.8以上、Python 3、OPAを用意する",
+      "コスト確認やテストのスクリプトを実行して構成を確認する",
+      "自分のアカウントで段階的に適用する"
+    ],
+    "code": "python3 -I scripts/cost_check.py --root .\npython3 -I -m pytest tests -q\ntofu -chdir=modules/firewall init -backend=false\ntofu -chdir=modules/firewall test"
+  },
+  "effects": [
+    "ゼロトラスト構成の実例から設計の考え方を学べる",
+    "IaCのテスト・コスト管理の流れを体験できる",
+    "公開ポートなしで管理環境に到達する構成を理解できる"
+  ],
+  "domains": [
+    {
+      "area": "インフラ学習",
+      "example": "IaCとクラウド構成の入門教材"
+    },
+    {
+      "area": "セキュリティ教育",
+      "example": "ゼロトラスト構成の学習"
+    },
+    {
+      "area": "社内勉強会",
+      "example": "ホームラボ拡張の題材"
+    },
+    {
+      "area": "個人開発",
+      "example": "安価な検証環境の構築"
+    }
+  ],
+  "target_users": "クラウドとIaCを基礎から実践的に学びたい初級〜中級のエンジニア。",
+  "cautions": [
+    "実環境の適用には自分のクラウドアカウントと利用料金が必要",
+    "利用サービス(Spacelift、Doppler、Twingate等)の契約・設定が前提と考えられる"
+  ],
+  "license": null,
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

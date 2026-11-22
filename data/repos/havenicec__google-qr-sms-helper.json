@@ -1,0 +1,55 @@
+{
+  "full_name": "havenicec/google-qr-sms-helper",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "Googleの二次認証をSMS方式へ戻すChrome拡張",
+  "category": "その他",
+  "summary_ja": "Googleのデスクトップ向けQRコード認証を、従来の6桁SMS認証へ戻すとされるChrome拡張(Manifest V3)。READMEは中国語主体で、Cloud Shellの認証画面を経由して降格させる手順を案内している。",
+  "features": [
+    "QRコード認証画面からSMS選択へ切り替えるボタンを画面上に表示",
+    "ブラウザのBarcodeDetectorでQRコードを識別",
+    "Google側のRPC呼び出しで認証方式を変更する処理",
+    "Chrome / Edge / Braveに対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Releasesのzipをダウンロードして解凍する、またはgit cloneで取得する",
+      "chrome://extensions/ を開き、デベロッパーモードを有効にする",
+      "「パッケージ化されていない拡張機能を読み込む」でフォルダを選ぶ",
+      "READMEの手順に従い、Google Cloud Consoleから認証画面を開いて拡張のボタンで切り替える"
+    ],
+    "code": "git clone https://github.com/havenicec/google-qr-sms-helper.git"
+  },
+  "effects": [
+    "QR認証が使えない環境でSMS認証へ切り替えられるとされる",
+    "認証手順の操作を一部自動化する"
+  ],
+  "domains": [
+    {
+      "area": "個人アカウント管理",
+      "example": "QR認証を使えない端末での認証"
+    },
+    {
+      "area": "開発者",
+      "example": "クラウド系開発ツールのログイン時の認証"
+    },
+    {
+      "area": "ブラウザ拡張の学習",
+      "example": "MV3拡張の実装例として読む"
+    }
+  ],
+  "target_users": "Googleアカウントの認証方式の挙動を理解したうえで自己責任で試せる開発者。",
+  "cautions": [
+    "Googleのセキュリティ機構を回避する性質があり、利用規約違反やアカウント停止のリスクがある",
+    "アカウントの認証画面で動作する拡張のため、導入前にソースコードを確認すること",
+    "自分が管理するアカウントでのみ使うこと"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "Googleの認証方式を書き換える拡張で、アカウント保護機構を回避する性質がある",
+      "Releasesのzipの導入を「推奨」としている",
+      "作成が2026-10-26で、スターが短期間に急増"
+    ]
+  }
+}

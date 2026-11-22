@@ -1,0 +1,56 @@
+{
+  "full_name": "rustrak/rustrak",
+  "analyzed_at": "2026-11-22",
+  "title_ja": "Rust製の軽量セルフホストSentry代替",
+  "category": "インフラ・DevOps",
+  "summary_ja": "Sentryのプロトコルに対応した、セルフホスト型のエラー追跡ツール。ログ・トランザクション・リリースの健全性・AIエージェントのトレースも扱う。既定ではSQLiteで、1つのコンテナで動く。",
+  "features": [
+    "Sentry SDKの接続先を変えるだけで利用可能",
+    "SQLite(既定)またはPostgreSQL",
+    "ダッシュボードとAPIを1プロセスで配信",
+    "受信を先に保存する2段階の取り込み"
+  ],
+  "how_to_use": {
+    "steps": [
+      "docker-compose.ymlを用意する",
+      "SESSION_SECRET_KEYとCREATE_SUPERUSERを環境変数に設定する",
+      "docker compose up -d で起動する",
+      "http://localhost:8080 にサインインし、SDKの接続先(DSN)を変更する"
+    ],
+    "code": "export SESSION_SECRET_KEY=$(openssl rand -hex 32)\nexport CREATE_SUPERUSER=admin@example.com:changeme123\ndocker compose up -d"
+  },
+  "effects": [
+    "SaaSのエラー監視の費用を抑えられる",
+    "データを自社環境に置ける",
+    "既存のSentry SDKを書き換えずに移行できる"
+  ],
+  "domains": [
+    {
+      "area": "Webサービス運用",
+      "example": "アプリのエラー監視を自社で運用"
+    },
+    {
+      "area": "小規模チーム",
+      "example": "1台のサーバーで障害検知"
+    },
+    {
+      "area": "AIエージェント開発",
+      "example": "エージェントのトレース確認"
+    },
+    {
+      "area": "SRE",
+      "example": "ログとリリース健全性の確認"
+    }
+  ],
+  "target_users": "Sentryのコストやインフラ負荷を抑えたいチーム。",
+  "cautions": [
+    "AGPL-3.0のため、改変して提供する場合の公開義務に注意",
+    "READMEのサンプルのパスワード(changeme123)は必ず変更すること",
+    "大規模運用はPostgreSQL構成を検討"
+  ],
+  "license": "AGPL-3.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}
