@@ -1,0 +1,62 @@
+{
+  "full_name": "baidu/Unlimited-OCR",
+  "title_ja": "百ページ級の文書を一括解析する長文OCRモデル",
+  "category": "研究・学術",
+  "summary_ja": "Baidu が公開する文書解析（OCR）モデル。第2版は SR-SWA（疎な参照スライディングウィンドウ注意）により、文書が長くなってもデコード時の遅延とメモリがほぼ一定になるとされる。複数ページを1回のリクエストで解析できる。",
+  "features": [
+    "複数ページを1リクエストで解析し、ページをまたぐ文脈を利用（infer_multi）",
+    "SR-SWA で注意の対象を固定長（例: 512トークン）に抑え、超長文書でも計算量を抑制",
+    "Transformers（手軽な検証用）と SGLang（サービング推奨）の両方で推論可能",
+    "vLLM、ms-swift による学習、Hugging Face / ModelScope 配布に対応",
+    "README では数十ページ・百ページ級のベンチマークで最高水準と主張"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Python 3.10 環境を用意し、README 記載の依存パッケージをインストールする",
+      "Transformers で baidu/Unlimited-OCR-2 を読み込む（GPU が前提）",
+      "ページ画像を順番に並べて infer_multi に渡し、解析結果を得る",
+      "サービングする場合は README の手順で SGLang 環境を構築する"
+    ],
+    "code": "pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \\\n  tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13"
+  },
+  "effects": [
+    "長い契約書・論文・報告書をページ分割せずに文脈を保って構造化できる",
+    "文書長に依存しにくい遅延とメモリで、大量ページの処理コストを見通しやすい",
+    "オンライン体験版（Hugging Face Spaces、Baidu AI Cloud）で導入前に試せる",
+    "MIT ライセンスで商用利用の自由度が高い"
+  ],
+  "domains": [
+    {
+      "area": "法務・契約管理",
+      "example": "数百ページの契約書を一括でテキスト化し、条項検索に利用"
+    },
+    {
+      "area": "金融・経理",
+      "example": "決算資料や請求書の束から表・数値を抽出"
+    },
+    {
+      "area": "研究・図書館",
+      "example": "論文や書籍のスキャンをデジタル化して全文検索可能にする"
+    },
+    {
+      "area": "行政・医療",
+      "example": "紙の長大な記録を電子化して検索・分析"
+    },
+    {
+      "area": "RAG・LLM前処理",
+      "example": "PDFをLLMが扱える構造化テキストへ変換"
+    }
+  ],
+  "target_users": "長大な文書のOCR・構造化を必要とし、GPU環境を用意できる研究者・開発者。",
+  "cautions": [
+    "README の検証環境は NVIDIA A800-80GB で、GPU とバージョン固定の依存関係が必要",
+    "性能数値は開発元の主張であり、自社文書での精度確認が必要",
+    "trust_remote_code=True でモデル付属コードを実行するため、取得元を確認すること"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-22"
+}

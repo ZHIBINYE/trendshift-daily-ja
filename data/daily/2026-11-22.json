@@ -1,0 +1,522 @@
+{
+  "date": "2026-11-22",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "ItsNotRexed/Leonida",
+      "slug": "ItsNotRexed__Leonida",
+      "github_url": "https://github.com/ItsNotRexed/Leonida",
+      "trendshift_url": "https://trendshift.io/repositories/370687",
+      "language": "Python",
+      "description": "",
+      "stars": 14136,
+      "forks": 935,
+      "stars_gained": 9789,
+      "forks_gained": 593,
+      "score": 69311,
+      "created_at": "2026-11-20T20:07:13Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "havenicec/google-qr-sms-helper",
+      "slug": "havenicec__google-qr-sms-helper",
+      "github_url": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshift_url": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "stars": 3023,
+      "forks": 586,
+      "stars_gained": 1181,
+      "forks_gained": 174,
+      "score": 9796,
+      "created_at": "2026-10-26T10:44:47Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "EL4CTEO/fast-anything",
+      "slug": "EL4CTEO__fast-anything",
+      "github_url": "https://github.com/EL4CTEO/fast-anything",
+      "trendshift_url": "https://trendshift.io/repositories/371252",
+      "language": "Rust",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "stars": 1767,
+      "forks": 12,
+      "stars_gained": 1591,
+      "forks_gained": 0,
+      "score": 9546,
+      "created_at": "2026-11-21T14:40:27Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "shinyobjectz/raea",
+      "slug": "shinyobjectz__raea",
+      "github_url": "https://github.com/shinyobjectz/raea",
+      "trendshift_url": "https://trendshift.io/repositories/338946",
+      "language": "TypeScript",
+      "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
+      "stars": 4183,
+      "forks": 295,
+      "stars_gained": 1093,
+      "forks_gained": 61,
+      "score": 8866,
+      "created_at": "2026-10-18T18:08:48Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "pingdotgg/t3code",
+      "slug": "pingdotgg__t3code",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "trendshift_url": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "stars": 71502,
+      "forks": 13269,
+      "stars_gained": 2046,
+      "forks_gained": 26,
+      "score": 6182,
+      "created_at": "2026-02-08T23:46:22Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "ChiefGyk3D/Clouds-Against-Humanity",
+      "slug": "ChiefGyk3D__Clouds-Against-Humanity",
+      "github_url": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+      "trendshift_url": "https://trendshift.io/repositories/309875",
+      "language": "Python",
+      "description": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "stars": 2753,
+      "forks": 167,
+      "stars_gained": 724,
+      "forks_gained": 15,
+      "score": 5822,
+      "created_at": "2026-10-10T17:50:27Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 7,
+      "full_name": "baidu/Unlimited-OCR",
+      "slug": "baidu__Unlimited-OCR",
+      "github_url": "https://github.com/baidu/Unlimited-OCR",
+      "trendshift_url": "https://trendshift.io/repositories/62053",
+      "language": "Python",
+      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+      "stars": 32080,
+      "forks": 3492,
+      "stars_gained": 686,
+      "forks_gained": 8,
+      "score": 5504,
+      "created_at": "2026-06-18T08:40:15Z",
+      "tags": [
+        "Document parsing"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "stars": 2075,
+      "forks": 234,
+      "stars_gained": 668,
+      "forks_gained": 76,
+      "score": 5496,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "bol-van/zapret",
+      "slug": "bol-van__zapret",
+      "github_url": "https://github.com/bol-van/zapret",
+      "trendshift_url": "https://trendshift.io/repositories/10967",
+      "language": "C",
+      "description": "DPI bypass multi platform",
+      "stars": 17236,
+      "forks": 1162,
+      "stars_gained": 678,
+      "forks_gained": 15,
+      "score": 5454,
+      "created_at": "2016-02-15T13:30:50Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 17688,
+      "forks": 1900,
+      "stars_gained": 1735,
+      "forks_gained": 17,
+      "score": 5002,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "omonkeyz/xbox-emulator",
+      "slug": "omonkeyz__xbox-emulator",
+      "github_url": "https://github.com/omonkeyz/xbox-emulator",
+      "trendshift_url": "https://trendshift.io/repositories/370837",
+      "language": "Python",
+      "description": "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)",
+      "stars": 1269,
+      "forks": 71,
+      "stars_gained": 555,
+      "forks_gained": 33,
+      "score": 4510,
+      "created_at": "2026-11-21T08:08:39Z",
+      "tags": [
+        "Emulator"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "anefzaoui/misterdownloadmanager",
+      "slug": "anefzaoui__misterdownloadmanager",
+      "github_url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshift_url": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "stars": 16539,
+      "forks": 1435,
+      "stars_gained": 1043,
+      "forks_gained": 76,
+      "score": 4103,
+      "created_at": "2026-10-29T01:25:19Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "stars": 206955,
+      "forks": 11265,
+      "stars_gained": 854,
+      "forks_gained": 9,
+      "score": 4071,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 132930,
+      "forks": 9357,
+      "stars_gained": 996,
+      "forks_gained": 14,
+      "score": 4034,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "Augani/openreel-video",
+      "slug": "Augani__openreel-video",
+      "github_url": "https://github.com/Augani/openreel-video",
+      "trendshift_url": "https://trendshift.io/repositories/27016",
+      "language": "TypeScript",
+      "description": "OpenReel Video - Professional browser-based video editor. Open source CapCut alternative. 100% browser-based, no installation, no cloud uploads, no watermarks.",
+      "stars": 6215,
+      "forks": 919,
+      "stars_gained": 499,
+      "forks_gained": 7,
+      "score": 4006,
+      "created_at": "2026-01-19T11:24:02Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "FlorianBruniaux/claude-code-ultimate-guide",
+      "slug": "FlorianBruniaux__claude-code-ultimate-guide",
+      "github_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "trendshift_url": "https://trendshift.io/repositories/23471",
+      "language": "Python",
+      "description": "The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, quizzes, and production-ready templates. 430K+ lines.",
+      "stars": 6976,
+      "forks": 859,
+      "stars_gained": 468,
+      "forks_gained": 1,
+      "score": 3746,
+      "created_at": "2026-01-09T13:42:10Z",
+      "tags": [
+        "Learning resources"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "WhiteTowerAI/ohmygame",
+      "slug": "WhiteTowerAI__ohmygame",
+      "github_url": "https://github.com/WhiteTowerAI/ohmygame",
+      "trendshift_url": "https://trendshift.io/repositories/291307",
+      "language": "TypeScript",
+      "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
+      "stars": 3046,
+      "forks": 360,
+      "stars_gained": 434,
+      "forks_gained": 39,
+      "score": 3550,
+      "created_at": "2026-08-11T02:24:24Z",
+      "tags": [
+        "Game engine"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 15066,
+      "forks": 947,
+      "stars_gained": 676,
+      "forks_gained": 0,
+      "score": 3461,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "atuizz/posewear",
+      "slug": "atuizz__posewear",
+      "github_url": "https://github.com/atuizz/posewear",
+      "trendshift_url": "https://trendshift.io/repositories/366894",
+      "language": "Python",
+      "description": "姿势、服装、人像参考图库，附中英文提示词，可在浏览器里 AI 试穿 · Pose, outfit & portrait reference library with bilingual prompts and in-browser AI try-on",
+      "stars": 1743,
+      "forks": 390,
+      "stars_gained": 447,
+      "forks_gained": 54,
+      "score": 3460,
+      "created_at": "2026-10-30T19:08:14Z",
+      "tags": [
+        "AI image generation"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "HKUDS/CLI-Anything",
+      "slug": "HKUDS__CLI-Anything",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "trendshift_url": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 62740,
+      "forks": 5927,
+      "stars_gained": 696,
+      "forks_gained": 11,
+      "score": 3451,
+      "created_at": "2026-03-08T13:52:57Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "toeverything/AFFiNE",
+      "slug": "toeverything__AFFiNE",
+      "github_url": "https://github.com/toeverything/AFFiNE",
+      "trendshift_url": "https://trendshift.io/repositories/3381",
+      "language": "TypeScript",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "stars": 76792,
+      "forks": 5930,
+      "stars_gained": 536,
+      "forks_gained": 3,
+      "score": 3401,
+      "created_at": "2022-07-31T18:45:21Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "R0Y00/Xbox2Windows",
+      "slug": "R0Y00__Xbox2Windows",
+      "github_url": "https://github.com/R0Y00/Xbox2Windows",
+      "trendshift_url": "https://trendshift.io/repositories/370332",
+      "language": "Python",
+      "description": "Static recompilation research for Xbox Series X|S (Scarlett) on x64 Windows. GTA VI case study with shader translation, BC7 texture rendering, script-state replay and D3D12/PE checks.",
+      "stars": 1279,
+      "forks": 116,
+      "stars_gained": 402,
+      "forks_gained": 34,
+      "score": 3386,
+      "created_at": "2026-11-20T17:43:52Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "pithings/unkernel",
+      "slug": "pithings__unkernel",
+      "github_url": "https://github.com/pithings/unkernel",
+      "trendshift_url": "https://trendshift.io/repositories/360041",
+      "language": "TypeScript",
+      "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+      "stars": 1103,
+      "forks": 52,
+      "stars_gained": 412,
+      "forks_gained": 9,
+      "score": 3314,
+      "created_at": "2026-11-12T22:06:00Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "diggerhq/opencomputer",
+      "slug": "diggerhq__opencomputer",
+      "github_url": "https://github.com/diggerhq/opencomputer",
+      "trendshift_url": "https://trendshift.io/repositories/39744",
+      "language": "TypeScript",
+      "description": "An open-source, faster Devin alternative",
+      "stars": 1528,
+      "forks": 150,
+      "stars_gained": 407,
+      "forks_gained": 9,
+      "score": 3274,
+      "created_at": "2025-12-09T23:35:00Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 13400,
+      "forks": 2142,
+      "stars_gained": 583,
+      "forks_gained": 6,
+      "score": 3184,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    }
+  ]
+}

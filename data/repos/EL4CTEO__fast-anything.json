@@ -1,0 +1,61 @@
+{
+  "full_name": "EL4CTEO/fast-anything",
+  "title_ja": "遅い5%だけをRustに置き換える高速化CLI",
+  "category": "AI開発ツール",
+  "summary_ja": "アプリをプロファイリングして遅い関数を特定し、コーディングエージェントにその関数だけをRustへ移植させるCLI。実際に記録した呼び出しで同じ結果になることを検証してから差し替える。いつでも元に戻せる。",
+  "features": [
+    "scan で実行時間と移植しやすさから対象関数をランク付け",
+    "port で最大500件の実呼び出しを記録し、1関数ぶんのRustクレートと TASK.md を生成",
+    "verify でリリースビルドし、記録した呼び出しとエッジケースを再生して一致を確認",
+    "enable / disable で差し替えと復元（元のコードはバイト単位で戻る）",
+    "Claude Code プラグイン・MCPサーバー・スキルとして利用可能"
+  ],
+  "how_to_use": {
+    "steps": [
+      "npm または cargo で fast-anything をインストールし、Rustツールチェーン（rustup）を用意する",
+      "`fast-anything go --agent claude -- <実行コマンド>` でプロファイル→移植→検証→差し替えを一括実行する",
+      "段階的に行う場合は scan → port → verify → enable の順に実行する",
+      "bench で元のアプリと移植後の実行時間を比較し、report でPR用のレポートを出す"
+    ],
+    "code": "npm i -g @el4cteo/fast-anything      # or: cargo install fast-anything\nfast-anything go --agent claude -- python app.py"
+  },
+  "effects": [
+    "ホットパスだけをRust化するため、アプリ全体の書き直しより工数とコンパイル時間を抑えられる",
+    "README の計測では、ファジー重複排除で Python 116倍・PHP 55倍・TypeScript 20倍の高速化",
+    "記録した実呼び出しとの照合で、移植による挙動の食い違いを検出できる",
+    "FAST_ANYTHING_DISABLE=1 でいつでも元の実装に戻せる"
+  ],
+  "domains": [
+    {
+      "area": "Webバックエンド開発",
+      "example": "Python/Node/Ruby製APIの重い文字列処理や集計関数だけをRust化して応答時間を短縮"
+    },
+    {
+      "area": "データ処理・ETL",
+      "example": "名寄せ・重複排除など計算量の大きいバッチ処理の高速化"
+    },
+    {
+      "area": "AIコーディング支援",
+      "example": "Claude Code や Codex に移植作業を任せ、検証ループを自動化"
+    },
+    {
+      "area": "レガシー資産の延命",
+      "example": "全面刷新せず、ボトルネックの関数だけを置き換えて性能問題を解消"
+    }
+  ],
+  "target_users": "性能ボトルネックを抱える既存アプリを、書き直さずに部分的に高速化したい開発者・チーム。",
+  "cautions": [
+    "対象は引数・戻り値が単純なデータの決定的な関数で、それ以外は移植できない",
+    "コンパイルにRustツールチェーンが必要で、移植コードの生成はエージェント（LLM）に依存する",
+    "リポジトリ作成から1日で急速にスターが増えており、成熟度は未知数。導入前に挙動を確認すること"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "リポジトリ作成が2026-11-21で、1日で約1,600スターが増えている",
+      "ソースコード（Rust）・CI・npm/crates.io 公開があり、ダウンロード実行を促す形式ではない"
+    ]
+  },
+  "analyzed_at": "2026-11-22"
+}

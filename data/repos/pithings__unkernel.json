@@ -1,0 +1,58 @@
+{
+  "full_name": "pithings/unkernel",
+  "title_ja": "WebAssemblyで動く本物のLinuxカーネル",
+  "category": "インフラ・DevOps",
+  "summary_ja": "Linux 7.x を単一の wasm モジュールとしてビルドし、ブラウザや Node.js 上で1秒未満でシェルまで起動するプロジェクト。カーネルはエミュレーションでなくコンパイル済みコードで、ユーザープログラム（aarch64 バイナリ）のみをエミュレートする。",
+  "features": [
+    "MMU 付きのカーネル（fork、mmap、スレッド、シグナルが通常のLinux同様に動作）",
+    "ext4、overlayfs、9p、FUSE や、LinuxのTCP/IPスタックを備える",
+    "Alpine と Debian を起動でき、apk / apt でパッケージを導入可能",
+    "aarch64 コードの JIT で高速化",
+    "ターミナル用 CLI と JavaScript SDK を提供"
+  ],
+  "how_to_use": {
+    "steps": [
+      "ブラウザで公式のデモページを開くと、Linux シェルがすぐ使える",
+      "ターミナルから `npx unkernel` を実行して Alpine を起動する（終了は Ctrl-]）",
+      "`--distro debian` を付けると Debian 13 で起動する",
+      "アプリへ組み込む場合は JavaScript SDK を利用する"
+    ],
+    "code": "npx unkernel\nnpx unkernel --distro debian"
+  },
+  "effects": [
+    "サーバーやインストールなしで、使い捨てのLinux環境を即座に用意できる",
+    "ブラウザ内で隔離して実行されるため、サンドボックスとして利用できる",
+    "READMEの計測では syscall や fork がネイティブに近いコストで動く",
+    "CI やテスト、教育用の再現可能な環境に使える"
+  ],
+  "domains": [
+    {
+      "area": "教育・学習",
+      "example": "Linux コマンドの演習をブラウザだけで提供"
+    },
+    {
+      "area": "Web アプリ開発",
+      "example": "オンラインIDEやドキュメントにLinuxシェルを埋め込む"
+    },
+    {
+      "area": "AI エージェント",
+      "example": "エージェントのコード実行を安全に隔離するサンドボックスとして利用"
+    },
+    {
+      "area": "CI・テスト",
+      "example": "Node.js からカーネル込みの環境を起動して検証"
+    }
+  ],
+  "target_users": "ブラウザや Node.js 上で本物の Linux 環境を使いたい開発者や、サンドボックスを探しているチーム。",
+  "cautions": [
+    "IPv6、DNS/DHCP 以外の UDP、外部からの受信接続、ptrace（strace/gdb）などは未対応",
+    "CPU負荷の高い処理はネイティブよりかなり遅い（例: apk add python3 が約3.4秒）",
+    "ライセンスは原則 GPL-2.0-or-later で、一部ファイルは MIT。組み込み前に確認すること"
+  ],
+  "license": "GPL-2.0-or-later（一部 MIT）",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-22"
+}

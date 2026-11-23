@@ -1,0 +1,58 @@
+{
+  "full_name": "Augani/openreel-video",
+  "title_ja": "ブラウザ完結のオープンソース動画エディタ",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "CapCut の代替を目指す、ブラウザだけで動作する動画編集ソフト。WebCodecs と WebGPU を使い、アップロードやインストールなしでクライアント側だけで編集・書き出しができる。",
+  "features": [
+    "複数トラックのタイムライン、フレーム単位のカット・トリム・分割、キーフレームアニメーション",
+    "エフェクト、トランジション、ブレンドモード、速度変更、クロマキー",
+    "テキストアニメーション、カラオケ風字幕、SRT 取り込み",
+    "カラーグレーディング（カラーホイール、カーブ、LUT）と音声エフェクト（EQ、ノイズ除去、ダッキング）",
+    "MP4/WebM/ProRes や 4K 60fps での書き出し、画面録画"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Chrome または Edge で openreel.video を開くとすぐ編集できる",
+      "ローカルで動かす場合は、リポジトリを clone して Node.js 18+ で pnpm install する",
+      "`pnpm dev` で開発サーバーを起動し、ブラウザで localhost:5173 を開く",
+      "AIチャットで編集したい場合は AI Editor のセットアップガイドに従い、自分のAPIキーを設定する"
+    ],
+    "code": "git clone https://github.com/Augani/openreel-video.git\ncd openreel-video\npnpm install\npnpm dev"
+  },
+  "effects": [
+    "動画がデバイスの外に出ないため、機密性の高い素材も扱える",
+    "インストール不要・透かしなしで、環境を選ばず編集できる",
+    "GPU・ハードウェアエンコードにより4K編集と書き出しを高速化",
+    "MIT ライセンスで自社向けにカスタマイズや組み込みが可能"
+  ],
+  "domains": [
+    {
+      "area": "SNS・マーケティング",
+      "example": "ショート動画の字幕付き編集と書き出し"
+    },
+    {
+      "area": "教育・研修",
+      "example": "講義や操作説明の動画にテロップとナレーションを追加"
+    },
+    {
+      "area": "企業の社内広報",
+      "example": "社外にアップロードできない素材をブラウザ内で編集"
+    },
+    {
+      "area": "ソフトウェア開発",
+      "example": "動画編集機能を自社Webアプリに組み込むための参考実装"
+    }
+  ],
+  "target_users": "インストール不要で安全に動画編集したい個人クリエイターや、Web 動画編集機能を実装したい開発者。",
+  "cautions": [
+    "README に Beta と記載されており、成熟度に注意",
+    "WebGPU・WebCodecs が必要で、対応ブラウザは Chrome/Edge が中心",
+    "AI チャット機能を使う場合は自分で用意した外部AIのAPIキーが必要"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-22"
+}

@@ -1,0 +1,58 @@
+{
+  "full_name": "bol-van/zapret",
+  "title_ja": "DPI検閲を回避するスタンドアロンツール",
+  "category": "セキュリティ",
+  "summary_ja": "外部サーバーを使わずに、DPI（ディープパケットインスペクション）によるHTTP(S)サイトのブロックや速度制限を回避するツール。パケットを分割・改変してDPIの判定を妨げる方式で、主にロシア向けだが多くの機能は一般的。README 冒頭で zapret 1 は開発終了とされ、後継は zapret2。",
+  "features": [
+    "nfqws: パケットを加工（TCP分割、偽パケット、ヘッダ改変など）して DPI を回避",
+    "tpws: 透過プロキシ型で TCP を分割するなどして回避",
+    "ブロック対象のドメイン・IPリストの取得、ホスト名フィルタ、autohostlist モード",
+    "OpenWRT、Linux、FreeBSD、OpenBSD、Windows、一部 macOS に対応",
+    "iptables / nftables との連携"
+  ],
+  "how_to_use": {
+    "steps": [
+      "README の「Checking ISP」でプロバイダのDPIの挙動を確認する",
+      "対象OS（デスクトップLinux、OpenWRT、Windows など）向けの Installation 手順に従って導入する",
+      "nfqws または tpws の回避パラメータをプロバイダに合わせて選ぶ",
+      "必要に応じてドメインリスト（autohostlist など）と起動方式を設定する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "外部のVPNやプロキシなしで、特定サイトへの接続制限を回避できる可能性がある",
+    "OpenWRT ルーターに入れて、ネットワーク全体に適用できる",
+    "autohostlist により、ブロックされたホストだけに回避処理を適用できる",
+    "複数戦略を設定でき、プロバイダごとの差異に合わせて調整できる"
+  ],
+  "domains": [
+    {
+      "area": "ネットワーク研究",
+      "example": "DPI の検知方式を検証し、通信がどう妨害されるかを調べる"
+    },
+    {
+      "area": "通信の自由・人権分野",
+      "example": "検閲下の地域で情報アクセスを確保する手段の調査"
+    },
+    {
+      "area": "ルーター・ホームネットワーク",
+      "example": "OpenWRT ルーターで家庭内の端末に一括適用"
+    },
+    {
+      "area": "セキュリティ教育",
+      "example": "パケット分割・TTL 操作など回避技術の学習"
+    }
+  ],
+  "target_users": "ネットワークの仕組みに詳しく、自分の回線で通信制限の挙動を検証・回避したい上級ユーザー。",
+  "cautions": [
+    "利用する国・地域の法令や、プロバイダ・サービスの利用規約に反する可能性がある。自分の回線・許可された環境でのみ使うこと",
+    "効果はプロバイダのDPIに依存し、README には効かないケース（When it will not work）が記載されている",
+    "zapret 1 は開発終了で新機能・PRは受け付けない。後継の zapret2 を確認すること。配布元を装う詐欺への警告も README にある"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-22"
+}

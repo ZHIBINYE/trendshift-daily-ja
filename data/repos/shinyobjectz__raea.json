@@ -1,0 +1,59 @@
+{
+  "full_name": "shinyobjectz/raea",
+  "title_ja": "AIに作らせる映像・3D・ゲームのレンダリングエンジン",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "React と TypeScript で書いた映像・モーショングラフィックス・3D・ゲームを、自分のGPUでレンダリングするエンジン（Rust + Bevy）。チャットでAIに依頼するとコードが書かれ、デスクトップアプリで確認・修正できる。",
+  "features": [
+    "React コンポーネントとして動画やモーショングラフィックスを記述し、GPUで合成・ハードウェアエンコード",
+    "Bevy による3Dシーン、glTF、Gaussian splat、three.js / React Three Fiber に対応",
+    "`raea play` でゲームを実行し、`raea export-game` で単体プログラム化",
+    "`raea check` で文字切れ・低コントラスト・音量などの品質を自動検査",
+    "タイムライン編集、レビュータブ、フォルダ検索（Index）を備えたデスクトップアプリ"
+  ],
+  "how_to_use": {
+    "steps": [
+      "README のインストールコマンドで raea をインストールする（Windows は PowerShell 用スクリプト）",
+      "`raea init` でプロジェクトを作成する",
+      "React コンポーネントで Composition を書く（またはAIに依頼する）",
+      "`raea render hello.tsx -o hello.mp4` で動画を書き出す",
+      "`raea play` でゲームとして再生する"
+    ],
+    "code": "curl -fsSL https://raea.io/install | sh\nraea render hello.tsx -o hello.mp4"
+  },
+  "effects": [
+    "AIが書き慣れた React/TypeScript で映像制作を記述できるため、エージェントとの協業がしやすい",
+    "README によれば Apple Silicon で90フレームを約1秒でレンダリング",
+    "レンダリングした1フレームをAIが確認して自己修正でき、人手の確認工数を減らせる",
+    "動画・3D・ゲーム・音を一つのエンジンで扱える"
+  ],
+  "domains": [
+    {
+      "area": "動画制作・マーケティング",
+      "example": "商品紹介やSNS向けのモーショングラフィックスをAIに依頼して量産"
+    },
+    {
+      "area": "ゲーム開発",
+      "example": "小規模ゲームのプロトタイプを作り、単体プログラムとして書き出す"
+    },
+    {
+      "area": "教育・解説コンテンツ",
+      "example": "字幕付きの解説動画を話した内容に合わせて自動カット"
+    },
+    {
+      "area": "3D・可視化",
+      "example": "3Dシーンを歩き回りながらコメントを付け、コードへ反映"
+    }
+  ],
+  "target_users": "AIエージェントを使って映像・3D・ゲームを手早く制作したいクリエイター・開発者。",
+  "cautions": [
+    "ライセンスは FSL-1.1-ALv2。raea と競合する製品には使えず、各版は公開2年後に Apache-2.0 になる",
+    "若いプロジェクトでほぼ毎日リリースされ、Windows版は最も検証が少ないと明記されている",
+    "DirectX 12 または Vulkan 対応のGPUが必要。インストーラは curl でスクリプトを取得して実行する形式のため、内容を確認してから使うこと"
+  ],
+  "license": "FSL-1.1-ALv2",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-22"
+}
