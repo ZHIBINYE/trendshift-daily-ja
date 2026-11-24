@@ -1,0 +1,57 @@
+{
+  "full_name": "ScrapeCreators/social-media-research-skills",
+  "title_ja": "SNS調査をAIエージェントに任せるスキル集",
+  "category": "データ・スクレイピング",
+  "summary_ja": "TikTok・Instagram・YouTube・Reddit・X・LinkedIn など多数の SNS を対象に、アウトライア投稿の発見、コメント分析、競合分析、広告ライブラリ調査、トレンド探索などを行う AI エージェント向けスキル集。データ取得には ScrapeCreators の API を使う。",
+  "features": [
+    "outlier-post-finder・comment-mining・competitor-social-research・ad-library-teardown・trend-discovery などのスキル",
+    "インフルエンサー候補リスト作成、オーディエンス調査、ソーシャルリスニング、商品需要調査",
+    "Claude Code・Cursor・Codex・Gemini CLI・Windsurf など Agent Skills 仕様の各ツールで利用可",
+    "出力は表・レポート・CSV など再利用しやすい成果物"
+  ],
+  "how_to_use": {
+    "steps": [
+      "npx skills add でスキルを導入する",
+      "ScrapeCreators のサイトで API キーを取得する",
+      "環境変数 SCRAPECREATORS_API_KEY を設定する",
+      "エージェントに調査目的を伝え、該当スキルを使わせる"
+    ],
+    "code": "npx skills add ScrapeCreators/social-media-research-skills\nexport SCRAPECREATORS_API_KEY=sk_..."
+  },
+  "effects": [
+    "競合や市場の SNS 動向調査の時間を短縮できる",
+    "コメントから顧客の疑問・不満・言葉遣いを抽出できる",
+    "伸びた投稿の共通パターンを把握し、企画に活かせる",
+    "広告のメッセージや訴求の傾向を整理できる"
+  ],
+  "domains": [
+    {
+      "area": "マーケティング",
+      "example": "競合のコンテンツ戦略と広告訴求を比較レポートにする"
+    },
+    {
+      "area": "コンテンツ制作",
+      "example": "バズった投稿のフックを分析して企画に反映する"
+    },
+    {
+      "area": "商品企画",
+      "example": "コメントから需要と不満点を抽出して仮説を立てる"
+    },
+    {
+      "area": "インフルエンサーマーケ",
+      "example": "条件に合うクリエイターの候補表を作る"
+    }
+  ],
+  "target_users": "SNS の市場調査やコンテンツ分析を AI エージェントで効率化したいマーケターや企画担当者。",
+  "cautions": [
+    "有料の外部サービス（ScrapeCreators）の API キーが必要で、利用料や上限は各自確認すること",
+    "各 SNS の利用規約・個人情報の取り扱い法令に従い、公開データの範囲で使う",
+    "取得データの正確性やセンチメント分析には限界がある"
+  ],
+  "license": null,
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

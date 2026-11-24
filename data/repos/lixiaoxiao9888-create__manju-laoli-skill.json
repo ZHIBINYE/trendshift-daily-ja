@@ -1,0 +1,59 @@
+{
+  "full_name": "lixiaoxiao9888-create/manju-laoli-skill",
+  "title_ja": "AI短編ドラマ制作の全工程を支援するスキル群",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "AI 短編ドラマ（漫劇）制作の企画・脚本・素材・絵コンテ・動画生成モデル向けプロンプト作成・品質検査までを、1 つの統括スキルと 10 の子スキルで扱う AI エージェント向けルール集。Seedance 2.5/2.0 などの動画生成モデルへ投入する提示文を作ることを目的とする。README は中国語。",
+  "features": [
+    "企画ロック・段階ゲート式の脚本・素材固定・アクションと会話の絵コンテ・プロンプト封入・独立品質検査の一貫パイプライン",
+    "48 件のルールブックと、C1〜C41 の機械チェック（スクリプトで一括検査）",
+    "Seedance 2.5/2.0 向け提示文の生成と投入前ゲート",
+    "OpenClaw・Coze・Dify・WorkBuddy 等への配置に対応",
+    "オフラインのダッシュボード"
+  ],
+  "how_to_use": {
+    "steps": [
+      "統括スキル（short-drama-director）と子スキル（sd-*-engine）を同じ階層に配置する",
+      "OpenClaw などの対応プラットフォームに統括スキルをインストールする",
+      "check_package.py でパッケージの自己検査を行う",
+      "作成した原稿を gate_check.py に通し、FAIL がなくなってから納品する"
+    ],
+    "code": "openclaw skills install ./short-drama-director --as short-drama-director\npython3 short-drama-director/scripts/check_package.py\npython3 sd-feed-engine/scripts/gate_check.py <稿>.md --model 2.5 --aspect 16:9"
+  },
+  "effects": [
+    "短編ドラマ制作の工程を標準化し、品質のばらつきを抑えられる",
+    "脚本から動画生成用プロンプトまでの作業時間を短縮できる",
+    "機械チェックにより提示文の不備を投入前に検出できる",
+    "AI エージェントに渡すだけで専門的な制作ルールを再利用できる"
+  ],
+  "domains": [
+    {
+      "area": "AI 短編ドラマ制作",
+      "example": "企画から Seedance 用プロンプトまでを AI と一貫して作る"
+    },
+    {
+      "area": "広告・SNS 動画",
+      "example": "縦型ショート動画のシナリオと絵コンテを量産する"
+    },
+    {
+      "area": "制作チームの品質管理",
+      "example": "出稿前に機械チェックで基準違反を検出する"
+    },
+    {
+      "area": "AI スキル開発",
+      "example": "多スキル構成のルール集の設計を参考にする"
+    }
+  ],
+  "target_users": "AI 動画生成で短編ドラマを制作する中国語圏のクリエイター・制作チーム。",
+  "cautions": [
+    "README や規則は中国語が中心で、日本語環境では読み替えが必要",
+    "動画生成モデル（Seedance 等）の利用規約・料金や、生成物の権利・コンテンツ規制を各自確認すること",
+    "README にスポンサーの広告・紹介リンクが含まれる",
+    "「二次修正・オープンソース内容の統合」を含む旨の記載があり、元素材のライセンスに注意"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

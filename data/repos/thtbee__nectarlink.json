@@ -1,0 +1,63 @@
+{
+  "full_name": "thtbee/nectarlink",
+  "title_ja": "AndroidとPCを一体化する連携アプリ",
+  "category": "生産性・ドキュメント",
+  "summary_ja": "Android スマホと Windows 10/11・Linux の PC を連携させるオープンソースアプリ。通知・メッセージ・通話・クリップボード・ファイル・写真・画面ミラーリング・スマホアプリの PC 表示に対応。ローカルファースト、エンドツーエンド暗号化で、アカウントやクラウドは不要。",
+  "features": [
+    "通知・メッセージ・通話・クリップボード・ファイル・写真の共有",
+    "画面ミラーリングと、スマホアプリの PC ウィンドウ表示",
+    "スマホを Webcam・キーボード・マウスとして利用（OS により条件あり）",
+    "QR コードまたは 6 桁コードでのペアリング、機能ごと・端末ごとのオン/オフ",
+    "アプリが GitHub Releases から自動更新し、SHA-256 を検証"
+  ],
+  "how_to_use": {
+    "steps": [
+      "PC（Windows または Linux）とスマホ（Android 8.0 以降）に NectarLink をインストールする",
+      "PC のセットアップ画面に出る QR コードをスマホで読み取ってペアリングする",
+      "共有したい機能を機器ごとに許可する（機微な機能は初期状態でオフ）",
+      "必要に応じてスマホ側でワイヤレスデバッグを設定し、特権機能を有効にする"
+    ],
+    "code": "curl -fsSL https://github.com/thtbee/nectarlink/releases/latest/download/install.sh | sh"
+  },
+  "effects": [
+    "Phone Link・KDE Connect・LocalSend のような複数アプリを 1 つにまとめられる",
+    "スマホを取り出さず PC 上で通知・メッセージ・通話に対応できる",
+    "PC とスマホ間のファイルやクリップボードの受け渡しが簡単になる",
+    "クラウドを使わずローカルで完結するためプライバシー面で安心しやすい"
+  ],
+  "domains": [
+    {
+      "area": "在宅・リモートワーク",
+      "example": "PC 作業中にスマホの通知やメッセージを PC 上で確認・返信する"
+    },
+    {
+      "area": "クリエイティブ",
+      "example": "スマホで撮った写真を PC に即座に取り込む"
+    },
+    {
+      "area": "開発・QA",
+      "example": "画面ミラーリングで実機の動作を PC から確認する"
+    },
+    {
+      "area": "Linux デスクトップ利用",
+      "example": "Linux でも Phone Link 相当の機能を使う"
+    }
+  ],
+  "target_users": "Android と Windows/Linux PC を日常的に併用し、連携機能を 1 つのアプリで済ませたい人。",
+  "cautions": [
+    "Windows インストーラーはコード署名がなく、SmartScreen の警告が出る。入手は公式リリースに限り SHA-256 を確認すること",
+    "Android の APK は Play Protect にブロックされる場合があり、無効化を促されるが、セキュリティ設定の変更は慎重に判断する",
+    "通話・SMS・画面など機微な権限を扱うため、必要な機能だけ許可する",
+    "バージョンは v0.1 系で、成熟度に注意"
+  ],
+  "license": "GPL-3.0-or-later（コアは MPL-2.0）",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "Windows インストーラーがコード署名なしで、SmartScreen の警告を回避する操作を案内している",
+      "Android の APK で Play Protect の一時停止を案内している",
+      "一方でソースコードと CI があり、GPL/MPL のオープンソースで SHA-256 検証もあるため、high とは判定しなかった"
+    ]
+  },
+  "analyzed_at": "2026-11-23"
+}

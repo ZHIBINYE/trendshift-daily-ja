@@ -1,0 +1,59 @@
+{
+  "full_name": "nickrunning/wechat-selkies",
+  "title_ja": "ブラウザで使うLinux版WeChat/QQのDocker環境",
+  "category": "インフラ・DevOps",
+  "summary_ja": "公式の WeChat / QQ の Linux クライアントを Docker コンテナに収め、Selkies（WebRTC）経由でブラウザから使えるようにするプロジェクト。サーバー配置やリモートワークでの利用を想定し、ローカルの中国語入力、画像コピー、ファイル転送に対応する。",
+  "features": [
+    "ブラウザ（HTTPS）から WeChat / QQ / Telegram を利用",
+    "AMD64 と ARM64 に対応、GPU ハードウェアアクセラレーションは任意",
+    "設定・チャット履歴の永続化、中国語フォントと入力方式に対応",
+    "サイドバーから画像コピー・ファイル転送、ウィンドウ切り替え、ファイルマネージャー",
+    "上流の WeChat バージョンを GitHub Actions で自動検出してイメージを再ビルド"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Docker を用意し、README の docker run または docker compose で起動する",
+      "ブラウザで https://localhost:3001（サーバーなら https://<サーバーIP>:3001）を開く",
+      "ブラウザ上に表示された WeChat / QQ にログインする",
+      "WeChat のみで良ければ minimal タグを使う"
+    ],
+    "code": "docker run -it -p 3001:3001 -v ./config:/config --device /dev/dri:/dev/dri ghcr.io/nickrunning/wechat-selkies:latest"
+  },
+  "effects": [
+    "クライアントをローカルに入れずブラウザで WeChat を使える",
+    "サーバーに常駐させ、複数端末から同じセッションを利用できる",
+    "チャット履歴を設定ディレクトリで永続化して管理できる",
+    "ARM 機でも動かせる"
+  ],
+  "domains": [
+    {
+      "area": "リモートワーク",
+      "example": "自宅サーバー上の WeChat に会社 PC のブラウザから接続する"
+    },
+    {
+      "area": "中国関連の事業・取引",
+      "example": "Linux 環境で取引先と WeChat で連絡する"
+    },
+    {
+      "area": "ホームラボ・NAS",
+      "example": "NAS 上に常駐させスマホ・PC から利用"
+    },
+    {
+      "area": "アプリのコンテナ化",
+      "example": "GUI アプリを Selkies でブラウザ配信する構成の参考にする"
+    }
+  ],
+  "target_users": "Linux サーバーや NAS で Docker を使い、ブラウザ経由で WeChat/QQ を利用したい人。",
+  "cautions": [
+    "公式クライアントを非公式にコンテナ化したもので、WeChat・QQ の利用規約に注意",
+    "アカウント情報・チャット履歴が入るため、公開ネットワークに出す場合は認証と HTTPS を設定すること",
+    "HTTPS（3001）の利用が推奨されている",
+    "/dev/dri のデバイス割り当てなど環境に合わせた設定が必要"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

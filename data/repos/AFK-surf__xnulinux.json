@@ -1,0 +1,58 @@
+{
+  "full_name": "AFK-surf/xnulinux",
+  "title_ja": "LinuxにmacOSカーネルを載せて動かす",
+  "category": "インフラ・DevOps",
+  "summary_ja": "macOS のカーネル XNU を Apple 公開ソースからビルドし、ロード可能カーネルモジュール（xnu.ko）として arm64 Linux 上で動かす実験的プロジェクト。ハイパーバイザなしで macOS のプロセスと Linux のプロセスが同じ CPU 上で並走する。",
+  "features": [
+    "XNU をカーネルモジュールとして Linux にロードし、macOS 27 のデスクトップ（Finder・Safari 等）まで起動",
+    "Linux 側との橋渡しを担う小さなインターフェースモジュール（fki.ko）でメモリ・タイマー・ファイル・ネットワーク・GPU を共有",
+    "Metal を Vulkan 経由で Linux ホストの GPU に接続する GPU ブリッジ（無い場合は CPU 描画）",
+    "Apple Silicon Mac 上の arm64 Linux VM と NVIDIA DGX Spark（ベアメタル）で動作確認"
+  ],
+  "how_to_use": {
+    "steps": [
+      "arm64 Linux ホストで scripts/vm-xnu-build.sh を実行して XNU をビルドする",
+      "scripts/vm-xnu-rebuild.sh でパッチ適用・カーネルと kext のビルド・カーネルコレクションのリンクを行う",
+      "Mac 側で scripts/mk-macvm-disk.sh を実行し、自分の macOS VM ディスクからホスト用システムディスクを作る",
+      "scripts/xnulinux-boot.sh で fki.ko と xnu.ko をビルドし、ホスト型 macOS を起動する"
+    ],
+    "code": "scripts/vm-xnu-build.sh\nscripts/vm-xnu-rebuild.sh\nscripts/mk-macvm-disk.sh\nscripts/xnulinux-boot.sh"
+  },
+  "effects": [
+    "Linux 上で macOS 環境を VM を介さず近いオーバーヘッドで動かせる",
+    "macOS 向けアプリやカーネル挙動の検証環境を Linux マシン上に用意できる",
+    "OS カーネル同士の相互運用に関する研究・学習の題材になる",
+    "同一 CPU 上で macOS と Linux のプロセスを並走させる構成の実例を確認できる"
+  ],
+  "domains": [
+    {
+      "area": "OS・カーネル研究",
+      "example": "XNU を別カーネル上でホストする仕組み（FKI）を読み、移植手法を学ぶ"
+    },
+    {
+      "area": "アプリ開発・QA",
+      "example": "Linux サーバー上で macOS アプリの動作確認環境を構築する"
+    },
+    {
+      "area": "CI・インフラ",
+      "example": "arm64 Linux ホスト上で macOS 環境を使う検証パイプラインを試作する"
+    },
+    {
+      "area": "GPU・グラフィックス",
+      "example": "Metal から Vulkan（Venus）への変換経路を調べる"
+    }
+  ],
+  "target_users": "arm64 Linux のカーネルモジュールを自分でビルドでき、OS 内部に詳しい研究者・上級エンジニア。",
+  "cautions": [
+    "macOS のシステムディスクや Apple の kext は利用者自身の正規の macOS 環境から用意する必要がある（リポジトリに Apple のバイナリは含まれない）",
+    "macOS のライセンス（実機 Apple ハード上での利用条件など）を各自確認すること",
+    "xnu.ko は GPL 外（APSL）扱いで、Linux からは非 GPL モジュールとして認識されカーネルが taint される",
+    "実験的で、ホスト設定（メモリの carve-out 等）の調整が必要"
+  ],
+  "license": "GPL-2.0-only / APSL-2.0（ディレクトリごとに異なる）",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

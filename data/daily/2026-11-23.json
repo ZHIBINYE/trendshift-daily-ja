@@ -1,0 +1,513 @@
+{
+  "date": "2026-11-23",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "ItsNotRexed/Leonida",
+      "slug": "ItsNotRexed__Leonida",
+      "github_url": "https://github.com/ItsNotRexed/Leonida",
+      "trendshift_url": "https://trendshift.io/repositories/370687",
+      "language": "Python",
+      "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
+      "stars": 32066,
+      "forks": 1587,
+      "stars_gained": 19121,
+      "forks_gained": 387,
+      "score": 119334,
+      "created_at": "2026-11-20T20:07:13Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "AFK-surf/xnulinux",
+      "slug": "AFK-surf__xnulinux",
+      "github_url": "https://github.com/AFK-surf/xnulinux",
+      "trendshift_url": "https://trendshift.io/repositories/373470",
+      "language": "Objective-C++",
+      "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "stars": 1852,
+      "forks": 0,
+      "stars_gained": 1901,
+      "forks_gained": 0,
+      "score": 11406,
+      "created_at": "2026-11-20T10:18:31Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "pingdotgg/t3code",
+      "slug": "pingdotgg__t3code",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "trendshift_url": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "stars": 74586,
+      "forks": 13529,
+      "stars_gained": 3083,
+      "forks_gained": 47,
+      "score": 10687,
+      "created_at": "2026-02-08T23:46:22Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "havenicec/google-qr-sms-helper",
+      "slug": "havenicec__google-qr-sms-helper",
+      "github_url": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshift_url": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "stars": 4299,
+      "forks": 726,
+      "stars_gained": 1250,
+      "forks_gained": 99,
+      "score": 10198,
+      "created_at": "2026-10-26T10:44:47Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "ivall/xcl",
+      "slug": "ivall__xcl",
+      "github_url": "https://github.com/ivall/xcl",
+      "trendshift_url": "https://trendshift.io/repositories/372068",
+      "language": "Rust",
+      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "stars": 1030,
+      "forks": 22,
+      "stars_gained": 1214,
+      "forks_gained": 3,
+      "score": 9737,
+      "created_at": "2026-11-20T20:03:21Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "EL4CTEO/fast-anything",
+      "slug": "EL4CTEO__fast-anything",
+      "github_url": "https://github.com/EL4CTEO/fast-anything",
+      "trendshift_url": "https://trendshift.io/repositories/371252",
+      "language": "Rust",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "stars": 3068,
+      "forks": 163,
+      "stars_gained": 1248,
+      "forks_gained": 54,
+      "score": 8741,
+      "created_at": "2026-11-21T14:40:27Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "os6/nospeaker",
+      "slug": "os6__nospeaker",
+      "github_url": "https://github.com/os6/nospeaker",
+      "trendshift_url": "https://trendshift.io/repositories/371655",
+      "language": "Swift",
+      "description": "make your macbook's trackpad talk using its haptic motor",
+      "stars": 1356,
+      "forks": 47,
+      "stars_gained": 1012,
+      "forks_gained": 29,
+      "score": 8154,
+      "created_at": "2026-11-22T12:05:54Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 16237,
+      "forks": 990,
+      "stars_gained": 1178,
+      "forks_gained": 10,
+      "score": 7717,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "pierridotite/mobile-agent-testers",
+      "slug": "pierridotite__mobile-agent-testers",
+      "github_url": "https://github.com/pierridotite/mobile-agent-testers",
+      "trendshift_url": "https://trendshift.io/repositories/371956",
+      "language": "Python",
+      "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+      "stars": 1419,
+      "forks": 105,
+      "stars_gained": 947,
+      "forks_gained": 55,
+      "score": 7686,
+      "created_at": "2026-11-16T19:11:44Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 134432,
+      "forks": 9455,
+      "stars_gained": 1510,
+      "forks_gained": 19,
+      "score": 7492,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "Hut-hzf/ung220z-tool",
+      "slug": "Hut-hzf__ung220z-tool",
+      "github_url": "https://github.com/Hut-hzf/ung220z-tool",
+      "trendshift_url": "https://trendshift.io/repositories/372498",
+      "language": "Python",
+      "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+      "stars": 3119,
+      "forks": 565,
+      "stars_gained": 853,
+      "forks_gained": 29,
+      "score": 6882,
+      "created_at": "2026-11-15T11:16:46Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 12,
+      "full_name": "xerj-org/xerj",
+      "slug": "xerj-org__xerj",
+      "github_url": "https://github.com/xerj-org/xerj",
+      "trendshift_url": "https://trendshift.io/repositories/116361",
+      "language": "Rust",
+      "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+      "stars": 20247,
+      "forks": 1807,
+      "stars_gained": 833,
+      "forks_gained": 1,
+      "score": 6680,
+      "created_at": "2026-06-30T04:32:45Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "thtbee/nectarlink",
+      "slug": "thtbee__nectarlink",
+      "github_url": "https://github.com/thtbee/nectarlink",
+      "trendshift_url": "https://trendshift.io/repositories/312285",
+      "language": "Rust",
+      "description": "Your Android phone and your PC, working as one. Windows and Linux. Local-first, end-to-end encrypted, no account.",
+      "stars": 6132,
+      "forks": 488,
+      "stars_gained": 817,
+      "forks_gained": 25,
+      "score": 6586,
+      "created_at": "2026-10-04T21:12:31Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 14354,
+      "forks": 2208,
+      "stars_gained": 952,
+      "forks_gained": 20,
+      "score": 6329,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "mjmirza/app-store-compliance",
+      "slug": "mjmirza__app-store-compliance",
+      "github_url": "https://github.com/mjmirza/app-store-compliance",
+      "trendshift_url": "https://trendshift.io/repositories/100374",
+      "language": "Shell",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "stars": 4912,
+      "forks": 249,
+      "stars_gained": 974,
+      "forks_gained": 14,
+      "score": 5756,
+      "created_at": "2026-06-06T11:29:45Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 19661,
+      "forks": 2045,
+      "stars_gained": 1964,
+      "forks_gained": 24,
+      "score": 5338,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "kunkundi/crossdesk",
+      "slug": "kunkundi__crossdesk",
+      "github_url": "https://github.com/kunkundi/crossdesk",
+      "trendshift_url": "https://trendshift.io/repositories/17514",
+      "language": "C++",
+      "description": "A lightweight, cross-platform remote desktop software with support for Web Client access | 一款支持 Web 客户端访问的轻量级跨平台远程桌面软件。",
+      "stars": 6634,
+      "forks": 629,
+      "stars_gained": 644,
+      "forks_gained": 10,
+      "score": 5172,
+      "created_at": "2023-11-20T06:31:52Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "lixiaoxiao9888-create/manju-laoli-skill",
+      "slug": "lixiaoxiao9888-create__manju-laoli-skill",
+      "github_url": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill",
+      "trendshift_url": "https://trendshift.io/repositories/191974",
+      "language": "Python",
+      "description": "漫剧老李 AIGC 创作全流程 Skill · V7.4.26 多技能套装版（Short-Drama Director Suite）：1 总控 + 12 子技能 · 四层纵深——赛道分流 / 素材采风 / 剧本 / 资产 / 分镜 / 三大打戏引擎 / 投喂 / 质检全链路。六道前置锁 + I 画风锁 · 50 份规则库 · 机检 C1~C33 | H1~H12 + 六道投喂闸门 + P4.5 故事板机检（P450~P458）· 素材形态 M0/M1/M2（本包不持有图）· 产出可直接投喂 Seedance 2.5 / 2.0 / MiniMax H3 的七段式提示词组。测试版，二次修改整合开源内容。",
+      "stars": 2941,
+      "forks": 346,
+      "stars_gained": 563,
+      "forks_gained": 42,
+      "score": 4588,
+      "created_at": "2026-08-15T08:00:57Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "stars": 2741,
+      "forks": 311,
+      "stars_gained": 673,
+      "forks_gained": 77,
+      "score": 4526,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "nickrunning/wechat-selkies",
+      "slug": "nickrunning__wechat-selkies",
+      "github_url": "https://github.com/nickrunning/wechat-selkies",
+      "trendshift_url": "https://trendshift.io/repositories/23355",
+      "language": "Python",
+      "description": "基于Selkies的Linux网页版微信/QQ/Telegram，支持本地中文输入法，支持三方应用，支持AMD64和ARM64。",
+      "stars": 3658,
+      "forks": 291,
+      "stars_gained": 557,
+      "forks_gained": 0,
+      "score": 4456,
+      "created_at": "2025-10-12T10:03:40Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "jingyaogong/minimind",
+      "slug": "jingyaogong__minimind",
+      "github_url": "https://github.com/jingyaogong/minimind",
+      "trendshift_url": "https://trendshift.io/repositories/12586",
+      "language": "Python",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "stars": 69403,
+      "forks": 9336,
+      "stars_gained": 798,
+      "forks_gained": 14,
+      "score": 4254,
+      "created_at": "2024-07-27T04:34:12Z",
+      "tags": [
+        "LLM training"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "ChiefGyk3D/Clouds-Against-Humanity",
+      "slug": "ChiefGyk3D__Clouds-Against-Humanity",
+      "github_url": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+      "trendshift_url": "https://trendshift.io/repositories/309875",
+      "language": "Python",
+      "description": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "stars": 3322,
+      "forks": 188,
+      "stars_gained": 575,
+      "forks_gained": 20,
+      "score": 4235,
+      "created_at": "2026-10-10T17:50:27Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 23,
+      "full_name": "ScrapeCreators/social-media-research-skills",
+      "slug": "ScrapeCreators__social-media-research-skills",
+      "github_url": "https://github.com/ScrapeCreators/social-media-research-skills",
+      "trendshift_url": "https://trendshift.io/repositories/188956",
+      "language": "Python",
+      "description": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
+      "stars": 7518,
+      "forks": 258,
+      "stars_gained": 526,
+      "forks_gained": 7,
+      "score": 4222,
+      "created_at": "2026-06-06T21:47:43Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "janestreet/agent_skills",
+      "slug": "janestreet__agent_skills",
+      "github_url": "https://github.com/janestreet/agent_skills",
+      "trendshift_url": "https://trendshift.io/repositories/340099",
+      "language": "",
+      "description": "Agent skills",
+      "stars": 11342,
+      "forks": 760,
+      "stars_gained": 692,
+      "forks_gained": 21,
+      "score": 4167,
+      "created_at": "2026-11-03T16:50:21Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "google-gemini/gemini-api-cli",
+      "slug": "google-gemini__gemini-api-cli",
+      "github_url": "https://github.com/google-gemini/gemini-api-cli",
+      "trendshift_url": "https://trendshift.io/repositories/307075",
+      "language": "Go",
+      "description": "An (experimental) CLI for the Gemini API",
+      "stars": 1076,
+      "forks": 86,
+      "stars_gained": 517,
+      "forks_gained": 0,
+      "score": 4136,
+      "created_at": "2026-04-29T14:54:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    }
+  ]
+}

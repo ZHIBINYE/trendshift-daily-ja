@@ -1,0 +1,59 @@
+{
+  "full_name": "os6/nospeaker",
+  "title_ja": "MacBookのトラックパッドに喋らせる",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "MacBook のトラックパッド内蔵の触覚モーター（ハプティクス）を最大毎秒 4,000 回で駆動し、可聴音として声や音階を出すデモツール。スピーカーを使わずに喋る・歌う・楽器になる。",
+  "features": [
+    "macOS の音声合成の出力を 10ms ごとのフォルマントから 2 つの音に変換してモーターを駆動",
+    "テキストを渡して喋らせる、macOS の別の声（--voice）の指定、100Hz〜4kHz の音階スイープ（--sweep）",
+    "非公開フレームワーク MultitouchSupport の関数でハプティクス波形を再生",
+    "--dark や --plain など表示オプション",
+    "署名・公証（Apple 公証）済みのリリース、または Xcode でのソースビルドに対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Mac をミュートし、机の上に置く（膝の上だと音が小さい）",
+      "README の 1 行コマンドを実行するか、リリースの nospeaker.zip を展開して ./nospeaker を実行する",
+      "./nospeaker \"hello there\" のように文字列を渡して喋らせる",
+      "Space で次のパートへスキップ、q または Ctrl-C で終了"
+    ],
+    "code": "curl -fsSL a90.com/nospeaker | sh\n\n# ソースから\ngit clone https://github.com/os6/nospeaker\ncd nospeaker\n./build.sh\n./nospeaker"
+  },
+  "effects": [
+    "スピーカー無しでもトラックパッドから音声が出る様子を体験できる",
+    "ハプティクスで音を出す技術の実例として学べる",
+    "デモ・展示向けの目を引くコンテンツを作れる",
+    "非公開 API の利用方法の参考になる"
+  ],
+  "domains": [
+    {
+      "area": "プログラミング学習",
+      "example": "macOS の非公開フレームワークとハプティクス制御の仕組みを読む"
+    },
+    {
+      "area": "アート・インスタレーション",
+      "example": "触覚デバイスを使った体験型作品の素材にする"
+    },
+    {
+      "area": "音響研究",
+      "example": "アクチュエーターの周波数特性を測定する"
+    },
+    {
+      "area": "イベント・デモ",
+      "example": "登壇で MacBook が喋るデモを見せる"
+    }
+  ],
+  "target_users": "Force Touch トラックパッド搭載の Mac で遊び心のある技術デモを試したい開発者・クリエイター。",
+  "cautions": [
+    "curl ... | sh 形式のため、実行前に play.sh の中身（リポジトリ内）を確認すること",
+    "MultitouchSupport は非公開 API のため、macOS のバージョンや機種により動かない可能性（動作確認は M5 Max・macOS 27.2.1 のみ）",
+    "Force Touch トラックパッドが必要で、無い場合は終了する",
+    "音量は小さく、トラックパッドに負荷をかけ続けないよう用途に注意"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

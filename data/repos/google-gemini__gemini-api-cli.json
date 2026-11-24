@@ -1,0 +1,59 @@
+{
+  "full_name": "google-gemini/gemini-api-cli",
+  "title_ja": "AIエージェントからGeminiを呼ぶCLI",
+  "category": "AI開発ツール",
+  "summary_ja": "Codex や Claude Code など、シェルを使えるエージェントが Gemini API を呼び出せるようにする実験的な Go 製 CLI（gemini-api）。テキスト生成、ファイル分析、画像・音声・音楽・動画の生成、Gemini のマネージドエージェント起動などをコマンドで行える。",
+  "features": [
+    "モデル・マルチモーダル分析・画像/音声/音楽/動画生成・マネージドエージェントを 1 つのバイナリで利用",
+    "長時間タスクをバックグラウンド起動し、interaction ID で後から結果取得",
+    "--schema / --usage でエージェントが自己解説を取得、--dry-run で認証情報を隠したリクエストを検証",
+    "JSON・TOON 出力と --jq でのフィルタ",
+    "ステートレス実行、macOS・Linux・Windows 対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "インストールスクリプト、go install、またはビルド済みバイナリで gemini-api を導入する",
+      "Google AI Studio で API キーを作成し GEMINI_API_KEY を設定する",
+      "gemini-api image のようにコマンドを実行する",
+      "エージェントのシェルから呼び出して生成物のパスを受け取る"
+    ],
+    "code": "curl -fsSL https://raw.githubusercontent.com/google-gemini/gemini-api-cli/main/scripts/install.sh | bash\ngo install github.com/google-gemini/gemini-api-cli/cmd/gemini-api@latest\nexport GEMINI_API_KEY=\"YOUR_API_KEY\"\ngemini-api image \"A friendly robot mascot for a developer tool\" --out ./assets/"
+  },
+  "effects": [
+    "コーディングエージェントに画像・音声・動画生成機能を追加できる",
+    "資料や録画の分析・文字起こしをエージェントに任せられる",
+    "複数手順の調査を Gemini のエージェントに委任できる",
+    "スクリプトや CI からも Gemini を呼び出せる"
+  ],
+  "domains": [
+    {
+      "area": "アプリ開発",
+      "example": "開発中アプリのヒーロー画像やナレーションをエージェントに生成させる"
+    },
+    {
+      "area": "コンテンツ制作",
+      "example": "録画から字幕を作成する"
+    },
+    {
+      "area": "リサーチ",
+      "example": "長時間の調査タスクをバックグラウンドに任せる"
+    },
+    {
+      "area": "自動化・CI",
+      "example": "ジョブ内で PDF の内容を問い合わせる"
+    }
+  ],
+  "target_users": "AI コーディングエージェントに Gemini の能力を持たせたい開発者。",
+  "cautions": [
+    "実験的な CLI で、仕様変更の可能性がある",
+    "Gemini API の API キーと利用料金が必要",
+    "Pull Request は受け付けず、Issue のみ",
+    "curl | bash 形式のインストールは、スクリプトを確認してから実行すること"
+  ],
+  "license": "Apache-2.0（その他の資料は CC BY 4.0）",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}

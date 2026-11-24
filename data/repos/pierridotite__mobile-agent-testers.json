@@ -1,0 +1,63 @@
+{
+  "full_name": "pierridotite/mobile-agent-testers",
+  "title_ja": "AIが20台のスマホでアプリを並列テスト",
+  "category": "AI開発ツール",
+  "summary_ja": "Claude Code エージェントが GitHub Actions 上の iOS シミュレーターや Android エミュレーターで、ペルソナ（言語・端末・文字サイズなど）になりきってアプリを操作し、画面付きのバグレポートを出すツール。テストスクリプトを書く必要がない。",
+  "features": [
+    "最大 20 台の端末を GitHub の無料ランナー（公開リポジトリ）で並列実行",
+    "ペルソナ（例: スウェーデン語・最大文字サイズの iPhone SE、200% 表示の Pixel 7）で新規ユーザーのように探索",
+    "特定機能のエンドツーエンド確認、バグ報告の再現、改善レポート生成の各モード",
+    "Flutter・React Native・Expo・ネイティブ（Kotlin/Swift）・Capacitor・.NET MAUI に対応",
+    "Claude Code プラグインとして導入可能"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Claude Code に mobile-agent-testers プラグインをインストールする",
+      "README の Quick start に従いデモアプリで動作を確認する",
+      "自分のアプリ用に入力（ブリーフ・ペルソナ）を設定して GitHub Actions を実行する",
+      "スクリーンショット付きのバグレポートを確認する"
+    ],
+    "code": "/plugin install mobile-agent-testers@mobile-agent-testers"
+  },
+  "effects": [
+    "手作業の多端末・多言語テストの工数を削減できる",
+    "翻訳崩れ・レイアウト崩れ・アクセシビリティ上の問題を早期に発見できる",
+    "スクリプト作成なしで探索的テストを自動化できる",
+    "端末 1 台あたり約 $0.15〜0.55 のモデル費用で試せる"
+  ],
+  "domains": [
+    {
+      "area": "モバイルアプリ開発",
+      "example": "リリース前に多言語・多端末で画面崩れを一括確認する"
+    },
+    {
+      "area": "QA・テスト",
+      "example": "新規ユーザー目線の探索テストを夜間に自動実行する"
+    },
+    {
+      "area": "ローカライズ",
+      "example": "14 言語で翻訳切れ・文字溢れを検出する"
+    },
+    {
+      "area": "アクセシビリティ",
+      "example": "最大文字サイズや RTL 表示での不具合を洗い出す"
+    },
+    {
+      "area": "OSS メンテナ",
+      "example": "報告されたバグを複数端末で再現確認する"
+    }
+  ],
+  "target_users": "モバイルアプリの QA を省力化したい開発チームや OSS メンテナ。",
+  "cautions": [
+    "Claude のサブスクリプションまたは API キーの利用料が別途かかる",
+    "GitHub の無料ランナーは公開リポジトリが前提（非公開では課金に注意）",
+    "AI の報告には誤検出もありうるため、人間による確認が必要",
+    "公開直後で、成熟度は今後の確認が必要"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  },
+  "analyzed_at": "2026-11-23"
+}
