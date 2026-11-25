@@ -1,0 +1,50 @@
+{
+  "full_name": "LadybirdBrowser/ladybird",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "完全独立の新規Webブラウザ",
+  "category": "開発ツール",
+  "summary_ja": "既存エンジンに依存せず、Web標準に基づく独自エンジンで開発されている独立Webブラウザ。プレアルファ段階で、開発者向けと明記されている。",
+  "features": [
+    "UIプロセス・レンダラ・ネットワーク・画像デコード等のマルチプロセス構成",
+    "サイトごとに分離しサンドボックス化するレンダラ",
+    "LibWeb・LibJS・LibWasmなど独自ライブラリ群",
+    "Linux・macOS・Windows（WSL2）に対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "ビルド手順（Documentation/BuildInstructionsLadybird.md）を読む",
+      "手順に沿ってビルドする",
+      "Discordや CONTRIBUTING.md から開発に参加する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "ブラウザエンジンの多様性に貢献できる",
+    "Webレンダリングの実装を学べる",
+    "マルチプロセス設計の実例を参照できる"
+  ],
+  "domains": [
+    {
+      "area": "ブラウザ開発",
+      "example": "レンダリングエンジンやJS実装の学習・貢献"
+    },
+    {
+      "area": "セキュリティ",
+      "example": "プロセス分離・サンドボックス設計の調査"
+    },
+    {
+      "area": "標準化・テスト",
+      "example": "Web標準の準拠状況の検証"
+    }
+  ],
+  "target_users": "ブラウザ実装に関心のある開発者・研究者。",
+  "cautions": [
+    "プレアルファで一般利用には向かない",
+    "ビルドには環境構築が必要"
+  ],
+  "license": "BSD-2-Clause",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

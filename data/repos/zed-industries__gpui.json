@@ -1,0 +1,49 @@
+{
+  "full_name": "zed-industries/gpui",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "Rust向けGPU高速UIフレームワーク",
+  "category": "開発ツール",
+  "summary_ja": "Zed Industriesが公開するRust向けのGPU加速UIフレームワークで、即時モードと保持モードを組み合わせるとされている。現状のREADMEは「数週間後にまた」とだけ書かれたプレースホルダーで、詳しい内容は公式サイトとcrates.ioにある。",
+  "features": [
+    "GPUで描画するRust向けUIフレームワーク（概要より）",
+    "即時モードと保持モードの併用（概要より）",
+    "公式サイトとcrates.ioで公開される予定"
+  ],
+  "how_to_use": {
+    "steps": [
+      "README記載のWebサイト（gpui.rs）やcrates.ioのページを確認する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "Rustでデスクトップ向けUIを作る選択肢を把握できる",
+    "Zedエディタと同系統の描画技術を調べる足がかりになる",
+    "公開準備の動向を追える"
+  ],
+  "domains": [
+    {
+      "area": "デスクトップアプリ",
+      "example": "Rust製ネイティブクライアントのUI構築"
+    },
+    {
+      "area": "エディタ・IDE開発",
+      "example": "高速な描画を要するツールのUI"
+    },
+    {
+      "area": "グラフィックス",
+      "example": "GPU描画UIの設計の学習"
+    }
+  ],
+  "target_users": "RustでネイティブUIを作りたい開発者。",
+  "cautions": [
+    "READMEが「See you in a few weeks.」のみで、使い方や機能は現時点で確認できない",
+    "公開途中と考えられ、仕様が変わる可能性がある"
+  ],
+  "license": null,
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "ソースコード言語の判定が空で、README はプレースホルダーのみ（オーナーは zed-industries）"
+    ]
+  }
+}

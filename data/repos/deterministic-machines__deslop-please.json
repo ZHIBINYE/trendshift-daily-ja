@@ -1,0 +1,50 @@
+{
+  "full_name": "deterministic-machines/deslop-please",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "深いモジュールを促すRustリンター",
+  "category": "開発ツール",
+  "summary_ja": "「A Philosophy of Software Design」の考え方（深いモジュール・狭いインターフェース）に基づき、雑な構造のコードを指摘するRust製リンター。モジュール循環やフィールド漏洩などを検出する。",
+  "features": [
+    "module-cycle・tangle・field-leak・shallow-moduleの検出",
+    "許可リストで既存の指摘を一時的に抑制",
+    "AGENTS.mdに追記して、AIエージェントに修正を促せる",
+    "crates.ioで公開"
+  ],
+  "how_to_use": {
+    "steps": [
+      "cargo install でインストールする",
+      "プロジェクトで deslop-please を実行する",
+      "既存の指摘を抑えるなら --update-allow で許可リストを作り --allow で使う"
+    ],
+    "code": "cargo install deslop-please\ndeslop-please\ndeslop-please --update-allow .deslop-please.allow\ndeslop-please --allow .deslop-please.allow"
+  },
+  "effects": [
+    "設計の悪化を機械的に検出できる",
+    "AI生成コードの構造劣化を抑えられる",
+    "リファクタリング方針の議論の材料になる"
+  ],
+  "domains": [
+    {
+      "area": "Rust開発",
+      "example": "CIでの構造チェック"
+    },
+    {
+      "area": "AIコーディング",
+      "example": "エージェントの出力の品質ゲート"
+    },
+    {
+      "area": "レガシー改善",
+      "example": "循環依存や漏洩の洗い出し"
+    }
+  ],
+  "target_users": "コードの構造品質を保ちたいRust開発者・チーム。",
+  "cautions": [
+    "意見の強いルールで、既存コードでは大量の指摘が出る可能性がある",
+    "指摘への機械的な移動での回避はREADMEが推奨していない"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

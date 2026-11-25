@@ -1,0 +1,505 @@
+{
+  "date": "2026-11-24",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "Marvisak/VIctory",
+      "slug": "Marvisak__VIctory",
+      "github_url": "https://github.com/Marvisak/VIctory",
+      "trendshift_url": "https://trendshift.io/repositories/375251",
+      "language": "Rust",
+      "description": "An attempt at running GTA VI on PC",
+      "stars": 11161,
+      "forks": 1375,
+      "stars_gained": 8901,
+      "forks_gained": 1272,
+      "score": 55350,
+      "created_at": "2026-11-23T21:47:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "xcl-dev/xcl",
+      "slug": "xcl-dev__xcl",
+      "github_url": "https://github.com/xcl-dev/xcl",
+      "trendshift_url": "https://trendshift.io/repositories/372068",
+      "language": "Rust",
+      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "stars": 7726,
+      "forks": 889,
+      "stars_gained": 6282,
+      "forks_gained": 714,
+      "score": 51732,
+      "created_at": "2026-11-20T20:03:21Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "4lwayz/portwatch-vi",
+      "slug": "4lwayz__portwatch-vi",
+      "github_url": "https://github.com/4lwayz/portwatch-vi",
+      "trendshift_url": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "stars": 2665,
+      "forks": 55,
+      "stars_gained": 2344,
+      "forks_gained": 45,
+      "score": 18843,
+      "created_at": "2026-11-21T23:16:41Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "shirudo-dev/shirudo",
+      "slug": "shirudo-dev__shirudo",
+      "github_url": "https://github.com/shirudo-dev/shirudo",
+      "trendshift_url": "https://trendshift.io/repositories/375123",
+      "language": "C",
+      "description": "eBPF-based security platform",
+      "stars": 1648,
+      "forks": 125,
+      "stars_gained": 1424,
+      "forks_gained": 102,
+      "score": 11604,
+      "created_at": "2026-10-13T16:06:37Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "Hut-hzf/ung220z-tool",
+      "slug": "Hut-hzf__ung220z-tool",
+      "github_url": "https://github.com/Hut-hzf/ung220z-tool",
+      "trendshift_url": "https://trendshift.io/repositories/372498",
+      "language": "Python",
+      "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+      "stars": 4400,
+      "forks": 944,
+      "stars_gained": 1209,
+      "forks_gained": 230,
+      "score": 10132,
+      "created_at": "2026-11-15T11:16:46Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "zed-industries/gpui",
+      "slug": "zed-industries__gpui",
+      "github_url": "https://github.com/zed-industries/gpui",
+      "trendshift_url": "https://trendshift.io/repositories/375054",
+      "language": "",
+      "description": "A GPU-accelerated, open-source UI framework for Rust that combines immediate and retained modes.",
+      "stars": 1555,
+      "forks": 14,
+      "stars_gained": 1248,
+      "forks_gained": 10,
+      "score": 10004,
+      "created_at": "2022-06-20T19:43:39Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "google-gemini/gemini-api-cli",
+      "slug": "google-gemini__gemini-api-cli",
+      "github_url": "https://github.com/google-gemini/gemini-api-cli",
+      "trendshift_url": "https://trendshift.io/repositories/307075",
+      "language": "Go",
+      "description": "An (experimental) CLI for the Gemini API",
+      "stars": 2286,
+      "forks": 151,
+      "stars_gained": 1196,
+      "forks_gained": 27,
+      "score": 9622,
+      "created_at": "2026-04-29T14:54:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "AFK-surf/xnulinux",
+      "slug": "AFK-surf__xnulinux",
+      "github_url": "https://github.com/AFK-surf/xnulinux",
+      "trendshift_url": "https://trendshift.io/repositories/373470",
+      "language": "Objective-C++",
+      "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "stars": 3282,
+      "forks": 129,
+      "stars_gained": 1334,
+      "forks_gained": 54,
+      "score": 9335,
+      "created_at": "2026-11-20T10:18:31Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "xerj-org/xerj",
+      "slug": "xerj-org__xerj",
+      "github_url": "https://github.com/xerj-org/xerj",
+      "trendshift_url": "https://trendshift.io/repositories/116361",
+      "language": "Rust",
+      "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+      "stars": 21355,
+      "forks": 1913,
+      "stars_gained": 1107,
+      "forks_gained": 2,
+      "score": 8861,
+      "created_at": "2026-06-30T04:32:45Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "LadybirdBrowser/ladybird",
+      "slug": "LadybirdBrowser__ladybird",
+      "github_url": "https://github.com/LadybirdBrowser/ladybird",
+      "trendshift_url": "https://trendshift.io/repositories/11667",
+      "language": "Rust",
+      "description": "Truly independent web browser",
+      "stars": 68722,
+      "forks": 3473,
+      "stars_gained": 1058,
+      "forks_gained": 7,
+      "score": 8492,
+      "created_at": "2024-05-30T09:18:10Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "pingdotgg/t3code",
+      "slug": "pingdotgg__t3code",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "trendshift_url": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "stars": 77344,
+      "forks": 13841,
+      "stars_gained": 2763,
+      "forks_gained": 54,
+      "score": 7644,
+      "created_at": "2026-02-08T23:46:22Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "stars": 3749,
+      "forks": 401,
+      "stars_gained": 1007,
+      "forks_gained": 84,
+      "score": 7328,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "cathrynlavery/diagram-design",
+      "slug": "cathrynlavery__diagram-design",
+      "github_url": "https://github.com/cathrynlavery/diagram-design",
+      "trendshift_url": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars": 71969,
+      "forks": 4950,
+      "stars_gained": 1045,
+      "forks_gained": 9,
+      "score": 6740,
+      "created_at": "2026-04-16T18:01:16Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 136006,
+      "forks": 9553,
+      "stars_gained": 1574,
+      "forks_gained": 12,
+      "score": 6646,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "HKUDS/CLI-Anything",
+      "slug": "HKUDS__CLI-Anything",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "trendshift_url": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 64686,
+      "forks": 6096,
+      "stars_gained": 1118,
+      "forks_gained": 27,
+      "score": 5938,
+      "created_at": "2026-03-08T13:52:57Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "nickrunning/wechat-selkies",
+      "slug": "nickrunning__wechat-selkies",
+      "github_url": "https://github.com/nickrunning/wechat-selkies",
+      "trendshift_url": "https://trendshift.io/repositories/23355",
+      "language": "Python",
+      "description": "基于Selkies的Linux网页版微信/QQ/Telegram，支持本地中文输入法，支持三方应用，支持AMD64和ARM64。",
+      "stars": 4323,
+      "forks": 438,
+      "stars_gained": 653,
+      "forks_gained": 43,
+      "score": 5310,
+      "created_at": "2025-10-12T10:03:40Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "slug": "anhao__ai-pose-gallery-zh",
+      "github_url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "trendshift_url": "https://trendshift.io/repositories/321871",
+      "language": "TypeScript",
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "stars": 8558,
+      "forks": 2153,
+      "stars_gained": 639,
+      "forks_gained": 94,
+      "score": 5300,
+      "created_at": "2026-10-27T12:24:37Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 15290,
+      "forks": 2293,
+      "stars_gained": 939,
+      "forks_gained": 20,
+      "score": 5188,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 17242,
+      "forks": 1064,
+      "stars_gained": 1010,
+      "forks_gained": 14,
+      "score": 5052,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "stars": 208847,
+      "forks": 11360,
+      "stars_gained": 1020,
+      "forks_gained": 6,
+      "score": 4680,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "Avaneesh-Inamdar/Stream-Tube-Desktop",
+      "slug": "Avaneesh-Inamdar__Stream-Tube-Desktop",
+      "github_url": "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop",
+      "trendshift_url": "https://trendshift.io/repositories/374031",
+      "language": "Rust",
+      "description": "Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in",
+      "stars": 828,
+      "forks": 55,
+      "stars_gained": 552,
+      "forks_gained": 26,
+      "score": 4471,
+      "created_at": "2026-11-22T18:50:17Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 22,
+      "full_name": "wquguru/cicada",
+      "slug": "wquguru__cicada",
+      "github_url": "https://github.com/wquguru/cicada",
+      "trendshift_url": "https://trendshift.io/repositories/334299",
+      "language": "Swift",
+      "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+      "stars": 3152,
+      "forks": 482,
+      "stars_gained": 545,
+      "forks_gained": 55,
+      "score": 4470,
+      "created_at": "2026-11-01T05:41:23Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "kunkundi/crossdesk",
+      "slug": "kunkundi__crossdesk",
+      "github_url": "https://github.com/kunkundi/crossdesk",
+      "trendshift_url": "https://trendshift.io/repositories/17514",
+      "language": "C++",
+      "description": "A lightweight, cross-platform remote desktop software with support for Web Client access | 一款支持 Web 客户端访问的轻量级跨平台远程桌面软件。",
+      "stars": 7273,
+      "forks": 723,
+      "stars_gained": 643,
+      "forks_gained": 20,
+      "score": 4426,
+      "created_at": "2023-11-20T06:31:52Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "deterministic-machines/deslop-please",
+      "slug": "deterministic-machines__deslop-please",
+      "github_url": "https://github.com/deterministic-machines/deslop-please",
+      "trendshift_url": "https://trendshift.io/repositories/374996",
+      "language": "Rust",
+      "description": "Bring (back) sanity to your code",
+      "stars": 677,
+      "forks": 24,
+      "stars_gained": 544,
+      "forks_gained": 20,
+      "score": 4397,
+      "created_at": "2026-11-22T05:36:03Z",
+      "tags": [
+        "Static analysis"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "ksjhk/api",
+      "slug": "ksjhk__api",
+      "github_url": "https://github.com/ksjhk/api",
+      "trendshift_url": "https://trendshift.io/repositories/346741",
+      "language": "",
+      "description": "卡世界开放平台 API 官方文档与调用示例（PHP / Python / Node.js / curl）—— 200+ 品牌卡券货源，公开查货、签名下单、自动发货",
+      "stars": 1038,
+      "forks": 0,
+      "stars_gained": 548,
+      "forks_gained": 0,
+      "score": 4384,
+      "created_at": "2026-10-26T06:20:39Z",
+      "tags": [
+        "Learning resources"
+      ],
+      "social": []
+    }
+  ]
+}

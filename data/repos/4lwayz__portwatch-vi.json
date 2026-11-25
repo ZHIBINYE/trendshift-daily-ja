@@ -1,0 +1,55 @@
+{
+  "full_name": "4lwayz/portwatch-vi",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "GTA VIのPC移植状況トラッカー",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "GTA VI（流出したXbox Series版）をPCで動かそうとするコミュニティの取り組みを、同一の基準で採点して追跡する静的サイト。GitHub Actionsで3時間ごとにデータを更新する。ゲームファイルや実行ファイルは配布・リンクしないと明記している。",
+  "features": [
+    "各取り組みの進捗を共通のラダーで採点するリーダーボード",
+    "GitHubスター・コミット数・README変更の定期取得",
+    "偽ダウンロードや流用リポジトリのフィルタ",
+    "ニュースのRSSフィードとサイトマップの生成"
+  ],
+  "how_to_use": {
+    "steps": [
+      "GitHubに新規リポジトリを作り main に push する",
+      "Settings → Pages で Source を GitHub Actions にする",
+      "Actions を有効にする",
+      "Actions → Scout → Run workflow で初回のデータ取得とデプロイを実行する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "移植プロジェクトの動向を一か所で追える",
+    "偽ダウンロードの注意喚起で被害を避けられる",
+    "静的サイトの自動更新パイプラインの例を学べる"
+  ],
+  "domains": [
+    {
+      "area": "ゲームニュース",
+      "example": "移植状況の速報記事作成"
+    },
+    {
+      "area": "コミュニティ運営",
+      "example": "偽配布リポジトリの監視"
+    },
+    {
+      "area": "Web開発",
+      "example": "GitHub Actionsで更新する静的サイトの構成"
+    }
+  ],
+  "target_users": "GTA VIのPC移植動向を追いたい人や、静的サイトの自動更新に興味がある開発者。",
+  "cautions": [
+    "オプションで Anthropic など外部APIキーを使う機能があり、利用料金が発生し得る",
+    "採点は自動処理で、READMEの主張は未検証の場合がある",
+    "流出ゲームに関する話題のため、関連リポジトリの利用は著作権面に注意"
+  ],
+  "license": null,
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約2日で約2,300スターと急増している",
+      "話題が流出したゲームに関するもので、法的リスクのある内容を扱う"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "full_name": "Avaneesh-Inamdar/Stream-Tube-Desktop",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "広告なしのRust製YouTubeデスクトップ",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "Windows・Linux向けのネイティブなYouTubeクライアント。ブラウザを使わず、SponsorBlock、DeArrow、Return YouTube Dislikeを内蔵する。UIはGPUIで描画し、動画はlibmpvで再生する。",
+  "features": [
+    "広告を読み込まずに再生（READMEによる）",
+    "SponsorBlock・DeArrow・Return YouTube Dislike内蔵",
+    "ハードウェアデコード、画質選択、字幕スタイル、チャプターパネル",
+    "タブ、ミニプレイヤー、PiP、ライブチャット"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Releasesページから対応OS向けの配布物を取得する（README記載）",
+      "起動して視聴・検索・登録チャンネルを利用する",
+      "必要に応じて設定でプレイヤーの画質などを調整する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "ブラウザ不要でメモリ使用を抑えられる",
+    "広告やスポンサー部分を飛ばして視聴時間を短縮できる",
+    "DeArrowでタイトル・サムネイルを見やすくできる"
+  ],
+  "domains": [
+    {
+      "area": "日常利用",
+      "example": "動画視聴の軽量化"
+    },
+    {
+      "area": "学習",
+      "example": "チャプターとタイムスタンプで講義動画を効率視聴"
+    },
+    {
+      "area": "配信視聴",
+      "example": "ライブチャット付きの視聴"
+    }
+  ],
+  "target_users": "ブラウザを使わずYouTubeを視聴したいデスクトップユーザー。",
+  "cautions": [
+    "YouTubeの利用規約に抵触する可能性がある（非公式クライアント）",
+    "YouTube側の仕様変更で動かなくなる可能性がある",
+    "導入はReleasesの配布物を使うため、公式リポジトリ由来かを確認すること"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約3日で約550スターと急増している",
+      "配布はReleasesのバイナリが中心"
+    ]
+  }
+}

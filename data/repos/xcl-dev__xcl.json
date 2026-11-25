@@ -1,0 +1,56 @@
+{
+  "full_name": "xcl-dev/xcl",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "Xbox Series用のWindows互換レイヤー",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "Xbox Series X|S（GDK）向けゲームを、所有済みの展開済みファイルからWindows上で実行する互換レイヤー（Wine/Protonのような位置づけ）。CPUエミュレーションは使わず、コンソールのシステムライブラリを独自実装し、RDNA2シェーダーをDXILへ再コンパイルする。",
+  "features": [
+    "ゲームのx64コードをネイティブ実行するPEローダー",
+    "kernelx・XGameRuntimeなどコンソール用ライブラリの独自実装",
+    "RDNA2→HLSL→DXILのシェーダー再コンパイラ",
+    "DirectStorage・BCPackテクスチャ展開、GFX10タイリングの復元",
+    "Minecraft Preview等が動作確認済み"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Windows 10/11 x64・Rust・Windows SDK（DXC）・シェーダーモデル6.6対応GPUを用意する",
+      "cargo build --release --workspace でビルドする",
+      "xcl inspect でゲームの依存関係を確認する",
+      "xcl run でゲームのフォルダを指定して起動する"
+    ],
+    "code": "cargo build --release --workspace\nxcl inspect D:\\Game\\game.exe\nxcl run D:\\Game [-- game arguments]"
+  },
+  "effects": [
+    "コンソール専用ゲームをPCで動かすための互換技術を学べる",
+    "シェーダー変換のテストやGPU検証の実例を参照できる",
+    "対応ゲームの動作状況を表で確認できる"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム開発",
+      "example": "コンソール依存APIの抽象化の設計参考"
+    },
+    {
+      "area": "グラフィックス研究",
+      "example": "RDNA2シェーダー変換とGPU検証手法の学習"
+    },
+    {
+      "area": "ソフトウェア保存",
+      "example": "自分が所有するタイトルの互換実行の検証"
+    }
+  ],
+  "target_users": "互換レイヤーやシェーダー変換に興味のあるRust・グラフィックス開発者。",
+  "cautions": [
+    "README上、DRM回避やパッケージ復号は行わず、自分が所有する展開済みファイルのみが対象",
+    "ゲームごとに対応状況が異なり、最新タイトルは「メニュー到達」の段階",
+    "NVIDIA GPU等では性能や描画に制約があると記載されている"
+  ],
+  "license": "GPL-2.0-only",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から数日で約6,000スター超と急増している",
+      "スターの伸びが急で、対象に商用ゲームのコンソール向け実行ファイルが含まれる"
+    ]
+  }
+}

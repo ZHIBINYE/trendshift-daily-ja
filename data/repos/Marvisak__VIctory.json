@@ -1,0 +1,55 @@
+{
+  "full_name": "Marvisak/VIctory",
+  "analyzed_at": "2026-11-24",
+  "title_ja": "Xbox版GTA VIをWindowsで動かす試み",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "Xbox Series X|S向けGTA VIの実行ファイルを、ユーザーが用意したファイルからWindows上でネイティブ実行しようとするRust製プロジェクト。README時点では「まだプレイ不可」で、メニュー表示と一部のワールド描画まで到達している。",
+  "features": [
+    "タイトルのx86-64コードをそのままプロセス内で実行するローダー",
+    "コンソール用GPUコードをDXILへ再コンパイルするシェーダー変換",
+    "XInputパッド・キーボード入力、オフラインのセーブ等のランタイム再実装",
+    "ネットワークは設計上オフライン"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Windows 10/11 x64・AVX2対応CPU・シェーダーモデル6.6対応のD3D12 GPU・Rustを用意する",
+      "victory.example.toml を victory.toml にコピーしパスを設定する",
+      "cargo build --release でビルドする",
+      "translate でシェーダーを事前変換してから run で起動する"
+    ],
+    "code": "cargo xtask install-hooks\ncopy victory.example.toml victory.toml\ncargo test --workspace\ncargo run -p victory -- config\ncargo build --release -p victory"
+  },
+  "effects": [
+    "コンソール向けゲームのPC実行に必要な層の実装例を学べる",
+    "シェーダー変換や互換レイヤーの設計を研究する材料になる",
+    "現状の到達点（ロード・描画・不具合）が状態表で把握できる"
+  ],
+  "domains": [
+    {
+      "area": "ソフトウェア研究",
+      "example": "ゲームコンソール互換レイヤーの構造の調査"
+    },
+    {
+      "area": "グラフィックス開発",
+      "example": "RDNA2シェーダーのDXIL変換手法の学習"
+    },
+    {
+      "area": "ゲーム保存・解析",
+      "example": "メモリ・アーカイブ形式の解析手法の参考"
+    }
+  ],
+  "target_users": "互換レイヤーやGPUコード変換に関心のあるRust開発者・研究者。",
+  "cautions": [
+    "正規に所有するソフト・ファイルのみ対象にすること。流出・違法入手したゲームデータの使用は著作権侵害になり得る",
+    "プレイ不可の開発初期段階で、実GPUでの実行がドライバのリセット（画面が一瞬黒くなる）を招いた例がある",
+    "起動に数GiBのWindowsコミットメモリと大容量のキャッシュ（約1.3GB）が必要"
+  ],
+  "license": "GPL-3.0-or-later",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約1日で約8,900スターと急増している",
+      "対象が流出したと噂される商用ゲームで、法的リスクがある"
+    ]
+  }
+}
