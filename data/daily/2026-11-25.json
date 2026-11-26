@@ -1,0 +1,523 @@
+{
+  "date": "2026-11-25",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 137857,
+      "forks": 9685,
+      "stars_gained": 1901,
+      "forks_gained": 33,
+      "score": 8684,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "4lwayz/portwatch-vi",
+      "slug": "4lwayz__portwatch-vi",
+      "github_url": "https://github.com/4lwayz/portwatch-vi",
+      "trendshift_url": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "stars": 3935,
+      "forks": 95,
+      "stars_gained": 1240,
+      "forks_gained": 23,
+      "score": 8631,
+      "created_at": "2026-11-21T23:16:41Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "Zettrox/ztrx",
+      "slug": "Zettrox__ztrx",
+      "github_url": "https://github.com/Zettrox/ztrx",
+      "trendshift_url": "https://trendshift.io/repositories/377102",
+      "language": "Rust",
+      "description": "Run the Xbox Series build of the game natively on Windows PCs with NVIDIA GPUs",
+      "stars": 1499,
+      "forks": 262,
+      "stars_gained": 1171,
+      "forks_gained": 262,
+      "score": 7419,
+      "created_at": "2026-11-25T01:12:08Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "crhywun/g1-acq",
+      "slug": "crhywun__g1-acq",
+      "github_url": "https://github.com/crhywun/g1-acq",
+      "trendshift_url": "https://trendshift.io/repositories/373989",
+      "language": "JavaScript",
+      "description": "",
+      "stars": 1194,
+      "forks": 264,
+      "stars_gained": 760,
+      "forks_gained": 124,
+      "score": 6328,
+      "created_at": "2026-11-22T10:53:17Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "google-gemini/gemini-api-cli",
+      "slug": "google-gemini__gemini-api-cli",
+      "github_url": "https://github.com/google-gemini/gemini-api-cli",
+      "trendshift_url": "https://trendshift.io/repositories/307075",
+      "language": "Go",
+      "description": "An (experimental) CLI for the Gemini API",
+      "stars": 3029,
+      "forks": 201,
+      "stars_gained": 731,
+      "forks_gained": 34,
+      "score": 5717,
+      "created_at": "2026-04-29T14:54:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "cathrynlavery/diagram-design",
+      "slug": "cathrynlavery__diagram-design",
+      "github_url": "https://github.com/cathrynlavery/diagram-design",
+      "trendshift_url": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars": 72939,
+      "forks": 5012,
+      "stars_gained": 1012,
+      "forks_gained": 11,
+      "score": 5545,
+      "created_at": "2026-04-16T18:01:16Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "firecrawl/firecrawl",
+      "slug": "firecrawl__firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "trendshift_url": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "stars": 209949,
+      "forks": 11411,
+      "stars_gained": 1100,
+      "forks_gained": 5,
+      "score": 4908,
+      "created_at": "2024-04-15T21:02:29Z",
+      "tags": [
+        "Web scraping"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "slug": "anhao__ai-pose-gallery-zh",
+      "github_url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "trendshift_url": "https://trendshift.io/repositories/321871",
+      "language": "TypeScript",
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "stars": 9174,
+      "forks": 2318,
+      "stars_gained": 593,
+      "forks_gained": 103,
+      "score": 4899,
+      "created_at": "2026-10-27T12:24:37Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "Marvisak/VIctory",
+      "slug": "Marvisak__VIctory",
+      "github_url": "https://github.com/Marvisak/VIctory",
+      "trendshift_url": "https://trendshift.io/repositories/375251",
+      "language": "Rust",
+      "description": "An attempt at running GTA VI on PC",
+      "stars": 12532,
+      "forks": 1856,
+      "stars_gained": 1328,
+      "forks_gained": 186,
+      "score": 4883,
+      "created_at": "2026-11-23T21:47:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "seanhowarthdev/Roam-Control",
+      "slug": "seanhowarthdev__Roam-Control",
+      "github_url": "https://github.com/seanhowarthdev/Roam-Control",
+      "trendshift_url": "https://trendshift.io/repositories/213260",
+      "language": "",
+      "description": "Choose, test and move an iPhone’s reported location.",
+      "stars": 1801,
+      "forks": 239,
+      "stars_gained": 576,
+      "forks_gained": 38,
+      "score": 4684,
+      "created_at": "2026-09-04T15:09:22Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "openai/math",
+      "slug": "openai__math",
+      "github_url": "https://github.com/openai/math",
+      "trendshift_url": "https://trendshift.io/repositories/286672",
+      "language": "Lean",
+      "description": "",
+      "stars": 18317,
+      "forks": 2052,
+      "stars_gained": 581,
+      "forks_gained": 16,
+      "score": 4680,
+      "created_at": "2026-10-06T21:47:02Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "RMvdesi/obsidian-prism",
+      "slug": "RMvdesi__obsidian-prism",
+      "github_url": "https://github.com/RMvdesi/obsidian-prism",
+      "trendshift_url": "https://trendshift.io/repositories/370165",
+      "language": "JavaScript",
+      "description": "Optical UI, damped-spring choreography, 512K shallow-water vial, pixel mascots & dual-mode thought suite for Antigravity (GPL-3.0)",
+      "stars": 910,
+      "forks": 27,
+      "stars_gained": 556,
+      "forks_gained": 9,
+      "score": 4466,
+      "created_at": "2026-11-17T02:50:21Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "pingdotgg/t3code",
+      "slug": "pingdotgg__t3code",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "trendshift_url": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "stars": 79319,
+      "forks": 14682,
+      "stars_gained": 2010,
+      "forks_gained": 243,
+      "score": 4270,
+      "created_at": "2026-02-08T23:46:22Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "HKUDS/CLI-Anything",
+      "slug": "HKUDS__CLI-Anything",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "trendshift_url": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 65617,
+      "forks": 6208,
+      "stars_gained": 944,
+      "forks_gained": 10,
+      "score": 4146,
+      "created_at": "2026-03-08T13:52:57Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "zed-industries/gpui",
+      "slug": "zed-industries__gpui",
+      "github_url": "https://github.com/zed-industries/gpui",
+      "trendshift_url": "https://trendshift.io/repositories/375054",
+      "language": "",
+      "description": "A GPU-accelerated, open-source UI framework for Rust that combines immediate and retained modes.",
+      "stars": 2086,
+      "forks": 21,
+      "stars_gained": 556,
+      "forks_gained": 5,
+      "score": 4047,
+      "created_at": "2022-06-20T19:43:39Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "mvanhorn/last30days-skill",
+      "slug": "mvanhorn__last30days-skill",
+      "github_url": "https://github.com/mvanhorn/last30days-skill",
+      "trendshift_url": "https://trendshift.io/repositories/21997",
+      "language": "Python",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars": 75036,
+      "forks": 7139,
+      "stars_gained": 905,
+      "forks_gained": 11,
+      "score": 4043,
+      "created_at": "2026-01-23T20:37:37Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "XinaTian/MROffice",
+      "slug": "XinaTian__MROffice",
+      "github_url": "https://github.com/XinaTian/MROffice",
+      "trendshift_url": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "description": "MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line.",
+      "stars": 4550,
+      "forks": 477,
+      "stars_gained": 790,
+      "forks_gained": 75,
+      "score": 3995,
+      "created_at": "2026-11-10T17:54:07Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 18172,
+      "forks": 1129,
+      "stars_gained": 921,
+      "forks_gained": 6,
+      "score": 3980,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "ubiquitarianism/leonida",
+      "slug": "ubiquitarianism__leonida",
+      "github_url": "https://github.com/ubiquitarianism/leonida",
+      "trendshift_url": "https://trendshift.io/repositories/376671",
+      "language": "Python",
+      "description": "A continuation of Leonida, the Xbox > PC port interface of GTA VI",
+      "stars": 2308,
+      "forks": 473,
+      "stars_gained": 463,
+      "forks_gained": 70,
+      "score": 3871,
+      "created_at": "2026-11-23T23:54:39Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "antigravity-cn-community/Antigravity-Chinese-Localization",
+      "slug": "antigravity-cn-community__Antigravity-Chinese-Localization",
+      "github_url": "https://github.com/antigravity-cn-community/Antigravity-Chinese-Localization",
+      "trendshift_url": "https://trendshift.io/repositories/209626",
+      "language": "JavaScript",
+      "description": "antigravity一键汉化",
+      "stars": 2371,
+      "forks": 68,
+      "stars_gained": 468,
+      "forks_gained": 9,
+      "score": 3764,
+      "created_at": "2026-05-25T01:35:04Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "zhouxiaoka/autoclip",
+      "slug": "zhouxiaoka__autoclip",
+      "github_url": "https://github.com/zhouxiaoka/autoclip",
+      "trendshift_url": "https://trendshift.io/repositories/25801",
+      "language": "Python",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "stars": 16107,
+      "forks": 2354,
+      "stars_gained": 827,
+      "forks_gained": 16,
+      "score": 3744,
+      "created_at": "2025-07-08T04:51:15Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "jingyaogong/minimind",
+      "slug": "jingyaogong__minimind",
+      "github_url": "https://github.com/jingyaogong/minimind",
+      "trendshift_url": "https://trendshift.io/repositories/12586",
+      "language": "Python",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "stars": 70897,
+      "forks": 9503,
+      "stars_gained": 766,
+      "forks_gained": 21,
+      "score": 3499,
+      "created_at": "2024-07-27T04:34:12Z",
+      "tags": [
+        "LLM training"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "BaaRai/ARTEX",
+      "slug": "BaaRai__ARTEX",
+      "github_url": "https://github.com/BaaRai/ARTEX",
+      "trendshift_url": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "stars": 20711,
+      "forks": 7507,
+      "stars_gained": 1482,
+      "forks_gained": 245,
+      "score": 3456,
+      "created_at": "2026-10-08T21:14:39Z",
+      "tags": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "getpaseo/paseo",
+      "slug": "getpaseo__paseo",
+      "github_url": "https://github.com/getpaseo/paseo",
+      "trendshift_url": "https://trendshift.io/repositories/23675",
+      "language": "TypeScript",
+      "description": "Orchestrate multiple coding agents from desktop and mobile",
+      "stars": 25418,
+      "forks": 3364,
+      "stars_gained": 397,
+      "forks_gained": 5,
+      "score": 3188,
+      "created_at": "2025-10-13T12:27:02Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "slug": "elementalsouls__Claude-BugHunter",
+      "github_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshift_url": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars": 22853,
+      "forks": 2310,
+      "stars_gained": 1538,
+      "forks_gained": 20,
+      "score": 3179,
+      "created_at": "2026-05-05T11:22:32Z",
+      "tags": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "social": [
+        "x"
+      ]
+    }
+  ]
+}

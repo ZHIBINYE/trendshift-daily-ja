@@ -1,0 +1,55 @@
+{
+  "full_name": "ubiquitarianism/leonida",
+  "title_ja": "GTA VI Xbox版の PC 静的再コンパイル",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "Grand Theft Auto VI（Xbox Series 版）を、手元の正規コピーから Windows 上でネイティブ実行できるようにする静的再コンパイル計画の継続プロジェクト。リポジトリにゲーム本体・鍵・実行ファイルは含まれない。現状は初期段階で、プレイはできない。",
+  "features": [
+    "Xbox Series の x86-64 コードをネイティブ実行",
+    "RDNA2 シェーダーを SPIR-V（Vulkan 用）へ変換（26,503 本が変換済み）",
+    "手元のゲームパッケージからモデル・テクスチャ・音声を読み込む",
+    "Windows / Linux（Proton）でのブートを確認"
+  ],
+  "how_to_use": {
+    "steps": [
+      "前提条件を用意する（Xbox Series 版パッケージ 1.0.2.1、Windows 10/11 x64、約 400 GB の空き容量など）",
+      "git clone --recursive でサブモジュール込みで取得する",
+      "Build.bat（Linux/macOS は ./Build.sh）を実行する",
+      "ゲームフォルダが自動検出され、結果は Documents\\Leonida に出力される"
+    ],
+    "code": "git clone --recursive https://github.com/ubiquitarianism/leonida"
+  },
+  "effects": [
+    "静的再コンパイルや GPU シェーダー変換の技術を学べる",
+    "ビルド工程が再開可能で、検証状況をレポートで追える"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム技術研究",
+      "example": "静的再コンパイルの手法の学習"
+    },
+    {
+      "area": "グラフィックス",
+      "example": "RDNA2 から SPIR-V への変換の研究"
+    },
+    {
+      "area": "OS 互換技術",
+      "example": "Proton 上での動作調査"
+    }
+  ],
+  "target_users": "自分でゲームコピーを所有し、移植技術に深い関心のある上級開発者。",
+  "cautions": [
+    "正規に所有するコピーのみ対象。著作権・利用規約に反する利用や、生成物の共有はしてはならない",
+    "プロジェクトは初期段階でプレイ不可。約 400 GB の空き容量が必要",
+    "公開から数日で急増したスターがあり、スター数だけで信頼性は判断できない"
+  ],
+  "license": "GPL-3.0 以降",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "リポジトリ作成が 2026-11-23 で、数日で 463 スターを獲得している",
+      "権利者の許諾が不明な商用ゲームの移植を扱う内容で、法的リスクがある",
+      "ソースコード（Python）は公開されており、README は鍵・実行ファイルを含まないと明記している"
+    ]
+  },
+  "analyzed_at": "2026-11-26"
+}

@@ -1,0 +1,56 @@
+{
+  "full_name": "antigravity-cn-community/Antigravity-Chinese-Localization",
+  "title_ja": "Antigravity の中国語化パッチ",
+  "category": "AI開発ツール",
+  "summary_ja": "Google Antigravity の UI を中国語化する非破壊型のパッチ。app.asar を差し替えることで、設定・計画モード・権限・プラグインなど約4,920件の文言を翻訳する。コミュニティが保守する。",
+  "features": [
+    "計画モード・設定・音声・権限サンドボックス等の画面を中国語化",
+    "対応バージョンを確認してから適用し、原本をバックアップ",
+    "ローカル管理画面（127.0.0.1:3388）でのインストール・復元",
+    "Windows / macOS / Linux に対応"
+  ],
+  "how_to_use": {
+    "steps": [
+      "対応する Antigravity のバージョンを確認する",
+      "Releases から該当バージョン用のパッチ（app.asar）を取得する",
+      "Node.js があればローカル管理画面から「ダウンロードして適用」を選ぶ",
+      "必要なら元の英語版に復元する"
+    ],
+    "code": "node localize.js --check-status\nnode localize.js --now"
+  },
+  "effects": [
+    "中国語話者が Antigravity をより使いやすくなる",
+    "版数不一致の上書きを防ぐ検査で、起動不能のリスクを減らす",
+    "原本のバックアップから英語版へ復元できる"
+  ],
+  "domains": [
+    {
+      "area": "中国語圏の開発者",
+      "example": "母語で AI コーディング環境を使う"
+    },
+    {
+      "area": "教育",
+      "example": "初学者向けに画面を中国語化"
+    },
+    {
+      "area": "ローカライズ",
+      "example": "対象アプリの文言の翻訳手法を参考にする"
+    }
+  ],
+  "target_users": "Antigravity を中国語 UI で使いたい個人・チーム。",
+  "cautions": [
+    "app.asar の置き換えで Google の署名が無効になり、macOS では「破損」警告が出ることがある",
+    "適用時に Antigravity のプロセスを終了するため、保存前の編集が失われる恐れがある",
+    "非公式パッチなので、公式の更新で動作しなくなることがある。バージョン対応表を確認すること"
+  ],
+  "license": null,
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "Releases の app.asar を取得してクライアントのファイルを置き換える方式である",
+      "配布物の取得・適用を AI エージェントに任せるプロンプトを案内している",
+      "ソース（JavaScript）は公開されており、作成は 2026-05 でスター増加は急激ではない"
+    ]
+  },
+  "analyzed_at": "2026-11-26"
+}
