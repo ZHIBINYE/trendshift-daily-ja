@@ -1,0 +1,56 @@
+{
+  "full_name": "emilkowalski/skills",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "UI設計・アニメーションのAIスキル集",
+  "category": "AI開発ツール",
+  "summary_ja": "UI・アニメーションの設計知識をAIエージェント向けのスキルにまとめた集。Vercel・Linearで働いた作者の経験にもとづき、イージングの選び方など、エージェントが間違えやすい点を補う。アニメーションの作成・レビュー・改善・削除などのスキルを含む。",
+  "features": [
+    "アニメーション作成・レビュー・改善・削除のスキル",
+    "gestures、choreograph、animation-performance など専門スキル",
+    "モバイル向けの apple-design、mobile-native、animate-expo",
+    "UIライブラリ選定の pick-ui-library",
+    "複数案を切り替えて比較する prototype"
+  ],
+  "how_to_use": {
+    "steps": [
+      "`npx skills@latest add emilkowalski/skills` でスキルを追加する",
+      "作業内容に合わせてエージェントにスキルを使わせる",
+      "各スキルのページ（aiforui.dev）で使いどころと例を確認する"
+    ],
+    "code": "npx skills@latest add emilkowalski/skills"
+  },
+  "effects": [
+    "アニメーションの品質が上がり、手戻りが減る",
+    "エージェントの典型的な誤りを避けられる",
+    "UIの判断基準を学べる"
+  ],
+  "domains": [
+    {
+      "area": "Web開発",
+      "example": "UI部品のアニメーション設計"
+    },
+    {
+      "area": "モバイル開発",
+      "example": "React Nativeのジェスチャーと画面遷移"
+    },
+    {
+      "area": "デザイン",
+      "example": "UI案の比較検討"
+    },
+    {
+      "area": "品質管理",
+      "example": "アニメーションの性能・過不足の監査"
+    }
+  ],
+  "target_users": "AIエージェントでUIを作るデザイナー・フロントエンド開発者。",
+  "cautions": [
+    "外部のスキルをエージェントに追加するため、導入前に内容を確認すること",
+    "スキルは作者個人の判断基準にもとづく。自社のデザイン指針と合うか確認すること",
+    "ライセンスはREADMEの記載だけでは特定できない"
+  ],
+  "license": null,
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

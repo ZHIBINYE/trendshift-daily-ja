@@ -1,0 +1,57 @@
+{
+  "full_name": "WhiteBr1ck/agy-powertools",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "Antigravity 2.0の拡張プラグイン",
+  "category": "AI開発ツール",
+  "summary_ja": "Antigravity 2.0に内部から組み込む拡張プラグイン。コンテキストやキャッシュ、生成速度の表示、用量ダッシュボード、会話の分岐・編集、多言語UIなどを加える。ローカルのSQLiteとJSONLを読み取り専用で解析し、クライアントのインストールファイルは変更しないと説明している。",
+  "features": [
+    "コンテキスト使用量・キャッシュ再利用・生成速度の表示",
+    "用量ダッシュボード（リクエスト数・トークン・参考費用・キャッシュ命中率）",
+    "会話の分岐と編集",
+    "複数Googleアカウントの切り替えと上限の表示（既定はオフ）",
+    "TUN不要の独立プロキシ、SSH・WSL2対応（既定はオフ）"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Antigravityを一度インストールして起動しておく",
+      "Releasesから最新のZIPを入手して解凍する（またはcloneする）",
+      "Windowsは install.ps1、macOS/Linux/WSL2は install.sh を実行する",
+      "Antigravityを開き、設定から機能を選ぶ"
+    ],
+    "code": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1\nsh ./install.sh"
+  },
+  "effects": [
+    "利用上限やコンテキスト消費を可視化して、使い過ぎを避けやすくなる",
+    "キャッシュ異常を検知して無駄な消費に気づける",
+    "長い会話を分岐して試行錯誤できる"
+  ],
+  "domains": [
+    {
+      "area": "AIコーディング",
+      "example": "トークンと費用の管理"
+    },
+    {
+      "area": "チーム運用",
+      "example": "複数アカウントの上限の把握"
+    },
+    {
+      "area": "リモート開発",
+      "example": "SSH・WSL2環境でのAI利用"
+    },
+    {
+      "area": "ツール開発",
+      "example": "クライアント拡張の実装例"
+    }
+  ],
+  "target_users": "Antigravity 2.0を日常的に使い、用量や会話を細かく管理したい人。",
+  "cautions": [
+    "クライアントのデバッグ接続を利用して組み込むため、Antigravityの更新で動かなくなる可能性がある",
+    "複数アカウント切り替えは認証情報をローカルに保存する機能で、既定はオフ。使う場合は扱いに注意",
+    "Antigravity 2.35.0対応と記載。README本体は中国語"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

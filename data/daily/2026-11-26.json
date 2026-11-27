@@ -1,0 +1,519 @@
+{
+  "date": "2026-11-26",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "4lwayz/portwatch-vi",
+      "slug": "4lwayz__portwatch-vi",
+      "github_url": "https://github.com/4lwayz/portwatch-vi",
+      "trendshift_url": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "stars": 5617,
+      "forks": 161,
+      "stars_gained": 1659,
+      "forks_gained": 42,
+      "score": 11420,
+      "created_at": "2026-11-21T23:16:41Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "jub0t/Concat",
+      "slug": "jub0t__Concat",
+      "github_url": "https://github.com/jub0t/Concat",
+      "trendshift_url": "https://trendshift.io/repositories/191379",
+      "language": "Rust",
+      "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
+      "stars": 21527,
+      "forks": 2605,
+      "stars_gained": 1356,
+      "forks_gained": 75,
+      "score": 10998,
+      "created_at": "2026-08-25T18:34:47Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 140272,
+      "forks": 9825,
+      "stars_gained": 2407,
+      "forks_gained": 34,
+      "score": 10705,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "alesha-pro/llm.asm",
+      "slug": "alesha-pro__llm.asm",
+      "github_url": "https://github.com/alesha-pro/llm.asm",
+      "trendshift_url": "https://trendshift.io/repositories/377405",
+      "language": "Assembly",
+      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+      "stars": 1455,
+      "forks": 174,
+      "stars_gained": 1288,
+      "forks_gained": 137,
+      "score": 10578,
+      "created_at": "2026-11-25T07:28:51Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "RMvdesi/obsidian-prism",
+      "slug": "RMvdesi__obsidian-prism",
+      "github_url": "https://github.com/RMvdesi/obsidian-prism",
+      "trendshift_url": "https://trendshift.io/repositories/370165",
+      "language": "JavaScript",
+      "description": "Optical UI, damped-spring choreography, 512K shallow-water vial, pixel mascots & dual-mode thought suite for Antigravity (GPL-3.0)",
+      "stars": 2214,
+      "forks": 82,
+      "stars_gained": 1306,
+      "forks_gained": 42,
+      "score": 10534,
+      "created_at": "2026-11-17T02:50:21Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "Belobug/VIctory-Belobug-AMD",
+      "slug": "Belobug__VIctory-Belobug-AMD",
+      "github_url": "https://github.com/Belobug/VIctory-Belobug-AMD",
+      "trendshift_url": "https://trendshift.io/repositories/377434",
+      "language": "Rust",
+      "description": "",
+      "stars": 2529,
+      "forks": 312,
+      "stars_gained": 1164,
+      "forks_gained": 30,
+      "score": 9372,
+      "created_at": "2026-11-25T09:41:37Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "opensetlabs/openset-llm",
+      "slug": "opensetlabs__openset-llm",
+      "github_url": "https://github.com/opensetlabs/openset-llm",
+      "trendshift_url": "https://trendshift.io/repositories/378802",
+      "language": "C++",
+      "description": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
+      "stars": 1682,
+      "forks": 137,
+      "stars_gained": 933,
+      "forks_gained": 72,
+      "score": 7625,
+      "created_at": "2026-11-13T12:45:59Z",
+      "tags": [
+        "LLM inference"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "lsernau/grh-lean",
+      "slug": "lsernau__grh-lean",
+      "github_url": "https://github.com/lsernau/grh-lean",
+      "trendshift_url": "https://trendshift.io/repositories/379402",
+      "language": "Lean",
+      "description": "A short Lean 4 proof of the Generalized Riemann Hypothesis",
+      "stars": 862,
+      "forks": 84,
+      "stars_gained": 756,
+      "forks_gained": 76,
+      "score": 6200,
+      "created_at": "2026-11-25T20:42:55Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "antigravity-cn-community/Antigravity-Chinese-Localization",
+      "slug": "antigravity-cn-community__Antigravity-Chinese-Localization",
+      "github_url": "https://github.com/antigravity-cn-community/Antigravity-Chinese-Localization",
+      "trendshift_url": "https://trendshift.io/repositories/209626",
+      "language": "JavaScript",
+      "description": "antigravity一键汉化",
+      "stars": 2976,
+      "forks": 81,
+      "stars_gained": 606,
+      "forks_gained": 12,
+      "score": 4872,
+      "created_at": "2026-05-25T01:35:04Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "avatarmanz/VIctory-7900XTX",
+      "slug": "avatarmanz__VIctory-7900XTX",
+      "github_url": "https://github.com/avatarmanz/VIctory-7900XTX",
+      "trendshift_url": "https://trendshift.io/repositories/379520",
+      "language": "Rust",
+      "description": "VIctory (Xbox Series compatibility layer) tuned for AMD RX 7900 XTX: faster preparing, texture read-back, findings. No game files.",
+      "stars": 1838,
+      "forks": 253,
+      "stars_gained": 802,
+      "forks_gained": 0,
+      "score": 4812,
+      "created_at": "2026-11-25T22:18:14Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "nexu-io/opengame",
+      "slug": "nexu-io__opengame",
+      "github_url": "https://github.com/nexu-io/opengame",
+      "trendshift_url": "https://trendshift.io/repositories/379696",
+      "language": "TypeScript",
+      "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+      "stars": 729,
+      "forks": 4,
+      "stars_gained": 781,
+      "forks_gained": 0,
+      "score": 4686,
+      "created_at": "2026-11-25T10:35:45Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 12,
+      "full_name": "perixtar/Tech-OA-Interview-Questions",
+      "slug": "perixtar__Tech-OA-Interview-Questions",
+      "github_url": "https://github.com/perixtar/Tech-OA-Interview-Questions",
+      "trendshift_url": "https://trendshift.io/repositories/84978",
+      "language": "Python",
+      "description": "Daily updated list of Tech Company OAs and Interview Problems. Save your time from finding them all over the internet.",
+      "stars": 6718,
+      "forks": 432,
+      "stars_gained": 571,
+      "forks_gained": 0,
+      "score": 4568,
+      "created_at": "2023-09-04T23:34:24Z",
+      "tags": [
+        "Learning resources",
+        "Curated list"
+      ],
+      "social": [
+        "reddit"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "google-gemini/gemini-api-cli",
+      "slug": "google-gemini__gemini-api-cli",
+      "github_url": "https://github.com/google-gemini/gemini-api-cli",
+      "trendshift_url": "https://trendshift.io/repositories/307075",
+      "language": "Go",
+      "description": "An (experimental) CLI for the Gemini API",
+      "stars": 3755,
+      "forks": 259,
+      "stars_gained": 733,
+      "forks_gained": 38,
+      "score": 4503,
+      "created_at": "2026-04-29T14:54:25Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 14,
+      "full_name": "superdesigndev/treg",
+      "slug": "superdesigndev__treg",
+      "github_url": "https://github.com/superdesigndev/treg",
+      "trendshift_url": "https://trendshift.io/repositories/85292",
+      "language": "Python",
+      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+      "stars": 9555,
+      "forks": 933,
+      "stars_gained": 553,
+      "forks_gained": 15,
+      "score": 4458,
+      "created_at": "2026-07-15T13:38:07Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "Hut-hzf/ung220z-tool",
+      "slug": "Hut-hzf__ung220z-tool",
+      "github_url": "https://github.com/Hut-hzf/ung220z-tool",
+      "trendshift_url": "https://trendshift.io/repositories/372498",
+      "language": "Python",
+      "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+      "stars": 5488,
+      "forks": 1166,
+      "stars_gained": 676,
+      "forks_gained": 115,
+      "score": 4073,
+      "created_at": "2026-11-15T11:16:46Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "tt-a1i/archify",
+      "slug": "tt-a1i__archify",
+      "github_url": "https://github.com/tt-a1i/archify",
+      "trendshift_url": "https://trendshift.io/repositories/31352",
+      "language": "JavaScript",
+      "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+      "stars": 100550,
+      "forks": 7339,
+      "stars_gained": 649,
+      "forks_gained": 6,
+      "score": 4027,
+      "created_at": "2026-04-15T05:27:37Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "intel/intel-one-mono",
+      "slug": "intel__intel-one-mono",
+      "github_url": "https://github.com/intel/intel-one-mono",
+      "trendshift_url": "https://trendshift.io/repositories/222198",
+      "language": "",
+      "description": "Intel One Mono font repository",
+      "stars": 10757,
+      "forks": 339,
+      "stars_gained": 503,
+      "forks_gained": 0,
+      "score": 4024,
+      "created_at": "2023-04-11T20:25:19Z",
+      "tags": [],
+      "social": [
+        "hackernews"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "WhiteBr1ck/agy-powertools",
+      "slug": "WhiteBr1ck__agy-powertools",
+      "github_url": "https://github.com/WhiteBr1ck/agy-powertools",
+      "trendshift_url": "https://trendshift.io/repositories/370708",
+      "language": "JavaScript",
+      "description": "Antigravity 2.0 原生界面增强插件：界面汉化、类 Codex 紧凑排版与阶段汇报、上下文与缓存监控、会话分支及本地用量面板",
+      "stars": 1286,
+      "forks": 56,
+      "stars_gained": 482,
+      "forks_gained": 19,
+      "score": 3900,
+      "created_at": "2026-11-16T21:35:31Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "slug": "rohitg00__ai-engineering-from-scratch",
+      "github_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshift_url": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "stars": 80581,
+      "forks": 14881,
+      "stars_gained": 476,
+      "forks_gained": 3,
+      "score": 3814,
+      "created_at": "2026-03-18T18:38:02Z",
+      "tags": [
+        "Learning resources"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "ersinkoc/phonebox",
+      "slug": "ersinkoc__phonebox",
+      "github_url": "https://github.com/ersinkoc/phonebox",
+      "trendshift_url": "https://trendshift.io/repositories/345967",
+      "language": "JavaScript",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+      "stars": 7175,
+      "forks": 812,
+      "stars_gained": 724,
+      "forks_gained": 26,
+      "score": 3713,
+      "created_at": "2026-11-07T16:45:16Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "cathrynlavery/diagram-design",
+      "slug": "cathrynlavery__diagram-design",
+      "github_url": "https://github.com/cathrynlavery/diagram-design",
+      "trendshift_url": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars": 73783,
+      "forks": 5069,
+      "stars_gained": 827,
+      "forks_gained": 14,
+      "score": 3670,
+      "created_at": "2026-04-16T18:01:16Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 22,
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "slug": "XiaoYouChR__Ghost-Downloader-3",
+      "github_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshift_url": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "stars": 19047,
+      "forks": 1173,
+      "stars_gained": 876,
+      "forks_gained": 15,
+      "score": 3537,
+      "created_at": "2023-08-16T04:23:44Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "BaaRai/ARTEX",
+      "slug": "BaaRai__ARTEX",
+      "github_url": "https://github.com/BaaRai/ARTEX",
+      "trendshift_url": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "description": "Actively maintained ARTEX: AI autonomous penetration testing system. Self-hosted, model-agnostic, evidence-backed findings. Community continuation of Autumn-27/ARTEX, AGPL-3.0.",
+      "stars": 22228,
+      "forks": 8148,
+      "stars_gained": 1517,
+      "forks_gained": 353,
+      "score": 3525,
+      "created_at": "2026-10-08T21:14:39Z",
+      "tags": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "emilkowalski/skills",
+      "slug": "emilkowalski__skills",
+      "github_url": "https://github.com/emilkowalski/skills",
+      "trendshift_url": "https://trendshift.io/repositories/44614",
+      "language": "Markdown",
+      "description": "Skills for Designers and Engineers.",
+      "stars": 60094,
+      "forks": 3686,
+      "stars_gained": 526,
+      "forks_gained": 11,
+      "score": 3517,
+      "created_at": "2026-03-16T13:52:31Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "n8n-io/nod",
+      "slug": "n8n-io__nod",
+      "github_url": "https://github.com/n8n-io/nod",
+      "trendshift_url": "https://trendshift.io/repositories/349572",
+      "language": "TypeScript",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "stars": 3992,
+      "forks": 615,
+      "stars_gained": 436,
+      "forks_gained": 39,
+      "score": 3490,
+      "created_at": "2026-09-25T13:46:42Z",
+      "tags": [
+        "AI agent"
+      ],
+      "social": [
+        "x"
+      ]
+    }
+  ]
+}

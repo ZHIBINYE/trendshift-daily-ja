@@ -1,0 +1,57 @@
+{
+  "full_name": "rohitg00/ai-engineering-from-scratch",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "AIエンジニアリングを一から学ぶ",
+  "category": "研究・学術",
+  "summary_ja": "モデル内部、検索パイプライン、エージェント実行基盤を自分で実装しながら学ぶ無料のカリキュラム。542レッスンが20フェーズに分かれ、Python・TypeScript・Rust・Julia・Goでコードを書く。Webサイト、コーディングエージェント、ローカルのコードの3通りで学べる。",
+  "features": [
+    "542レッスン・20フェーズの体系的なカリキュラム",
+    "各レッスンでコードと評価結果を残す",
+    "インタラクティブなラボとプロジェクト課題",
+    "複数の学習ルート",
+    "`npx skills add` でコーディングエージェントを家庭教師にできる"
+  ],
+  "how_to_use": {
+    "steps": [
+      "学習サイト（aiengineeringfromscratch.com）で環境構築のレッスンから始める",
+      "学習ルートを選ぶ",
+      "エージェントを使う場合は npx skills add でスキルを追加する",
+      "ローカルで学ぶ場合はリポジトリをcloneしてレッスンのコードを実行する"
+    ],
+    "code": "npx skills add rohitg00/ai-engineering-from-scratch\ngit clone https://github.com/rohitg00/ai-engineering-from-scratch.git"
+  },
+  "effects": [
+    "AIの内部動作を実装を通じて理解できる",
+    "学習の道筋が整理され、独学の迷いが減る",
+    "作ったコードと評価結果をポートフォリオにできる"
+  ],
+  "domains": [
+    {
+      "area": "教育",
+      "example": "AI人材育成の社内研修教材"
+    },
+    {
+      "area": "個人学習",
+      "example": "独学でのAIエンジニアリングの習得"
+    },
+    {
+      "area": "転職",
+      "example": "実装経験の積み上げ"
+    },
+    {
+      "area": "研究",
+      "example": "基礎手法を再実装して検証する"
+    }
+  ],
+  "target_users": "AIエンジニアリングを基礎から実装で学びたいエンジニアや学生。",
+  "cautions": [
+    "規模が非常に大きく、全体の完走には長い時間が必要",
+    "スキル導入コマンドは外部のスキルをエージェントに追加するため、内容を確認してから使うこと",
+    "複数言語・複数ツールの環境構築が必要になる"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

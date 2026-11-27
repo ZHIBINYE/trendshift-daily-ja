@@ -1,0 +1,57 @@
+{
+  "full_name": "avatarmanz/VIctory-7900XTX",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "4K・レイトレ対応を狙うXbox互換レイヤー",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "VIctory（Xbox Series向けタイトルをWindowsで動かす互換レイヤー）のRX 7900 XTX向けフォーク。Series Xの4K出力＋レイトレーシングで本来の見た目に近づけることを第一目標とし、描画の正確さ、フレームレート、小型PC対応の順に進める。ゲームファイルは含まないと明記している。",
+  "features": [
+    "レイトレーシング有効時のライティング不具合の修正（暗すぎ・明るすぎ）",
+    "描画ずれ（木々の消失など）の修正を2026-11-26に反映",
+    "環境変数で切り替えるレンダラーパッチ群",
+    "4K（1440p描画）・1080p、Series S/Xの各プロファイルでの計測表",
+    "DRED診断付きの起動スクリプト"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Windows 10/11 x64、AVX2対応CPU、DirectX 12対応GPU、Rust、MSVCビルドツールと自分のゲームダンプを用意する",
+      "リポジトリをcloneし、victory.example.toml をコピーしてパスを設定する",
+      "cargo build でビルドする",
+      "scripts\\play.ps1 に自分のexeのパスを渡して起動する"
+    ],
+    "code": "git clone https://github.com/avatarmanz/VIctory-7900XTX\ncd VIctory-7900XTX\ncopy victory.example.toml victory.toml\ncargo build --locked --profile diag -p victory --features diagnostics\nscripts\\play.ps1 -Exe <path of your copy's executable>"
+  },
+  "effects": [
+    "レイトレ有効時の描画品質の現状を数値で把握できる",
+    "ストリーミングの遅さなど未解決課題が明示されている",
+    "D3D12移植層の最適化事例を学べる"
+  ],
+  "domains": [
+    {
+      "area": "グラフィックス開発",
+      "example": "レイトレ構造の破損原因の調査"
+    },
+    {
+      "area": "互換レイヤー開発",
+      "example": "間接描画の準備タイミング問題の修正例"
+    },
+    {
+      "area": "コミュニティ調査",
+      "example": "解像度・RT設定ごとの性能比較"
+    }
+  ],
+  "target_users": "互換レイヤーやレイトレーシングの実装に関心がある開発者。",
+  "cautions": [
+    "流出したとされるゲームの動作環境にあたるため、著作権・利用規約上のリスクがある。自分で正規に入手したファイルのみを対象にすること",
+    "実験的な移植層で、動作環境にはWindows 11・AVX2対応CPU・DirectX 12対応GPUのほか、大量のRAM（README推奨は64GB）が必要",
+    "READMEでは、レイトレ有効時は約10fpsで実用的な速度ではないと示されている"
+  ],
+  "license": "GPL-3.0-or-later",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約2日（2026-11-25作成）で約1,800スターと急増している",
+      "話題が流出したゲームの動作に関するもので、法的リスクのある内容を扱う",
+      "READMEの性能値は作者の1台のPCでの計測で、未検証の主張を含む"
+    ]
+  }
+}

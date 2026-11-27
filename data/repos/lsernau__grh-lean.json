@@ -1,0 +1,52 @@
+{
+  "full_name": "lsernau/grh-lean",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "Lean 4によるリーマン予想の証明",
+  "category": "研究・学術",
+  "summary_ja": "リーマン予想とディリクレL関数に対する一般化リーマン予想の証明をLean 4で記述した研究成果物。Mathlibを使い、Levent Alpögeの証明をもとにAnthropicの同僚とClaudeとの共同作業で短縮した版だという。作者は保守も貢献受付も行わないと明記している。",
+  "features": [
+    "可読版（約30万行）とコンパクト版（約7.6万行）の2エディション",
+    "公理は propext・Classical.choice・Quot.sound のみ",
+    "Lake プロジェクトとしてビルドでき、公理の出力スクリプトも付属",
+    "Mathlibに依存"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Lean v4.35.0とMathlibの指定コミットを用意する",
+      "grh/ または grh-compact/ に移動する",
+      "lake exe cache get でMathlibのキャッシュを取得する",
+      "lake build で検証し、PrintAxioms.lean で使用公理を確認する"
+    ],
+    "code": "lake exe cache get\nlake build\nlake env lean scripts/PrintAxioms.lean"
+  },
+  "effects": [
+    "形式証明の規模と手法の実例を確認できる",
+    "AIと人間の協働による数学の形式化の参考になる",
+    "公理の使用を機械的に確認する手順を学べる"
+  ],
+  "domains": [
+    {
+      "area": "数学研究",
+      "example": "解析的整数論の形式化の読み解き"
+    },
+    {
+      "area": "形式手法",
+      "example": "大規模Leanプロジェクトの構成の参考"
+    },
+    {
+      "area": "AI研究",
+      "example": "AI支援による定理証明の事例研究"
+    }
+  ],
+  "target_users": "Lean/Mathlibを扱う数学者・形式検証の研究者。",
+  "cautions": [
+    "README上、機械検査のみが通っており、数学者による通読や論文はまだ無いと明記されている",
+    "ビルドに12コア・24GBのメモリで1〜2時間かかる",
+    "保守・コントリビュートは受け付けない成果物"
+  ],
+  "license": "Apache-2.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "full_name": "n8n-io/nod",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "自分のPCで動く個人エージェント",
+  "category": "AIエージェント",
+  "summary_ja": "n8nが公開するオープンソースの個人エージェント。自分のPC上で、選んだモデルを使い、請求書の催促、通話の準備、無料トライアルの解約などを実際のWebサイト上で行う。実行前に確認を求める設計。研究プレビュー段階。",
+  "features": [
+    "Gmail・Calendar・Slack・Notionなどと連携して作業",
+    "通話前に1ページのブリーフを自動作成",
+    "アプリ内・Telegram・WhatsAppから依頼",
+    "行動前に確認する仕組みとルール設定",
+    "メモリ機能とベンチマーク結果の掲載"
+  ],
+  "how_to_use": {
+    "steps": [
+      "macOS 14以上などの環境を確認し、アプリをReleasesまたは公式サイトから入手する",
+      "モデルと連携するアプリを接続する（READMEは約10分としている）",
+      "アプリやTelegram・WhatsAppから依頼する",
+      "ソースから動かす場合はNode.js 24.21以上、pnpm、Dockerを用意する"
+    ],
+    "code": "git clone https://github.com/n8n-io/nod.git\ncd nod\ncorepack enable\npnpm start"
+  },
+  "effects": [
+    "メールや予定の確認・準備作業を減らせる",
+    "定型の事務作業をWebサイト上で代行させられる",
+    "モデルを自分で選べ、データを手元に置ける"
+  ],
+  "domains": [
+    {
+      "area": "営業",
+      "example": "商談前の情報収集とブリーフ作成"
+    },
+    {
+      "area": "経理",
+      "example": "請求書の催促と支払い状況の確認"
+    },
+    {
+      "area": "個人の事務",
+      "example": "サブスクの解約や予約の代行"
+    },
+    {
+      "area": "チーム運用",
+      "example": "SlackやNotionを横断した情報整理"
+    }
+  ],
+  "target_users": "日々のメール・予定・事務作業をAIに任せたい個人や小規模チーム。",
+  "cautions": [
+    "研究プレビュー段階で、動作や仕様が変わる可能性がある",
+    "メールや予定表など機密性の高いアカウントへのアクセスを与えるため、権限の範囲と確認ルールを慎重に設定すること",
+    "Windows版・Linux版はプレビューと記載されている"
+  ],
+  "license": "Apache-2.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

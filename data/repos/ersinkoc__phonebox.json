@@ -1,0 +1,57 @@
+{
+  "full_name": "ersinkoc/phonebox",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "古いAndroidをPCの卓上パネルに",
+  "category": "生産性・ドキュメント",
+  "summary_ja": "古いAndroidスマホを、PCの状態表示とタッチ操作のサブパネルにするツール。Androidアプリと、WindowsやLinux、macOSで動くデスクトップエージェントで構成される。USBまたはWi-Fiで接続し、クラウドやアカウントは不要と説明している。",
+  "features": [
+    "137種のウィジェットと30種のテンプレートを持つブラウザ上のビジュアルエディタ",
+    "CPU・GPU・メモリ・ネットワークの表示",
+    "Claude・Codexなどの利用上限表示やローカルのAIセッション確認、許可・拒否の操作",
+    "アプリ・キーの操作やマクロ、メディア・OBS操作",
+    "Webhook・Home Assistant連携"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Android 5以上のスマホを用意する",
+      "PCにデスクトップエージェントをインストールする（READMEのセットアップスクリプトを使用）",
+      "スマホにアプリを入れ、USBデバッグを許可して接続する（セットアップで自動導入も可）",
+      "ブラウザの設定画面（127.0.0.1:8765）でパネルを編集する"
+    ],
+    "code": "irm https://raw.githubusercontent.com/ersinkoc/phonebox/main/setup.ps1 | iex\ncurl -fsSL https://raw.githubusercontent.com/ersinkoc/phonebox/main/setup.sh | bash"
+  },
+  "effects": [
+    "PCの状態やAIの利用状況を一目で確認できる",
+    "古いスマホを再利用できる",
+    "よく使う操作をワンタッチ化できる"
+  ],
+  "domains": [
+    {
+      "area": "ソフトウェア開発",
+      "example": "AIコーディングの上限・セッション確認"
+    },
+    {
+      "area": "配信・動画",
+      "example": "OBSやメディアのタッチ操作"
+    },
+    {
+      "area": "スマートホーム",
+      "example": "Home Assistantの操作パネル"
+    },
+    {
+      "area": "オフィス",
+      "example": "PC稼働状況の常時表示"
+    }
+  ],
+  "target_users": "古いスマホを活用して、デスク周りの情報表示や操作を便利にしたい人。",
+  "cautions": [
+    "`irm | iex` や `curl | bash` 形式のセットアップのため、実行前にスクリプトの内容を確認すること",
+    "Windows版は未署名のため、SmartScreenやウイルス対策ソフトが警告・ブロックすることがある",
+    "USBデバッグは信頼できるPCでのみ許可すること"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

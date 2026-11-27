@@ -1,0 +1,57 @@
+{
+  "full_name": "superdesigndev/treg",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "エージェント用ツールのAPIレジストリ",
+  "category": "AIエージェント",
+  "summary_ja": "エージェントのツール版OpenRouterを目指すサービス。1つのベースURLとトークンで、SEO・ソーシャル・企業情報・スクレイピング・画像生成など数千のAPIエンドポイントを従量課金で呼べる。チーム独自のAPIキーやCLIも登録でき、認証情報は常にサーバー側で注入される。自前ホストも可能。",
+  "features": [
+    "`treg catalog search` による用途ベースのツール検索",
+    "呼び出しごとの従量課金（1セントから）と残高確認",
+    "チームのAPIキー・OAuth・ベンダーCLI・SKILL.mdの登録と共有",
+    "プロバイダのAPIのベースURLを置き換えるだけの互換呼び出し",
+    "認証情報をサーバー側に保持し、利用者に渡さない設計"
+  ],
+  "how_to_use": {
+    "steps": [
+      "CLIをインストールしてレジストリ（treg.to）に向ける",
+      "treg login でGitHub・メール・トークンのいずれかでサインインする",
+      "treg catalog search で目的のツールを探す",
+      "treg call でツールを呼び出し、treg balance で料金を確認する"
+    ],
+    "code": "curl -fsSL https://treg.to/install.sh | sh\ntreg login\ntreg catalog search \"backlinks for a domain\"\ntreg call tikhub.tiktok.user.profile --query uniqueId=tiktok\ntreg balance"
+  },
+  "effects": [
+    "個別契約なしに多数の外部APIをエージェントから使える",
+    "高額なSaaS契約を、必要な呼び出し分の課金に置き換えられる",
+    "チーム内でAPIキーを配らずにツールを共有できる"
+  ],
+  "domains": [
+    {
+      "area": "マーケティング",
+      "example": "SEO・被リンクデータの自動収集"
+    },
+    {
+      "area": "営業",
+      "example": "企業・人物情報の補完"
+    },
+    {
+      "area": "コンテンツ制作",
+      "example": "画像・動画・音声生成の呼び出し"
+    },
+    {
+      "area": "社内ツール運用",
+      "example": "チーム共通のAPIキー管理"
+    }
+  ],
+  "target_users": "多数の外部ツールをAIエージェントに使わせたい開発者・チーム。",
+  "cautions": [
+    "`curl | sh` 形式のインストールのため、実行前にスクリプトの内容を確認すること",
+    "ホスト版を使うと通信内容や認証情報が運営サーバーを経由する。機密データの扱いに注意",
+    "従量課金で、ライセンスはApache 2.0に追加条件が付く形"
+  ],
+  "license": "Apache 2.0（追加条件あり）",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

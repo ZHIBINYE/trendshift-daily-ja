@@ -1,0 +1,58 @@
+{
+  "full_name": "alesha-pro/llm.asm",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "純アセンブリで動くLLM推論とOS",
+  "category": "AI開発ツール",
+  "summary_ja": "x86-64のNASMアセンブリだけで書かれた3つのLLMプロジェクト集。Qwen3-0.6Bの推論エンジン、同モデルが直接起動するベアメタルOS、Mini-GPTの学習器から成り、C言語やlibcに依存しない。READMEでは同条件のllama.cpp（CPU）より速いと主張している。",
+  "features": [
+    "Qwen3-0.6B（Q8_0）を約14KBのELFで推論（単発実行・対話モード）",
+    "約24KBのブートOS：LinuxなしでLLMとチャットできる",
+    "約32KBのMini-GPT学習器（AVX2 GEMM、解析的な逆伝播、AdamW）",
+    "学習状況を表示するBraille文字のTUI",
+    "PyTorchとの数値一致の検証結果を掲載"
+  ],
+  "how_to_use": {
+    "steps": [
+      "リポジトリをcloneして make all でビルドする",
+      "python3 scripts/export_weights.py でモデル重みを .asmbin 形式に変換する",
+      "make inference で推論バイナリを作り、プロンプトを渡して実行する",
+      "OS版は make os と make os-run でQEMU上で起動する",
+      "学習は make train 後に asm-gpt-train にデータを渡す"
+    ],
+    "code": "git clone https://github.com/alesha-pro/llm.asm.git\ncd llm.asm\nmake all\nmake inference FAST_Q8=1\n./build/asm-llm -m models/qwen3-0.6b-q8_0.asmbin -p \"Explain how a CPU cache works in 3 concise sentences.\" -n 128 -t 16"
+  },
+  "effects": [
+    "LLM推論の仕組みを低レイヤーまで読んで学べる",
+    "極小サイズでLLMを動かす実装の参考になる",
+    "CPU上のSIMD最適化の手法を具体的なコードで確認できる"
+  ],
+  "domains": [
+    {
+      "area": "教育・研究",
+      "example": "Transformer推論のカーネル実装を学ぶ教材"
+    },
+    {
+      "area": "組込み・低レイヤー開発",
+      "example": "最小構成でAIを動かす設計の検討材料"
+    },
+    {
+      "area": "性能評価",
+      "example": "CPU推論ベンチマークの手法の参考"
+    },
+    {
+      "area": "OS開発",
+      "example": "ブートからAI実行までを一貫して読む題材"
+    }
+  ],
+  "target_users": "アセンブリやCPU最適化、LLM内部の実装に関心のある上級の開発者。",
+  "cautions": [
+    "x86-64（AVX2/FMA/F16C対応CPU）が前提で、Linuxを想定している",
+    "性能比較はREADME掲載の自己計測値で、第三者による検証は確認していない",
+    "モデル重みは別途入手・変換する必要があり、モデル側のライセンスにも従う"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

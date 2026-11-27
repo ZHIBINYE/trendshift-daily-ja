@@ -1,0 +1,56 @@
+{
+  "full_name": "Belobug/VIctory-Belobug-AMD",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "RX 7900 XTX向けXbox互換レイヤー",
+  "category": "ゲーム・エミュレータ",
+  "summary_ja": "Xbox Series向けタイトルをユーザー提供のファイルからWindows上でネイティブ実行する互換レイヤー「VIctory」のフォーク。AMD RX 7900 XTXでの安定30fpsを目標に、レンダラーのパッチ適用や事前シェーダー変換で高速化を進めている。ゲームのファイルやコードは含まないと明記している。",
+  "features": [
+    "レンダラーパッチ（定数ヒープ、ディスクリプタ、CBV等）を環境変数で個別に有効化",
+    "Series S/Xプロファイルと出力解像度の切り替え",
+    "シェーダーを事前変換して保存するストア",
+    "フレーム時間の計測結果と他GPU（RX 9060 XT、RTX 3090、Arc B580）の報告を掲載",
+    "レイトレーシングは任意で既定はオフ"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Windows 10/11 x64、DirectX 12対応GPU、Rust、MSVCビルドツールと自分のゲームダンプを用意する",
+      "フォーク元の別フォークをcloneし、victory.example.toml をコピーしてパスを設定する",
+      "cargo build でビルドする",
+      "scripts\\play.ps1 に自分のexeのパスを渡して起動する"
+    ],
+    "code": "git clone https://github.com/avatarmanz/VIctory-7900XTX\ncd VIctory-7900XTX\ncopy victory.example.toml victory.toml\ncargo build --locked --profile diag -p victory --features diagnostics\nscripts\\play.ps1 -Exe <path of your copy's executable>"
+  },
+  "effects": [
+    "特定GPUでの描画性能の改善手法を追える",
+    "レンダラーパッチの効果を実測値で比較できる",
+    "互換レイヤーの実装課題（メモリ・ストリーミング）を学べる"
+  ],
+  "domains": [
+    {
+      "area": "グラフィックス開発",
+      "example": "D3D12のコマンド提出ボトルネックの分析"
+    },
+    {
+      "area": "互換レイヤー開発",
+      "example": "シェーダーの事前変換と共有メモリの扱い"
+    },
+    {
+      "area": "コミュニティ調査",
+      "example": "GPUごとの動作報告の比較"
+    }
+  ],
+  "target_users": "互換レイヤーやGPU最適化に関心がある開発者・検証者。",
+  "cautions": [
+    "流出したとされるゲームの動作環境にあたるため、著作権・利用規約上のリスクがある。自分で正規に入手したファイルのみを対象にすること",
+    "実験的な移植層で、動作環境にはWindows 11・AVX2対応CPU・DirectX 12対応GPUのほか、大量のRAM（README推奨は64GB）が必要"
+  ],
+  "license": "GPL-3.0-or-later",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約1日（2026-11-25作成）で約2,500スター（直近で+1,164）と急増している",
+      "話題が流出したゲームの動作に関するもので、法的リスクのある内容を扱う",
+      "READMEの性能値は作者の1台のPCでの計測で、未検証の主張を含む"
+    ]
+  }
+}

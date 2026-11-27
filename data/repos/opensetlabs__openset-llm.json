@@ -1,0 +1,57 @@
+{
+  "full_name": "opensetlabs/openset-llm",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "GPUなし8GBで27B LLMを動かす",
+  "category": "AI開発ツール",
+  "summary_ja": "GPUなしの通常のCPUと8GBのRAMで、27BクラスのLLM（三値量子化のBonsai-2-27B）を動かす推論エンジン。PrismML版llama.cppのフォークに新しいカーネルを加えたもので、OpenAI互換APIを提供する。READMEでは1ユーザーで毎秒17〜20トークンと説明している。",
+  "features": [
+    "8GBのRAMで27Bモデル（約5.95GB）を実行",
+    "AVX-512向けの高速カーネルとAVX2向けの256bitカーネル",
+    "OpenAI互換API（/v1）とチャット用Webページ",
+    "--multi による同時リクエスト処理",
+    "`install.sh --check` でCPUとRAMの事前確認"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Linux（またはWSL2）とx86-64 CPU、8GBのRAMを用意し、git・cmake・C++コンパイラを入れる",
+      "リポジトリをcloneして ./start を実行する（初回はビルドと約7.3GBのモデル取得）",
+      "ブラウザで http://127.0.0.1:8080 のチャットページを開く",
+      "開発用途では ./serve でAPIを起動し、OpenAIクライアントから接続する"
+    ],
+    "code": "git clone https://github.com/opensetlabs/openset-llm && cd openset-llm && ./start\n./install.sh --check\n./serve --multi 4"
+  },
+  "effects": [
+    "GPUなしでも大型モデルをローカル実行でき、従量課金を避けられる",
+    "既存のOpenAI互換クライアントやエージェントをそのまま接続できる",
+    "社内データを外部に出さずに検索・抽出処理を回せる"
+  ],
+  "domains": [
+    {
+      "area": "社内業務",
+      "example": "機密文書の要約・抽出をローカルで実行"
+    },
+    {
+      "area": "エージェント開発",
+      "example": "API費用なしでの長時間エージェント実験"
+    },
+    {
+      "area": "エッジ・オンプレ",
+      "example": "GPUのない拠点サーバーでのLLM提供"
+    },
+    {
+      "area": "研究",
+      "example": "CPU推論カーネル最適化の比較"
+    }
+  ],
+  "target_users": "GPUを用意できない環境でローカルLLMを動かしたい開発者・チーム。",
+  "cautions": [
+    "速度の数値は作者の計測環境（8 vCPUのIce Lake Xeon）での値で、AVX-512なしのCPUでは遅くなる",
+    "初回に約7.3GBのモデルをダウンロードし、ビルドも行う",
+    "チャットページは実験的機能と明記されている"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "full_name": "nexu-io/opengame",
+  "analyzed_at": "2026-11-26",
+  "title_ja": "AIエージェントをゲームスタジオ化",
+  "category": "AIエージェント",
+  "summary_ja": "Claude CodeやCodexなど20以上のローカルコーディングエージェントを、ゲーム制作スタジオとして使えるようにするオープンソースのツール群。25種のプレイ可能なテンプレートをリミックスし、検証・公開まで行える。Skillsとして導入し、12個のMCPツールから呼び出す。",
+  "features": [
+    "25個のプレイ可能ゲームテンプレート（3D・ボクセル・ピクセル・縦型）",
+    "`opengame` スキルとMCPツール（`openmotion_game_*`）",
+    "ロジック検証・バランスシミュレーション・ヘッドレス試遊",
+    "9:16のプレイアブル広告の書き出し",
+    "WeChat・TikTok・Telegram・itch.ioなどへの公開経路"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Git、Git LFS、npm、Node.js 22.18以上を用意する",
+      "Skills CLIで opengame スキルをエージェントに追加する",
+      "ソースをshallow cloneして npm ci、npm run build:studio を実行する",
+      "npm start でスタジオを起動し、テンプレートを選んで遊ぶ・リミックスする"
+    ],
+    "code": "npx skills add https://github.com/nexu-io/opengame/tree/skills --skill opengame\ngit -c filter.lfs.process= -c filter.lfs.smudge= -c filter.lfs.required=false clone --depth 1 --single-branch --branch main https://github.com/nexu-io/opengame.git\ncd opengame\ngit lfs install --local --skip-smudge\nnpm ci\nnpm run build:studio\nnpm start"
+  },
+  "effects": [
+    "アイデアから試遊可能なゲームまでの制作時間を短縮できる",
+    "既存テンプレートを土台に素材だけ差し替えられる",
+    "自分のエージェントとAPIキーをそのまま使える（BYOA/BYOK）"
+  ],
+  "domains": [
+    {
+      "area": "ゲーム開発",
+      "example": "プロトタイプを素早く作って検証"
+    },
+    {
+      "area": "マーケティング",
+      "example": "プレイアブル広告の制作"
+    },
+    {
+      "area": "教育",
+      "example": "ゲーム制作を題材にしたAI活用の演習"
+    },
+    {
+      "area": "個人開発",
+      "example": "ミニゲームの量産と各プラットフォームへの公開"
+    }
+  ],
+  "target_users": "AIエージェントでゲームや広告用ミニゲームを作りたい個人開発者・小規模チーム。",
+  "cautions": [
+    "素材の取得にLFSとネットワークが必要（初回の遊び・リミックス時にダウンロード）",
+    "外部モデルのAPIキー利用料や、公開先の規約・収益化条件に注意",
+    "READMEの機能説明は宣伝色が強く、実際の品質は未検証"
+  ],
+  "license": "Apache-2.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}
