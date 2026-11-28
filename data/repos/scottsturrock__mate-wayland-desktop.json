@@ -1,0 +1,56 @@
+{
+  "full_name": "scottsturrock/mate-wayland-desktop",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "MATEをWaylandで動かすLinuxディストロ",
+  "category": "インフラ・DevOps",
+  "summary_ja": "MATEデスクトップをWayland（labwcコンポジタ）上で動かす、Ubuntu 26.04ベースのLinuxディストリビューション。セッション設定・パッケージビルド・ISOを作るビルド系を含む。MATEやCanonicalとは無関係の独立プロジェクトと明記している。",
+  "features": [
+    "MATEパネル・Caja・設定をWaylandで動作",
+    "ライブISOとCalamaresインストーラ（LUKS2暗号化選択可）",
+    "複数モニターの個別解像度",
+    "XWayland対応とスケール画面向けの起動ツール"
+  ],
+  "how_to_use": {
+    "steps": [
+      "配布サイトからISOとチェックサムを取得する",
+      "USBに書き込んでUEFIで起動する",
+      "インストーラで導入する（暗号化は任意）",
+      "ビルドする場合は ./build.sh --packages を実行する"
+    ],
+    "code": "./build.sh --packages\n./build.sh"
+  },
+  "effects": [
+    "クラシックなGNOME 2風UIをWaylandで使える",
+    "X11依存を減らした環境を試せる",
+    "ISOを自作して改変できる"
+  ],
+  "domains": [
+    {
+      "area": "デスクトップ利用",
+      "example": "軽量で古典的なUIの環境"
+    },
+    {
+      "area": "Linuxコミュニティ",
+      "example": "Wayland移行の検証"
+    },
+    {
+      "area": "教育",
+      "example": "旧PCの再利用"
+    },
+    {
+      "area": "ディストロ開発",
+      "example": "ビルド系の参考"
+    }
+  ],
+  "target_users": "MATEのUIが好きでWaylandへ移行したい人。",
+  "cautions": [
+    "ISOの配布はGitHub外のサイト（mate-wayland.org）で、チェックサムを必ず確認すること",
+    "個人の独立プロジェクトで、サポート体制は不明",
+    "Ubuntu 26.04ベースのため新しい環境が必要"
+  ],
+  "license": "GPL-3.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "full_name": "VUILabsAI/Luna-Translator",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "自己ホスト型のリアルタイム同時通訳",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "音声をリアルタイムに原文字幕・翻訳文・翻訳音声へ変換する同時通訳アプリ。VUI LabsのWeb版・Go製バックエンド・iOS版のコミュニティ版を公開している。実際の認識・翻訳は外部APIで行い、ローカルにGPUは不要とされる。",
+  "features": [
+    "原文字幕・訳文・訳音のリアルタイム出力",
+    "中英双方向の対話と履歴・再生・共有",
+    "Docker Composeによる自己ホスト",
+    "Go API クイックスタートとiOSクライアント"
+  ],
+  "how_to_use": {
+    "steps": [
+      "DockerとComposeをインストールする",
+      "リポジトリをクローンして展開する",
+      "sh ./start.sh（WindowsはPowerShellの start.ps1）で起動する",
+      "ブラウザで開いて同時通訳を試す"
+    ],
+    "code": "git clone https://github.com/VUILabsAI/Luna-Translator.git\ncd Luna-Translator\nsh ./start.sh"
+  },
+  "effects": [
+    "外国語の講演を字幕と音声で追える",
+    "多言語の聴衆への説明を支援できる",
+    "会話の履歴を後から聞き返せる"
+  ],
+  "domains": [
+    {
+      "area": "教育",
+      "example": "外国語の講義の聴講"
+    },
+    {
+      "area": "国際会議",
+      "example": "発表の同時通訳"
+    },
+    {
+      "area": "接客・窓口",
+      "example": "対面の双方向会話支援"
+    },
+    {
+      "area": "開発",
+      "example": "同時通訳API連携のプロトタイプ"
+    }
+  ],
+  "target_users": "同時通訳を自分の環境で動かしたい開発者・組織。",
+  "cautions": [
+    "READMEは中国語中心で、中国国内向けAPIの利用が前提の部分がある",
+    "実運用には外部APIの契約・料金が必要になり得る",
+    "音声データが外部サービスに送られるため、機密会議では事前確認が必要"
+  ],
+  "license": null,
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "作成から約1か月でスターが急増している一方、フォークが少ない（約970スターに対し8）"
+    ]
+  }
+}

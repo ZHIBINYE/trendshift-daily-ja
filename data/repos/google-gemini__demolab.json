@@ -1,0 +1,55 @@
+{
+  "full_name": "google-gemini/demolab",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "Geminiチームのデモ用スキル集",
+  "category": "AIエージェント",
+  "summary_ja": "Geminiチームが作った、クリエイティブ・フロントエンド・実験的エージェントのスキルライブラリ。並列サブエージェントで調べる deep-research と、Webデザイン向けの gemini-frontend-design などを含む。",
+  "features": [
+    "deep-research（並列サブエージェントによる調査と出典付き報告）",
+    "gemini-frontend-design（Webデザインの指針）",
+    "Claude Code・Cursor・Codex等へのプラグイン導入",
+    "スキル単位でのインストール"
+  ],
+  "how_to_use": {
+    "steps": [
+      "使うエージェントの導入方法をREADMEで選ぶ",
+      "スキルまたはプラグインを追加する",
+      "エージェントで該当タスクを依頼する"
+    ],
+    "code": "npx skills add google-gemini/demolab --skill deep-research\nnpx skills add google-gemini/demolab --skill gemini-frontend-design"
+  },
+  "effects": [
+    "調査の網羅性と出典確認を支援できる",
+    "Webデザインの品質を安定させやすい",
+    "複数のエージェント環境で同じスキルを使える"
+  ],
+  "domains": [
+    {
+      "area": "リサーチ",
+      "example": "複雑な話題の出典付き調査"
+    },
+    {
+      "area": "Web制作",
+      "example": "LP・Webアプリの設計"
+    },
+    {
+      "area": "デモ開発",
+      "example": "Geminiデモの再現"
+    },
+    {
+      "area": "AI開発",
+      "example": "スキル設計の参考"
+    }
+  ],
+  "target_users": "コーディングエージェントでWeb制作・調査を行う開発者。",
+  "cautions": [
+    "評価結果はGemini 4モデルでの社内評価で、第三者検証は確認できない",
+    "並列サブエージェントによりトークン消費が増える可能性がある",
+    "ライセンスはREADMEから確認できていない"
+  ],
+  "license": null,
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

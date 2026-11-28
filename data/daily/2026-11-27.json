@@ -1,0 +1,517 @@
+{
+  "date": "2026-11-27",
+  "source": "https://trendshift.io/",
+  "items": [
+    {
+      "rank": 1,
+      "full_name": "trustno1-coder/VIctory-NVIDIA",
+      "slug": "trustno1-coder__VIctory-NVIDIA",
+      "github_url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+      "trendshift_url": "https://trendshift.io/repositories/380324",
+      "language": "Rust",
+      "description": "VIctory (Xbox Series compatibility layer) made to draw everything on NVIDIA cards: no skipped draws on capped descriptor heaps, Series S interface plane, half-scale Series S at about 20-22 fps on an RTX 5070. Fork of VIctory-7900XTX. No game files.",
+      "stars": 2670,
+      "forks": 116,
+      "stars_gained": 2887,
+      "forks_gained": 73,
+      "score": 23246,
+      "created_at": "2026-11-25T23:35:29Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 2,
+      "full_name": "Belobug/VIctory-Belobug-AMD",
+      "slug": "Belobug__VIctory-Belobug-AMD",
+      "github_url": "https://github.com/Belobug/VIctory-Belobug-AMD",
+      "trendshift_url": "https://trendshift.io/repositories/377434",
+      "language": "Rust",
+      "description": "",
+      "stars": 4180,
+      "forks": 1133,
+      "stars_gained": 1369,
+      "forks_gained": 410,
+      "score": 11772,
+      "created_at": "2026-11-25T09:41:37Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 3,
+      "full_name": "nexu-io/opengame",
+      "slug": "nexu-io__opengame",
+      "github_url": "https://github.com/nexu-io/opengame",
+      "trendshift_url": "https://trendshift.io/repositories/379696",
+      "language": "TypeScript",
+      "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+      "stars": 2169,
+      "forks": 294,
+      "stars_gained": 1396,
+      "forks_gained": 142,
+      "score": 11460,
+      "created_at": "2026-11-25T10:35:45Z",
+      "tags": [
+        "AI agent",
+        "Game engine"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 4,
+      "full_name": "stablyai/orca",
+      "slug": "stablyai__orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "trendshift_url": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "stars": 142372,
+      "forks": 9972,
+      "stars_gained": 2088,
+      "forks_gained": 35,
+      "score": 7119,
+      "created_at": "2026-03-17T03:28:57Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 5,
+      "full_name": "Reukix/Reloc",
+      "slug": "Reukix__Reloc",
+      "github_url": "https://github.com/Reukix/Reloc",
+      "trendshift_url": "https://trendshift.io/repositories/379705",
+      "language": "Swift",
+      "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
+      "stars": 1526,
+      "forks": 230,
+      "stars_gained": 792,
+      "forks_gained": 93,
+      "score": 6525,
+      "created_at": "2026-11-25T17:29:48Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 6,
+      "full_name": "togg53192-cmd/jailbreaks",
+      "slug": "togg53192-cmd__jailbreaks",
+      "github_url": "https://github.com/togg53192-cmd/jailbreaks",
+      "trendshift_url": "https://trendshift.io/repositories/207462",
+      "language": "",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "stars": 21993,
+      "forks": 3901,
+      "stars_gained": 1020,
+      "forks_gained": 54,
+      "score": 6292,
+      "created_at": "2026-06-18T18:21:25Z",
+      "tags": [
+        "Curated list"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 7,
+      "full_name": "ZigZagBoi1/ScarlettPort",
+      "slug": "ZigZagBoi1__ScarlettPort",
+      "github_url": "https://github.com/ZigZagBoi1/ScarlettPort",
+      "trendshift_url": "https://trendshift.io/repositories/375552",
+      "language": "Rust",
+      "description": "Grand Theft Auto VI running natively on Windows from your own Xbox Series dump. No emulator: the game's x64 code runs on your CPU and its GPU code is recompiled for your card.",
+      "stars": 1247,
+      "forks": 102,
+      "stars_gained": 742,
+      "forks_gained": 59,
+      "score": 6079,
+      "created_at": "2026-11-24T09:36:26Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 8,
+      "full_name": "jub0t/Concat",
+      "slug": "jub0t__Concat",
+      "github_url": "https://github.com/jub0t/Concat",
+      "trendshift_url": "https://trendshift.io/repositories/191379",
+      "language": "Rust",
+      "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
+      "stars": 22391,
+      "forks": 2770,
+      "stars_gained": 845,
+      "forks_gained": 67,
+      "score": 5661,
+      "created_at": "2026-08-25T18:34:47Z",
+      "tags": [
+        "Video editing"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 9,
+      "full_name": "alesha-pro/llm.asm",
+      "slug": "alesha-pro__llm.asm",
+      "github_url": "https://github.com/alesha-pro/llm.asm",
+      "trendshift_url": "https://trendshift.io/repositories/377405",
+      "language": "Assembly",
+      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+      "stars": 2159,
+      "forks": 286,
+      "stars_gained": 685,
+      "forks_gained": 71,
+      "score": 5622,
+      "created_at": "2026-11-25T07:28:51Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 10,
+      "full_name": "github/spec-kit",
+      "slug": "github__spec-kit",
+      "github_url": "https://github.com/github/spec-kit",
+      "trendshift_url": "https://trendshift.io/repositories/15463",
+      "language": "Python",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "stars": 152255,
+      "forks": 14201,
+      "stars_gained": 681,
+      "forks_gained": 9,
+      "score": 5466,
+      "created_at": "2025-08-21T22:54:31Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 11,
+      "full_name": "DeadInternetStudios/100x-engineer-skill",
+      "slug": "DeadInternetStudios__100x-engineer-skill",
+      "github_url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+      "trendshift_url": "https://trendshift.io/repositories/378317",
+      "language": "JavaScript",
+      "description": "100x is a skill by a former Cursor engineer that turns prompts into formally verified, production-ready code",
+      "stars": 739,
+      "forks": 3,
+      "stars_gained": 676,
+      "forks_gained": 0,
+      "score": 5408,
+      "created_at": "2026-11-23T11:06:07Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": []
+    },
+    {
+      "rank": 12,
+      "full_name": "WhiteBr1ck/agy-powertools",
+      "slug": "WhiteBr1ck__agy-powertools",
+      "github_url": "https://github.com/WhiteBr1ck/agy-powertools",
+      "trendshift_url": "https://trendshift.io/repositories/370708",
+      "language": "JavaScript",
+      "description": "Antigravity 2.0 原生界面增强插件：界面汉化、类 Codex 紧凑排版与阶段汇报、上下文与缓存监控、会话分支及本地用量面板",
+      "stars": 1887,
+      "forks": 75,
+      "stars_gained": 599,
+      "forks_gained": 16,
+      "score": 4828,
+      "created_at": "2026-11-16T21:35:31Z",
+      "tags": [
+        "AI coding assistant"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 13,
+      "full_name": "VUILabsAI/Luna-Translator",
+      "slug": "VUILabsAI__Luna-Translator",
+      "github_url": "https://github.com/VUILabsAI/Luna-Translator",
+      "trendshift_url": "https://trendshift.io/repositories/379533",
+      "language": "TypeScript",
+      "description": "Self-hosted real-time speech-to-speech translation with live captions and translated audio. Web community edition and a Go quickstart for the VUI Labs v3 API.",
+      "stars": 973,
+      "forks": 8,
+      "stars_gained": 597,
+      "forks_gained": 3,
+      "score": 4783,
+      "created_at": "2026-10-28T09:55:27Z",
+      "tags": [
+        "AI translation"
+      ],
+      "social": []
+    },
+    {
+      "rank": 14,
+      "full_name": "RMvdesi/obsidian-prism",
+      "slug": "RMvdesi__obsidian-prism",
+      "github_url": "https://github.com/RMvdesi/obsidian-prism",
+      "trendshift_url": "https://trendshift.io/repositories/370165",
+      "language": "JavaScript",
+      "description": "Optical UI, damped-spring choreography, 512K shallow-water vial, pixel mascots & dual-mode thought suite for Antigravity (GPL-3.0)",
+      "stars": 2919,
+      "forks": 112,
+      "stars_gained": 688,
+      "forks_gained": 23,
+      "score": 4483,
+      "created_at": "2026-11-17T02:50:21Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 15,
+      "full_name": "FortoGraphy/prism-download-manager",
+      "slug": "FortoGraphy__prism-download-manager",
+      "github_url": "https://github.com/FortoGraphy/prism-download-manager",
+      "trendshift_url": "https://trendshift.io/repositories/312368",
+      "language": "Rust",
+      "description": "Free, open-source IDM alternative for Windows, macOS and Linux — up to 32 connections, browser integration, video & MP3 downloads, torrents, crash-safe resume.",
+      "stars": 2223,
+      "forks": 115,
+      "stars_gained": 536,
+      "forks_gained": 15,
+      "score": 4318,
+      "created_at": "2026-10-15T10:11:39Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 16,
+      "full_name": "NVIDIA/auto-ontology",
+      "slug": "NVIDIA__auto-ontology",
+      "github_url": "https://github.com/NVIDIA/auto-ontology",
+      "trendshift_url": "https://trendshift.io/repositories/315432",
+      "language": "Python",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "stars": 15683,
+      "forks": 1396,
+      "stars_gained": 650,
+      "forks_gained": 21,
+      "score": 4060,
+      "created_at": "2026-04-27T21:45:56Z",
+      "tags": [],
+      "social": [
+        "hackernews",
+        "x"
+      ]
+    },
+    {
+      "rank": 17,
+      "full_name": "mjmirza/app-store-compliance",
+      "slug": "mjmirza__app-store-compliance",
+      "github_url": "https://github.com/mjmirza/app-store-compliance",
+      "trendshift_url": "https://trendshift.io/repositories/100374",
+      "language": "Shell",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "stars": 7862,
+      "forks": 475,
+      "stars_gained": 867,
+      "forks_gained": 8,
+      "score": 3764,
+      "created_at": "2026-06-06T11:29:45Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 18,
+      "full_name": "grapedjuice/ytm-rs",
+      "slug": "grapedjuice__ytm-rs",
+      "github_url": "https://github.com/grapedjuice/ytm-rs",
+      "trendshift_url": "https://trendshift.io/repositories/297103",
+      "language": "Rust",
+      "description": "Fast, native YouTube Music desktop app for Windows, macOS and Linux, built in Rust. No Electron, synced karaoke lyrics, 30 themes.",
+      "stars": 1268,
+      "forks": 95,
+      "stars_gained": 450,
+      "forks_gained": 12,
+      "score": 3624,
+      "created_at": "2026-10-06T21:39:16Z",
+      "tags": [
+        "Music player"
+      ],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 19,
+      "full_name": "scottsturrock/mate-wayland-desktop",
+      "slug": "scottsturrock__mate-wayland-desktop",
+      "github_url": "https://github.com/scottsturrock/mate-wayland-desktop",
+      "trendshift_url": "https://trendshift.io/repositories/360783",
+      "language": "Shell",
+      "description": "MATE Wayland Desktop: the MATE desktop on Wayland with labwc, on an Ubuntu 26.04 base. Sources and build system.",
+      "stars": 892,
+      "forks": 4,
+      "stars_gained": 423,
+      "forks_gained": 0,
+      "score": 3384,
+      "created_at": "2026-11-16T03:12:11Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 20,
+      "full_name": "net-merge/net-merge",
+      "slug": "net-merge__net-merge",
+      "github_url": "https://github.com/net-merge/net-merge",
+      "trendshift_url": "https://trendshift.io/repositories/301802",
+      "language": "Go",
+      "description": "Use all your internet connections at once on Windows, macOS, Linux and Android: per-connection load balancing over Wi-Fi, Ethernet, mobile data and phone tethers",
+      "stars": 4216,
+      "forks": 224,
+      "stars_gained": 421,
+      "forks_gained": 1,
+      "score": 3370,
+      "created_at": "2026-10-12T19:28:45Z",
+      "tags": [],
+      "social": [
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 21,
+      "full_name": "drdon1234/Hentai-Park",
+      "slug": "drdon1234__Hentai-Park",
+      "github_url": "https://github.com/drdon1234/Hentai-Park",
+      "trendshift_url": "https://trendshift.io/repositories/358739",
+      "language": "Dart",
+      "description": "跨平台成人内容聚合客户端：图集、视频、音声、小说与游戏资源，支持聚合搜索、排行榜、阅读播放、订阅追更、离线下载与隐私保护 | Cross-platform adult content client for images, videos, asmr, novels and game resources; unified search, rankings, reading, playback, subscriptions, offline downloads and privacy controls",
+      "stars": 789,
+      "forks": 26,
+      "stars_gained": 414,
+      "forks_gained": 13,
+      "score": 3338,
+      "created_at": "2026-10-11T04:00:54Z",
+      "tags": [],
+      "social": []
+    },
+    {
+      "rank": 22,
+      "full_name": "DietrichGebert/ponytail",
+      "slug": "DietrichGebert__ponytail",
+      "github_url": "https://github.com/DietrichGebert/ponytail",
+      "trendshift_url": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "stars": 200092,
+      "forks": 12048,
+      "stars_gained": 762,
+      "forks_gained": 6,
+      "score": 3328,
+      "created_at": "2026-06-12T00:52:37Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "hackernews",
+        "reddit",
+        "x"
+      ]
+    },
+    {
+      "rank": 23,
+      "full_name": "4lwayz/portwatch-vi",
+      "slug": "4lwayz__portwatch-vi",
+      "github_url": "https://github.com/4lwayz/portwatch-vi",
+      "trendshift_url": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "stars": 6657,
+      "forks": 183,
+      "stars_gained": 959,
+      "forks_gained": 11,
+      "score": 3277,
+      "created_at": "2026-11-21T23:16:41Z",
+      "tags": [],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 24,
+      "full_name": "google-gemini/demolab",
+      "slug": "google-gemini__demolab",
+      "github_url": "https://github.com/google-gemini/demolab",
+      "trendshift_url": "https://trendshift.io/repositories/353510",
+      "language": "",
+      "description": "Skills, prompts, and scripts used to build and reproduce Gemini model demos",
+      "stars": 950,
+      "forks": 25,
+      "stars_gained": 403,
+      "forks_gained": 0,
+      "score": 3224,
+      "created_at": "2026-10-20T10:05:59Z",
+      "tags": [
+        "AI skills"
+      ],
+      "social": [
+        "x"
+      ]
+    },
+    {
+      "rank": 25,
+      "full_name": "nightly-labs/openbot",
+      "slug": "nightly-labs__openbot",
+      "github_url": "https://github.com/nightly-labs/openbot",
+      "trendshift_url": "https://trendshift.io/repositories/224319",
+      "language": "TypeScript",
+      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+      "stars": 11795,
+      "forks": 1153,
+      "stars_gained": 545,
+      "forks_gained": 13,
+      "score": 3173,
+      "created_at": "2026-08-12T21:32:03Z",
+      "tags": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "social": [
+        "x"
+      ]
+    }
+  ]
+}

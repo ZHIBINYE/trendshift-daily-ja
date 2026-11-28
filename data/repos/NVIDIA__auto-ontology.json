@@ -1,0 +1,56 @@
+{
+  "full_name": "NVIDIA/auto-ontology",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "データ向けオントロジー構築フレームワーク",
+  "category": "AI開発ツール",
+  "summary_ja": "データ上に意味に基づくグラフ型の推論層を作るNVIDIAのPythonフレームワーク。メタデータからオントロジーを生成し、LLMやエージェントに指標・関係の正しい意味を与えて、決定的なクエリ生成と説明可能な回答を目指す。READMEはBIRD-InteractとBEAVERで1位と述べている。",
+  "features": [
+    "メタデータからのオントロジー・ナレッジグラフ生成",
+    "検証（実問題での試験とSQLの照合）",
+    "MCP・CLI・APIによる文脈の提供",
+    "認定された修正の学習"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Docker Compose v2・uv・NVIDIA APIキーを用意する",
+      "リポジトリをクローンし .env.example を .env にコピーする",
+      "APIキーや各パスワードを .env に設定する",
+      "READMEの手順でDocker Composeを起動する"
+    ],
+    "code": "git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology\ncp .env.example .env"
+  },
+  "effects": [
+    "指標の定義ぶれによる誤回答を減らせる",
+    "複数データソースの意味を一元管理できる",
+    "SQLと手順つきで回答の根拠を確認できる"
+  ],
+  "domains": [
+    {
+      "area": "データ分析",
+      "example": "自然言語でのBI問い合わせ"
+    },
+    {
+      "area": "データガバナンス",
+      "example": "指標定義の統一"
+    },
+    {
+      "area": "AIエージェント開発",
+      "example": "データ文脈の提供基盤"
+    },
+    {
+      "area": "金融・小売",
+      "example": "複数システムの売上指標の整合"
+    }
+  ],
+  "target_users": "社内データをエージェントに正確に扱わせたいデータ・AI基盤チーム。",
+  "cautions": [
+    "NVIDIA APIキーが必要で、外部モデル利用の料金・規約を確認すること",
+    "Postgres等を公開するため、既定パスワードを必ず変更すること",
+    "データが少なく質問が固定なら直接SQLで足りる場合がある"
+  ],
+  "license": "Apache-2.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}

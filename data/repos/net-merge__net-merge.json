@@ -1,0 +1,59 @@
+{
+  "full_name": "net-merge/net-merge",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "複数回線を同時に使う回線束ね",
+  "category": "インフラ・DevOps",
+  "summary_ja": "Wi-Fi・有線・スマホテザリングなど複数のネット接続を同時に使い、接続ごとの負荷分散で速度を足し合わせるツール。Windows・macOS・Linux・Androidに対応する。",
+  "features": [
+    "接続ごとの負荷分散",
+    "スマホ回線をテザリングで追加",
+    "メニューで各接続の稼働状況を表示",
+    "Android版との連携"
+  ],
+  "how_to_use": {
+    "steps": [
+      "READMEの手順でインストールする",
+      "2本目の回線（スマホなど）を追加する",
+      "メニューで両方の接続が動いていることを確認する",
+      "ダウンロードや通信で効果を確認する"
+    ],
+    "code": "curl -fsSL https://raw.githubusercontent.com/net-merge/net-merge/main/install.sh | sh"
+  },
+  "effects": [
+    "ダウンロード速度を複数回線分に引き上げられる",
+    "単一回線の不安定さを緩和できる",
+    "スマホ回線を補助回線として活用できる"
+  ],
+  "domains": [
+    {
+      "area": "在宅ワーク",
+      "example": "大容量ファイルの転送"
+    },
+    {
+      "area": "ゲーム",
+      "example": "通信の安定化"
+    },
+    {
+      "area": "イベント・現場",
+      "example": "複数SIMの併用"
+    },
+    {
+      "area": "開発",
+      "example": "ネットワークの検証"
+    }
+  ],
+  "target_users": "複数の回線を持ち通信速度を上げたい人。",
+  "cautions": [
+    "curl | sh やirm | iex でスクリプトを直接実行する方式のため、導入前にスクリプトを確認すること",
+    "通信経路を変えるため、回線の契約規約（テザリング制限等）を確認すること",
+    "速度向上はサーバー側の対応にも依存する"
+  ],
+  "license": "MIT",
+  "risk": {
+    "level": "medium",
+    "reasons": [
+      "インストールがスクリプトを直接実行する形式（curl | sh / irm | iex）",
+      "作成から約1.5か月で約4,200スターに急増している"
+    ]
+  }
+}

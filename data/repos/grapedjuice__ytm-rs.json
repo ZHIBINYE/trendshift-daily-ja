@@ -1,0 +1,56 @@
+{
+  "full_name": "grapedjuice/ytm-rs",
+  "analyzed_at": "2026-11-27",
+  "title_ja": "Rust製の軽量YouTube Music",
+  "category": "メディア・クリエイティブ",
+  "summary_ja": "Rust（egui・rodio）で描画するYouTube Musicのネイティブデスクトップアプリ。Electronやブラウザ再生を使わず、再生中のメモリは約130MBとされる。同期歌詞と30種のテーマを備える。",
+  "features": [
+    "おすすめフィード・検索・ライブラリ",
+    "同期歌詞と30種のテーマ",
+    "ミニプレイヤーとドラッグでのキュー並べ替え",
+    "バックグラウンドでの自動更新"
+  ],
+  "how_to_use": {
+    "steps": [
+      "Releasesから自分のOS用ファイルを取得する",
+      "Windowsはsetup.exe、macOSはdmg、Linuxはdeb/pkg/AppImageを使う",
+      "アプリを開きYouTube Musicアカウントを設定する",
+      "曲を検索・再生する"
+    ],
+    "code": ""
+  },
+  "effects": [
+    "Chromeでの利用よりメモリを抑えられる",
+    "ダウンロード・インストールサイズが小さい",
+    "歌詞表示で聴きながら歌詞を追える"
+  ],
+  "domains": [
+    {
+      "area": "音楽鑑賞",
+      "example": "作業中のBGM再生"
+    },
+    {
+      "area": "低スペックPC",
+      "example": "軽量な音楽環境"
+    },
+    {
+      "area": "カラオケ",
+      "example": "同期歌詞の表示"
+    },
+    {
+      "area": "Rust学習",
+      "example": "eguiアプリの実装例"
+    }
+  ],
+  "target_users": "YouTube Musicを軽く使いたいデスクトップユーザー。",
+  "cautions": [
+    "非公式アプリで、YouTube Musicの利用規約やAPI仕様変更の影響を受け得る",
+    "バイナリはREADMEのRelease経由のみで取得すること",
+    "コード署名の有無はREADMEから確認できていない"
+  ],
+  "license": "GPL-3.0",
+  "risk": {
+    "level": "none",
+    "reasons": []
+  }
+}
